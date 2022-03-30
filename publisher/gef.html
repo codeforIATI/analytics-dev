@@ -1,0 +1,3242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <style>
+  em {
+    font-style: italic;
+  }
+  .big-number {
+    font-size: 100px;
+  }
+  .title-number {
+    font-weight: bold;
+    float: left;
+    width: 20%;
+  }
+  .title-text {
+    float: left;
+  }
+  .panel-heading {
+    clear: both;
+  }
+  .break {
+    word-break:break-all;
+  }
+  .panel-body h4, .panel-body h5 {
+    margin-top: 24px;
+  }
+  .panel-body h4:first-of-type, .panel-body h5:first-of-type {
+    margin-top: 10px;
+  }
+
+  .tablesorter-default .tablesorter-header {
+    background-image: url(data:image/gif;base64,R0lGODlhFQAJAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAkAAAIXjI+AywnaYnhUMoqt3gZXPmVg94yJVQAAOw==);
+    background-position: center left;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  .tablesorter-default thead .headerSortUp,
+  .tablesorter-default thead .tablesorter-headerSortUp,
+  .tablesorter-default thead .tablesorter-headerAsc {
+    background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjI8Bya2wnINUMopZAQA7);
+    border-bottom: #000 2px solid;
+  }
+  .tablesorter-default thead .headerSortDown,
+  .tablesorter-default thead .tablesorter-headerSortDown,
+  .tablesorter-default thead .tablesorter-headerDesc {
+    background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjB+gC+jP2ptn0WskLQA7);
+    border-bottom: #000 2px solid;
+  }
+  .tablesorter-header-inner {
+    margin-left:10px;
+  }
+  .tablesorter-headerRow {
+    background-color:white;
+  }
+  html,body {
+    height:100%;
+  }
+
+  #wrap {
+    min-height:100%;
+    height:auto;
+    margin:0 auto -60px;
+    padding:0 0 60px;
+  }
+
+  #footer {
+    background-color:#f5f5f5;
+    margin-top: 30px
+  }
+
+  .container .text-muted {
+    margin: 20px 0;
+  }
+
+  .navbar-default {
+     margin-bottom: 0px;
+  }
+
+  .navbar-brand {
+    padding: 10px;
+  }
+
+  .navbar-brand img {
+    height: 30px;
+  }
+
+  a.popover-html:focus {
+    outline: none;
+  }
+  </style>
+  <link rel="icon" href="/favicon.ico">
+  <title>
+Code for IATI Analytics -  Publisher: GEF Secretariat
+</title>
+
+  
+</head>
+<body>
+<div id="wrap">
+  <div class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="#" class="navbar-brand" data-c4i-toggle="sidebar" aria-controls="c4i-sidebar" aria-expanded="false" aria-label="Toggle Code for IATI sidebar"><img src="https://codeforiati.org/assets/img/logo.png" alt="Code for IATI" /></a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+        
+            <li ><a href="../index.html">Home</a></li>
+        
+            <li ><a href="../headlines.html">Headlines</a></li>
+        
+            <li ><a href="../data_quality.html">Data Quality</a></li>
+        
+            <li ><a href="../publishing_stats.html">Publishing Statistics</a></li>
+        
+            <li ><a href="../exploring_data.html">Exploring Data</a></li>
+        
+            <li ><a href="../faq.html">FAQ</a></li>
+        
+        </ul>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+        
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+  <div class="container">
+    
+      
+        <div class="page-header">
+          
+<a href="https://github.com/codeforIATI/IATI-Stats-public/tree/gh-pages/current/aggregated-publisher/gef/" style="float:right">(Publisher Stats JSON)</a>
+<h1>Publisher: GEF Secretariat</h1>
+<p class="lead"></p>
+
+        </div>
+      
+
+      
+    <div class="row">
+    <div class="col-md-6">
+    <div class="panel panel-default">
+        <div class="panel-heading"><h3 class="panel-title" id="list_fail_validation">Table of Contents</h3></div>
+        <div class="panel-body">
+            <ul>
+                <li><a href="#h_headlines">Headlines</a>
+                <li><a href="#h_dataquality">Data Quality</a>
+                    <ul>
+                        
+                        <li><a href="#p_validation">Files Failing Validation</a>
+                        
+                        
+                        
+                        
+                    </ul>
+                </li>
+                <li><a href="#h_financial">Financial</a></li>
+                <li><a href="#h_exploringdata">Exploring Data</a>
+                    <ul>
+                        <li><a href="#p_files">Files</a>
+                        <li><a href="#p_codelists">Codelist values</a>
+                        <li><a href="#p_elements">Elements and Attributes published</a>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <h2 id="h_headlines">Headlines</h2>
+
+    <div class="row">
+    <div class="col-md-6">
+    <div class="panel panel-default">
+    <table class="table table-striped">
+        <tbody>
+            <tr>
+                <td>On the Registry</td>
+                <td><a href="http://iatiregistry.org/publisher/gef">gef</a></td>
+            </tr>
+            <tr>
+                <td>Reporting Org on Registry</td>
+                <td>
+                    <code>XI-BRIDGE-6385676864</code>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>Reporting Org(s) in Data</td>
+                <td>
+                
+                <code>XI-BRIDGE-6385676864</code>
+                
+                </td>
+            </tr><tr>
+                <td>Activity Files</td>
+                <td>163</td>
+            </tr><tr>
+                <td>Organisation Files</td>
+                <td>0</td>
+            </tr><tr>
+                <td>Total File Size</td>
+                <td>20.6 MB</td>
+            </tr><tr>
+                <td>Activities</td>
+                <td>4119</td>
+            </tr><tr>
+                <td>Unique Activities</td>
+                <td>4119</td>
+            </tr><tr>
+                <td>Organisations</td>
+                <td>0</td>
+            </tr><tr>
+                <td>Versions</td>
+                <td>
+                
+                <code>2.03</code>
+                
+                </td>
+            </tr><tr>
+                <td>Hierarchies</td>
+                <td>
+                
+                <code>null</code>
+                
+                </td>
+            </tr><tr>
+                <td>Licenses</td>
+                <td>
+                
+                <code><a href="../license/cc-by.html">cc-by</a></code>
+                
+                </td>
+            </tr><tr>
+                <td>Files failing validation</td>
+                <td>
+                1
+                </td>
+            </tr>
+        </body>
+    </table>
+    </div>
+    </div>
+    
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              
+              <span id="activities" class="title-number">4119</span>
+              <span class="title-text">Activities</span>
+            </h3>
+            
+            <a href="https://stats.codeforiati.org/gitaggregate-publisher-dated/gef/activities.json" style="float:right">(J)</a>
+            
+            <div class="clearfix"></div>
+          </div>
+          <div class="panel-body">
+            <p></p>
+            <img src="../publisher_imgs/gef_activities.png" width="100%" />
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+        
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              
+              <span id="activity-files" class="title-number">163</span>
+              <span class="title-text">Activity Files</span>
+            </h3>
+            
+            <a href="https://stats.codeforiati.org/gitaggregate-publisher-dated/gef/activity_files.json" style="float:right">(J)</a>
+            
+            <div class="clearfix"></div>
+          </div>
+          <div class="panel-body">
+            <p></p>
+            <img src="../publisher_imgs/gef_activity_files.png" width="100%" />
+            
+          </div>
+        </div>
+      </div>
+
+        
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              
+              <span id="organisation-files" class="title-number">0</span>
+              <span class="title-text">Organisation Files</span>
+            </h3>
+            
+            <a href="https://stats.codeforiati.org/gitaggregate-publisher-dated/gef/organisation_files.json" style="float:right">(J)</a>
+            
+            <div class="clearfix"></div>
+          </div>
+          <div class="panel-body">
+            <p></p>
+            <img src="../publisher_imgs/gef_organisation_files.png" width="100%" />
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+        
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              
+              <span id="files-per-version" class="title-number"></span>
+              <span class="title-text">Files per version</span>
+            </h3>
+            
+            <a href="https://stats.codeforiati.org/gitaggregate-publisher-dated/gef/versions.json" style="float:right">(J)</a>
+            
+            <div class="clearfix"></div>
+          </div>
+          <div class="panel-body">
+            <p></p>
+            <img src="../publisher_imgs/gef_versions.png" width="100%" />
+            
+            <img src="../publisher_imgs/gef_versions_legend.png" width="100%" />
+            
+          </div>
+        </div>
+      </div>
+
+        
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              
+              <span id="total-file-size" class="title-number">20.6 MB</span>
+              <span class="title-text">Total File Size</span>
+            </h3>
+            
+            <a href="https://stats.codeforiati.org/gitaggregate-publisher-dated/gef/file_size.json" style="float:right">(J)</a>
+            
+            <div class="clearfix"></div>
+          </div>
+          <div class="panel-body">
+            <p></p>
+            <img src="../publisher_imgs/gef_file_size.png" width="100%" />
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+        
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              
+              <span id="files-failing-validation" class="title-number">1</span>
+              <span class="title-text">Files failing validation</span>
+            </h3>
+            
+            <a href="https://stats.codeforiati.org/gitaggregate-publisher-dated/gef/validation.json" style="float:right">(J)</a>
+            
+            <div class="clearfix"></div>
+          </div>
+          <div class="panel-body">
+            <p></p>
+            <img src="../publisher_imgs/gef_validation.png" width="100%" />
+            
+          </div>
+        </div>
+      </div>
+
+        
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              
+              <span id="files-where-xml-is-not-well-formed" class="title-number">0</span>
+              <span class="title-text">Files where XML is not well-formed</span>
+            </h3>
+            
+            <a href="https://stats.codeforiati.org/gitaggregate-publisher-dated/gef/invalidxml.json" style="float:right">(J)</a>
+            
+            <div class="clearfix"></div>
+          </div>
+          <div class="panel-body">
+            <p></p>
+            <img src="../publisher_imgs/gef_invalidxml.png" width="100%" />
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <h2 id="h_dataquality">Data Quality</h2>
+
+    
+
+    <div class="row">
+    
+        
+        <div class="col-md-6">
+            <div class="panel panel-default" id="p_validation">
+              <!-- Default panel contents -->
+              <div class="panel-heading"><h3 class="panel-title" id="list_fail_validation">Files Failing Validation</h3></div>
+              <!--<div class="panel-body">
+                <p>...</p>
+              </div>-->
+
+              <!-- List group -->
+              <ul class="list-group">
+                
+                
+                <li class="list-group-item">
+                  <div class="row">
+                    <div class="col-md-4 break">
+                      <a href="http://iatiregistry.org/dataset/gef-km">gef-km</a>
+                    </div>
+                    <div class="col-md-6 break">
+                      
+                      <a href="https://d2mxkr7359ifh6.cloudfront.net/GEF/KM.xml">KM.xml</a>
+                      
+                    </div>
+                    <div class="col-md-2 break">
+                      
+                      <a href="https://iati-validator.herokuapp.com/?url=https%3A//d2mxkr7359ifh6.cloudfront.net/GEF/KM.xml">validator</a>
+                      
+                    </div>
+                  </div>
+                </li>
+                
+                
+              </ul>
+            </div>
+        </div>
+    
+
+    
+
+    
+
+    </div><!-- .row -->
+
+    
+
+    
+
+    <h2 id="h_financial">Financial</h2>
+
+    
+
+    <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Budgets</h3>
+    </div>
+    <div class="panel-body">
+        <p>The below figures are calculated based on the data contained within the <code>&lt;budget&gt;</code> element for each reported activity. Original and revised elements are based on the value declared in the <code><a href="https://reference.codeforiati.org/activity-standard/iati-activities/iati-activity/budget/#iati-activities-iati-activity-budget-type">budget/@type</a></code> attribute. Where budgets fall across two calendar years, the month of the <code>&lt;period-end&gt;</code> date is used to determine annual groupings, with budgets for periods ending January-June added to the previous calendar year.</p>
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Year</th>
+                <th>Count (all)</th>
+                <th>Sum (all)</th>
+                <th>Count (Original)</th>
+                <th>Sum (Original)</th>
+                <th>Count (Revised)</th>
+                <th>Sum (Revised)</th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <td>Total</td>
+                <td>4110</td>
+                <td>
+    
+    
+    
+    14730845757.0 USD</br>
+    
+    
+    
+    </td>
+                <td>4110</td>
+                <td>
+    
+    
+    
+    14730845757.0 USD</br>
+    
+    
+    
+    </td>
+                <td></td>
+                <td>
+    
+    </td>
+            </tr>
+        
+            <tr>
+                <td>2098</td>
+                <td>4110</td>
+                <td>
+    
+    
+    
+    14730845757.0 USD</br>
+    
+    
+    
+    </td>
+                <td>4110</td>
+                <td>
+    
+    
+    
+    14730845757.0 USD</br>
+    
+    
+    
+    </td>
+                <td></td>
+                <td>
+    
+    </td>
+            </tr>
+        
+        </tbody>
+    </table>
+    </div>
+
+
+    <h2 id="h_exploringdata">Exploring Data</h2>
+
+    <div class="panel panel-default" id="p_files">
+    <div class="panel-heading">
+        <h3 class="panel-title">Files</h3>
+    </div>
+    <table class="table table-striped exploring-data">
+        <thead>
+            <tr>
+                <th>Package</th>
+                <th>Activities <a href="https://stats.codeforiati.org/current/inverted-file-publisher/gef/activities.json">(J)</a></th>
+                <th>Organisations <a href="https://stats.codeforiati.org/current/inverted-file-publisher/gef/organisations.json">(J)</a></th>
+                <th>File Size <a href="https://stats.codeforiati.org/current/inverted-file-publisher/gef/file_size.json">(J)</a></th>
+                <th>Version <a href="https://stats.codeforiati.org/current/inverted-file-publisher/gef/versions.json">(J)</a></th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-af">gef-af</a></td>
+                <td>12</td>
+                <td>0</td>
+                <td data-bytes="55134">55.1 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-ag">gef-ag</a></td>
+                <td>14</td>
+                <td>0</td>
+                <td data-bytes="53596">53.6 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-al">gef-al</a></td>
+                <td>21</td>
+                <td>0</td>
+                <td data-bytes="99243">99.2 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-am">gef-am</a></td>
+                <td>36</td>
+                <td>0</td>
+                <td data-bytes="176203">176.2 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-ao">gef-ao</a></td>
+                <td>13</td>
+                <td>0</td>
+                <td data-bytes="57001">57.0 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-ar">gef-ar</a></td>
+                <td>42</td>
+                <td>0</td>
+                <td data-bytes="227065">227.1 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-az">gef-az</a></td>
+                <td>21</td>
+                <td>0</td>
+                <td data-bytes="100812">100.8 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-ba">gef-ba</a></td>
+                <td>17</td>
+                <td>0</td>
+                <td data-bytes="84865">84.9 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-bb">gef-bb</a></td>
+                <td>9</td>
+                <td>0</td>
+                <td data-bytes="35739">35.7 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-bd">gef-bd</a></td>
+                <td>24</td>
+                <td>0</td>
+                <td data-bytes="119277">119.3 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-bf">gef-bf</a></td>
+                <td>29</td>
+                <td>0</td>
+                <td data-bytes="138570">138.6 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-bg">gef-bg</a></td>
+                <td>16</td>
+                <td>0</td>
+                <td data-bytes="71887">71.9 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-bh">gef-bh</a></td>
+                <td>3</td>
+                <td>0</td>
+                <td data-bytes="10717">10.7 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-bi">gef-bi</a></td>
+                <td>16</td>
+                <td>0</td>
+                <td data-bytes="68449">68.4 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-bj">gef-bj</a></td>
+                <td>23</td>
+                <td>0</td>
+                <td data-bytes="109667">109.7 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-bo">gef-bo</a></td>
+                <td>25</td>
+                <td>0</td>
+                <td data-bytes="114480">114.5 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-br">gef-br</a></td>
+                <td>70</td>
+                <td>0</td>
+                <td data-bytes="414156">414.2 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-bs">gef-bs</a></td>
+                <td>16</td>
+                <td>0</td>
+                <td data-bytes="63065">63.1 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-bt">gef-bt</a></td>
+                <td>20</td>
+                <td>0</td>
+                <td data-bytes="89562">89.6 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-bw">gef-bw</a></td>
+                <td>24</td>
+                <td>0</td>
+                <td data-bytes="115566">115.6 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-by">gef-by</a></td>
+                <td>27</td>
+                <td>0</td>
+                <td data-bytes="125750">125.8 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-bz">gef-bz</a></td>
+                <td>23</td>
+                <td>0</td>
+                <td data-bytes="99993">100.0 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-cd">gef-cd</a></td>
+                <td>26</td>
+                <td>0</td>
+                <td data-bytes="112180">112.2 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-cf">gef-cf</a></td>
+                <td>14</td>
+                <td>0</td>
+                <td data-bytes="52743">52.7 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-cg">gef-cg</a></td>
+                <td>19</td>
+                <td>0</td>
+                <td data-bytes="79147">79.1 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-ci">gef-ci</a></td>
+                <td>26</td>
+                <td>0</td>
+                <td data-bytes="120696">120.7 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-ck">gef-ck</a></td>
+                <td>8</td>
+                <td>0</td>
+                <td data-bytes="33004">33.0 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-cl">gef-cl</a></td>
+                <td>41</td>
+                <td>0</td>
+                <td data-bytes="217199">217.2 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-cm">gef-cm</a></td>
+                <td>32</td>
+                <td>0</td>
+                <td data-bytes="157031">157.0 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-cn">gef-cn</a></td>
+                <td>172</td>
+                <td>0</td>
+                <td data-bytes="1006615">1.0 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-co">gef-co</a></td>
+                <td>56</td>
+                <td>0</td>
+                <td data-bytes="294810">294.8 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-cr">gef-cr</a></td>
+                <td>37</td>
+                <td>0</td>
+                <td data-bytes="175103">175.1 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-cu">gef-cu</a></td>
+                <td>33</td>
+                <td>0</td>
+                <td data-bytes="167335">167.3 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-cv">gef-cv</a></td>
+                <td>18</td>
+                <td>0</td>
+                <td data-bytes="80861">80.9 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-cz">gef-cz</a></td>
+                <td>11</td>
+                <td>0</td>
+                <td data-bytes="43762">43.8 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-dj">gef-dj</a></td>
+                <td>13</td>
+                <td>0</td>
+                <td data-bytes="54668">54.7 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-dm">gef-dm</a></td>
+                <td>13</td>
+                <td>0</td>
+                <td data-bytes="49351">49.4 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-do">gef-do</a></td>
+                <td>15</td>
+                <td>0</td>
+                <td data-bytes="68311">68.3 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-dz">gef-dz</a></td>
+                <td>18</td>
+                <td>0</td>
+                <td data-bytes="79641">79.6 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-ec">gef-ec</a></td>
+                <td>49</td>
+                <td>0</td>
+                <td data-bytes="252341">252.3 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-ee">gef-ee</a></td>
+                <td>5</td>
+                <td>0</td>
+                <td data-bytes="22487">22.5 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-eg">gef-eg</a></td>
+                <td>38</td>
+                <td>0</td>
+                <td data-bytes="202915">202.9 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-er">gef-er</a></td>
+                <td>15</td>
+                <td>0</td>
+                <td data-bytes="72839">72.8 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-et">gef-et</a></td>
+                <td>25</td>
+                <td>0</td>
+                <td data-bytes="130039">130.0 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-fj">gef-fj</a></td>
+                <td>15</td>
+                <td>0</td>
+                <td data-bytes="63932">63.9 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-fm">gef-fm</a></td>
+                <td>12</td>
+                <td>0</td>
+                <td data-bytes="48274">48.3 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-ga">gef-ga</a></td>
+                <td>14</td>
+                <td>0</td>
+                <td data-bytes="59617">59.6 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-gd">gef-gd</a></td>
+                <td>9</td>
+                <td>0</td>
+                <td data-bytes="35872">35.9 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-ge">gef-ge</a></td>
+                <td>29</td>
+                <td>0</td>
+                <td data-bytes="142009">142.0 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-gh">gef-gh</a></td>
+                <td>33</td>
+                <td>0</td>
+                <td data-bytes="176345">176.3 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-gm">gef-gm</a></td>
+                <td>22</td>
+                <td>0</td>
+                <td data-bytes="110128">110.1 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-gn">gef-gn</a></td>
+                <td>20</td>
+                <td>0</td>
+                <td data-bytes="93459">93.5 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-gq">gef-gq</a></td>
+                <td>7</td>
+                <td>0</td>
+                <td data-bytes="32350">32.4 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-gt">gef-gt</a></td>
+                <td>28</td>
+                <td>0</td>
+                <td data-bytes="130942">130.9 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-gw">gef-gw</a></td>
+                <td>18</td>
+                <td>0</td>
+                <td data-bytes="79862">79.9 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-gy">gef-gy</a></td>
+                <td>18</td>
+                <td>0</td>
+                <td data-bytes="73440">73.4 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-hn">gef-hn</a></td>
+                <td>26</td>
+                <td>0</td>
+                <td data-bytes="131304">131.3 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-hr">gef-hr</a></td>
+                <td>16</td>
+                <td>0</td>
+                <td data-bytes="76241">76.2 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-ht">gef-ht</a></td>
+                <td>14</td>
+                <td>0</td>
+                <td data-bytes="68068">68.1 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-hu">gef-hu</a></td>
+                <td>12</td>
+                <td>0</td>
+                <td data-bytes="57298">57.3 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-id">gef-id</a></td>
+                <td>60</td>
+                <td>0</td>
+                <td data-bytes="327253">327.3 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-in">gef-in</a></td>
+                <td>83</td>
+                <td>0</td>
+                <td data-bytes="488725">488.7 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-iq">gef-iq</a></td>
+                <td>8</td>
+                <td>0</td>
+                <td data-bytes="35009">35.0 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-ir">gef-ir</a></td>
+                <td>18</td>
+                <td>0</td>
+                <td data-bytes="97955">98.0 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-jm">gef-jm</a></td>
+                <td>20</td>
+                <td>0</td>
+                <td data-bytes="90944">90.9 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-jo">gef-jo</a></td>
+                <td>32</td>
+                <td>0</td>
+                <td data-bytes="156783">156.8 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-ke">gef-ke</a></td>
+                <td>42</td>
+                <td>0</td>
+                <td data-bytes="218197">218.2 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-kg">gef-kg</a></td>
+                <td>23</td>
+                <td>0</td>
+                <td data-bytes="115191">115.2 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-kh">gef-kh</a></td>
+                <td>28</td>
+                <td>0</td>
+                <td data-bytes="144885">144.9 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-ki">gef-ki</a></td>
+                <td>13</td>
+                <td>0</td>
+                <td data-bytes="53888">53.9 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-km">gef-km</a></td>
+                <td>16</td>
+                <td>0</td>
+                <td data-bytes="65731">65.7 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-kn">gef-kn</a></td>
+                <td>8</td>
+                <td>0</td>
+                <td data-bytes="31146">31.1 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-kp">gef-kp</a></td>
+                <td>8</td>
+                <td>0</td>
+                <td data-bytes="30713">30.7 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-kr">gef-kr</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td data-bytes="5918">5.9 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-kw">gef-kw</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td data-bytes="4116">4.1 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-kz">gef-kz</a></td>
+                <td>37</td>
+                <td>0</td>
+                <td data-bytes="196231">196.2 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-la">gef-la</a></td>
+                <td>22</td>
+                <td>0</td>
+                <td data-bytes="111167">111.2 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-lb">gef-lb</a></td>
+                <td>23</td>
+                <td>0</td>
+                <td data-bytes="109485">109.5 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-lc">gef-lc</a></td>
+                <td>13</td>
+                <td>0</td>
+                <td data-bytes="53031">53.0 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-lk">gef-lk</a></td>
+                <td>33</td>
+                <td>0</td>
+                <td data-bytes="187779">187.8 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-lr">gef-lr</a></td>
+                <td>17</td>
+                <td>0</td>
+                <td data-bytes="80757">80.8 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-ls">gef-ls</a></td>
+                <td>13</td>
+                <td>0</td>
+                <td data-bytes="58920">58.9 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-lt">gef-lt</a></td>
+                <td>10</td>
+                <td>0</td>
+                <td data-bytes="46243">46.2 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-lv">gef-lv</a></td>
+                <td>10</td>
+                <td>0</td>
+                <td data-bytes="46820">46.8 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-ly">gef-ly</a></td>
+                <td>3</td>
+                <td>0</td>
+                <td data-bytes="9369">9.4 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-ma">gef-ma</a></td>
+                <td>38</td>
+                <td>0</td>
+                <td data-bytes="210412">210.4 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-md">gef-md</a></td>
+                <td>31</td>
+                <td>0</td>
+                <td data-bytes="142123">142.1 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-me">gef-me</a></td>
+                <td>19</td>
+                <td>0</td>
+                <td data-bytes="87366">87.4 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-mg">gef-mg</a></td>
+                <td>33</td>
+                <td>0</td>
+                <td data-bytes="158938">158.9 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-mh">gef-mh</a></td>
+                <td>8</td>
+                <td>0</td>
+                <td data-bytes="33755">33.8 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-mk">gef-mk</a></td>
+                <td>22</td>
+                <td>0</td>
+                <td data-bytes="98040">98.0 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-ml">gef-ml</a></td>
+                <td>23</td>
+                <td>0</td>
+                <td data-bytes="118343">118.3 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-mm">gef-mm</a></td>
+                <td>14</td>
+                <td>0</td>
+                <td data-bytes="65764">65.8 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-mn">gef-mn</a></td>
+                <td>35</td>
+                <td>0</td>
+                <td data-bytes="175700">175.7 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-mr">gef-mr</a></td>
+                <td>23</td>
+                <td>0</td>
+                <td data-bytes="104251">104.3 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-mt">gef-mt</a></td>
+                <td>2</td>
+                <td>0</td>
+                <td data-bytes="5598">5.6 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-mu">gef-mu</a></td>
+                <td>25</td>
+                <td>0</td>
+                <td data-bytes="116748">116.7 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-mv">gef-mv</a></td>
+                <td>14</td>
+                <td>0</td>
+                <td data-bytes="60849">60.8 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-mw">gef-mw</a></td>
+                <td>21</td>
+                <td>0</td>
+                <td data-bytes="98013">98.0 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-mx">gef-mx</a></td>
+                <td>72</td>
+                <td>0</td>
+                <td data-bytes="383559">383.6 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-my">gef-my</a></td>
+                <td>30</td>
+                <td>0</td>
+                <td data-bytes="171504">171.5 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-mz">gef-mz</a></td>
+                <td>22</td>
+                <td>0</td>
+                <td data-bytes="115717">115.7 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-na">gef-na</a></td>
+                <td>34</td>
+                <td>0</td>
+                <td data-bytes="165013">165.0 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-ne">gef-ne</a></td>
+                <td>23</td>
+                <td>0</td>
+                <td data-bytes="102568">102.6 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-ng">gef-ng</a></td>
+                <td>34</td>
+                <td>0</td>
+                <td data-bytes="165498">165.5 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-ni">gef-ni</a></td>
+                <td>24</td>
+                <td>0</td>
+                <td data-bytes="116548">116.5 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-np">gef-np</a></td>
+                <td>22</td>
+                <td>0</td>
+                <td data-bytes="104182">104.2 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-nr">gef-nr</a></td>
+                <td>6</td>
+                <td>0</td>
+                <td data-bytes="24740">24.7 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-nu">gef-nu</a></td>
+                <td>11</td>
+                <td>0</td>
+                <td data-bytes="40477">40.5 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-om">gef-om</a></td>
+                <td>6</td>
+                <td>0</td>
+                <td data-bytes="18485">18.5 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-pa">gef-pa</a></td>
+                <td>29</td>
+                <td>0</td>
+                <td data-bytes="133950">133.9 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-pe">gef-pe</a></td>
+                <td>60</td>
+                <td>0</td>
+                <td data-bytes="319120">319.1 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-pg">gef-pg</a></td>
+                <td>17</td>
+                <td>0</td>
+                <td data-bytes="76905">76.9 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-ph">gef-ph</a></td>
+                <td>56</td>
+                <td>0</td>
+                <td data-bytes="325264">325.3 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-pk">gef-pk</a></td>
+                <td>34</td>
+                <td>0</td>
+                <td data-bytes="177761">177.8 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-pl">gef-pl</a></td>
+                <td>18</td>
+                <td>0</td>
+                <td data-bytes="80285">80.3 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-pw">gef-pw</a></td>
+                <td>10</td>
+                <td>0</td>
+                <td data-bytes="41218">41.2 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-py">gef-py</a></td>
+                <td>21</td>
+                <td>0</td>
+                <td data-bytes="94348">94.3 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-ro">gef-ro</a></td>
+                <td>18</td>
+                <td>0</td>
+                <td data-bytes="94416">94.4 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-rs">gef-rs</a></td>
+                <td>24</td>
+                <td>0</td>
+                <td data-bytes="111419">111.4 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-ru">gef-ru</a></td>
+                <td>44</td>
+                <td>0</td>
+                <td data-bytes="252110">252.1 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-rw">gef-rw</a></td>
+                <td>18</td>
+                <td>0</td>
+                <td data-bytes="76991">77.0 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-sa">gef-sa</a></td>
+                <td>2</td>
+                <td>0</td>
+                <td data-bytes="5773">5.8 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-sb">gef-sb</a></td>
+                <td>9</td>
+                <td>0</td>
+                <td data-bytes="37589">37.6 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-sc">gef-sc</a></td>
+                <td>26</td>
+                <td>0</td>
+                <td data-bytes="117342">117.3 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-sd">gef-sd</a></td>
+                <td>26</td>
+                <td>0</td>
+                <td data-bytes="115117">115.1 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-si">gef-si</a></td>
+                <td>7</td>
+                <td>0</td>
+                <td data-bytes="29069">29.1 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-sk">gef-sk</a></td>
+                <td>13</td>
+                <td>0</td>
+                <td data-bytes="65377">65.4 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-sl">gef-sl</a></td>
+                <td>12</td>
+                <td>0</td>
+                <td data-bytes="55595">55.6 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-sn">gef-sn</a></td>
+                <td>28</td>
+                <td>0</td>
+                <td data-bytes="145870">145.9 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-so">gef-so</a></td>
+                <td>4</td>
+                <td>0</td>
+                <td data-bytes="14220">14.2 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-sr">gef-sr</a></td>
+                <td>13</td>
+                <td>0</td>
+                <td data-bytes="57557">57.6 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-ss">gef-ss</a></td>
+                <td>6</td>
+                <td>0</td>
+                <td data-bytes="24744">24.7 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-st">gef-st</a></td>
+                <td>11</td>
+                <td>0</td>
+                <td data-bytes="45698">45.7 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-sv">gef-sv</a></td>
+                <td>18</td>
+                <td>0</td>
+                <td data-bytes="76937">76.9 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-sy">gef-sy</a></td>
+                <td>12</td>
+                <td>0</td>
+                <td data-bytes="50607">50.6 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-sz">gef-sz</a></td>
+                <td>13</td>
+                <td>0</td>
+                <td data-bytes="54068">54.1 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-td">gef-td</a></td>
+                <td>19</td>
+                <td>0</td>
+                <td data-bytes="79412">79.4 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-tg">gef-tg</a></td>
+                <td>15</td>
+                <td>0</td>
+                <td data-bytes="60540">60.5 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-th">gef-th</a></td>
+                <td>39</td>
+                <td>0</td>
+                <td data-bytes="196345">196.3 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-tj">gef-tj</a></td>
+                <td>26</td>
+                <td>0</td>
+                <td data-bytes="129258">129.3 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-tl">gef-tl</a></td>
+                <td>383</td>
+                <td>0</td>
+                <td data-bytes="2110770">2.1 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-tm">gef-tm</a></td>
+                <td>16</td>
+                <td>0</td>
+                <td data-bytes="75030">75.0 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-tn">gef-tn</a></td>
+                <td>28</td>
+                <td>0</td>
+                <td data-bytes="155437">155.4 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-to">gef-to</a></td>
+                <td>9</td>
+                <td>0</td>
+                <td data-bytes="36542">36.5 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-tr">gef-tr</a></td>
+                <td>33</td>
+                <td>0</td>
+                <td data-bytes="179738">179.7 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-tt">gef-tt</a></td>
+                <td>12</td>
+                <td>0</td>
+                <td data-bytes="43446">43.4 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-tv">gef-tv</a></td>
+                <td>7</td>
+                <td>0</td>
+                <td data-bytes="29806">29.8 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-tz">gef-tz</a></td>
+                <td>36</td>
+                <td>0</td>
+                <td data-bytes="191231">191.2 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-ua">gef-ua</a></td>
+                <td>32</td>
+                <td>0</td>
+                <td data-bytes="154327">154.3 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-ug">gef-ug</a></td>
+                <td>31</td>
+                <td>0</td>
+                <td data-bytes="156259">156.3 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-uy">gef-uy</a></td>
+                <td>32</td>
+                <td>0</td>
+                <td data-bytes="159261">159.3 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-uz">gef-uz</a></td>
+                <td>25</td>
+                <td>0</td>
+                <td data-bytes="125982">126.0 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-vc">gef-vc</a></td>
+                <td>9</td>
+                <td>0</td>
+                <td data-bytes="34273">34.3 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-ve">gef-ve</a></td>
+                <td>14</td>
+                <td>0</td>
+                <td data-bytes="72024">72.0 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-vn">gef-vn</a></td>
+                <td>58</td>
+                <td>0</td>
+                <td data-bytes="319559">319.6 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-vu">gef-vu</a></td>
+                <td>13</td>
+                <td>0</td>
+                <td data-bytes="53062">53.1 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-ws">gef-ws</a></td>
+                <td>12</td>
+                <td>0</td>
+                <td data-bytes="46882">46.9 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-xk">gef-xk</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td data-bytes="4061">4.1 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-ye">gef-ye</a></td>
+                <td>20</td>
+                <td>0</td>
+                <td data-bytes="90116">90.1 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-za">gef-za</a></td>
+                <td>54</td>
+                <td>0</td>
+                <td data-bytes="280473">280.5 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-zm">gef-zm</a></td>
+                <td>18</td>
+                <td>0</td>
+                <td data-bytes="90637">90.6 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/gef-zw">gef-zw</a></td>
+                <td>16</td>
+                <td>0</td>
+                <td data-bytes="66084">66.1 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+        </tbody>
+    </table>
+    </div>
+
+    
+    
+    <div class="panel panel-default" id="p_codelists">
+    <table class="table table-striped">
+    <div class="panel-heading">
+        <a href="https://stats.codeforiati.org/current/aggregated-publisher/gef/codelist_values.json" style="float:right">(J)</a>
+        <h3 class="panel-title">Codelist Values (version 2.xx)</h3>
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Element/Attribute</th>
+                <th>Codelist</th>
+                <th>Values on Codelist</th>
+                <th>Values not on Codelist</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            
+            <tr>
+            
+                <td><a href="../codelist/2/@default-currency.html">.//@default-currency</a></td>
+                <td><a href="https://codelists.codeforiati.org/Currency">Currency</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//@default-currency" role="button" tabindex="0" data-trigger="focus" data-content="<code>USD</code>:&nbsp;4119 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/activity-date_@type.html">.//activity-date/@type</a></td>
+                <td><a href="https://codelists.codeforiati.org/ActivityDateType">ActivityDateType</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//activity-date/@type" role="button" tabindex="0" data-trigger="focus" data-content="<code>1</code>:&nbsp;2202 <code>2</code>:&nbsp;3413 <code>3</code>:&nbsp;3091 <code>4</code>:&nbsp;2705 ">4</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/activity-status_@code.html">.//activity-status/@code</a></td>
+                <td><a href="https://codelists.codeforiati.org/ActivityStatus">ActivityStatus</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//activity-status/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>1</code>:&nbsp;430 <code>2</code>:&nbsp;882 <code>3</code>:&nbsp;2065 <code>4</code>:&nbsp;680 <code>5</code>:&nbsp;57 <code>6</code>:&nbsp;5 ">6</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/activity-scope_@code.html">.//activity-scope/@code</a></td>
+                <td><a href="https://codelists.codeforiati.org/ActivityScope">ActivityScope</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//activity-scope/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>1</code>:&nbsp;383 <code>4</code>:&nbsp;3736 ">2</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/budget_@type.html">.//budget/@type</a></td>
+                <td><a href="https://codelists.codeforiati.org/BudgetType">BudgetType</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//budget/@type" role="button" tabindex="0" data-trigger="focus" data-content="<code>1</code>:&nbsp;4110 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/budget_value_@currency.html">.//budget/value/@currency</a></td>
+                <td><a href="https://codelists.codeforiati.org/Currency">Currency</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//budget/value/@currency" role="button" tabindex="0" data-trigger="focus" data-content="<code>USD</code>:&nbsp;4110 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/collaboration-type_@code.html">.//collaboration-type/@code</a></td>
+                <td><a href="https://codelists.codeforiati.org/CollaborationType">CollaborationType</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//collaboration-type/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>2</code>:&nbsp;4119 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/contact-info_@type.html">.//contact-info/@type</a></td>
+                <td><a href="https://codelists.codeforiati.org/ContactType">ContactType</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//contact-info/@type" role="button" tabindex="0" data-trigger="focus" data-content="<code>1</code>:&nbsp;4119 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/default-aid-type@vocabulary1ornot@vocabulary_@code.html">.//default-aid-type[@vocabulary = &#39;1&#39; or not(@vocabulary)]/@code</a></td>
+                <td><a href="https://codelists.codeforiati.org/AidType">AidType</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//default-aid-type[@vocabulary = &#39;1&#39; or not(@vocabulary)]/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>C01</code>:&nbsp;4119 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/default-tied-status_@code.html">.//default-tied-status/@code</a></td>
+                <td><a href="https://codelists.codeforiati.org/TiedStatus">TiedStatus</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//default-tied-status/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>5</code>:&nbsp;4119 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/description_@type.html">.//description/@type</a></td>
+                <td><a href="https://codelists.codeforiati.org/DescriptionType">DescriptionType</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//description/@type" role="button" tabindex="0" data-trigger="focus" data-content="<code>2</code>:&nbsp;4119 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/document-link_@format.html">.//document-link/@format</a></td>
+                <td><a href="https://codelists.codeforiati.org/FileFormat">FileFormat</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//document-link/@format" role="button" tabindex="0" data-trigger="focus" data-content="<code>application/pdf</code>:&nbsp;1578 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/document-link_category_@code.html">.//document-link/category/@code</a></td>
+                <td><a href="https://codelists.codeforiati.org/DocumentCategory">DocumentCategory</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//document-link/category/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>A01</code>:&nbsp;320 <code>A07</code>:&nbsp;1258 ">2</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/participating-org_@role.html">.//participating-org/@role</a></td>
+                <td><a href="https://codelists.codeforiati.org/OrganisationRole">OrganisationRole</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//participating-org/@role" role="button" tabindex="0" data-trigger="focus" data-content="<code>1</code>:&nbsp;4386 <code>3</code>:&nbsp;4386 <code>4</code>:&nbsp;4112 ">3</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/participating-org_@type.html">.//participating-org/@type</a></td>
+                <td><a href="https://codelists.codeforiati.org/OrganisationType">OrganisationType</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//participating-org/@type" role="button" tabindex="0" data-trigger="focus" data-content="<code>10</code>:&nbsp;26 <code>22</code>:&nbsp;147 <code>40</code>:&nbsp;12627 ">3</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        <a href="javascript: return false;" class="popover-html" title="Values not on codelist for .//participating-org/@type" role="button" tabindex="0" data-trigger="focus" data-content="<code>00</code>:&nbsp;84 ">
+                            1
+                        </a>
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/recipient-country_@code.html">.//recipient-country/@code</a></td>
+                <td><a href="https://codelists.codeforiati.org/Country">Country</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//recipient-country/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>AF</code>:&nbsp;16 <code>AG</code>:&nbsp;15 <code>AL</code>:&nbsp;22 <code>AM</code>:&nbsp;36 <code>AO</code>:&nbsp;14 <code>AR</code>:&nbsp;45 <code>AZ</code>:&nbsp;18 <code>BA</code>:&nbsp;14 <code>BB</code>:&nbsp;11 <code>BD</code>:&nbsp;24 <code>BF</code>:&nbsp;33 <code>BG</code>:&nbsp;17 <code>BH</code>:&nbsp;3 <code>BI</code>:&nbsp;21 <code>BJ</code>:&nbsp;23 <code>BO</code>:&nbsp;28 <code>BR</code>:&nbsp;78 <code>BS</code>:&nbsp;18 <code>BT</code>:&nbsp;22 <code>BW</code>:&nbsp;26 <code>BY</code>:&nbsp;27 <code>BZ</code>:&nbsp;22 <code>CD</code>:&nbsp;31 <code>CF</code>:&nbsp;15 <code>CG</code>:&nbsp;22 <code>CI</code>:&nbsp;36 <code>CK</code>:&nbsp;8 <code>CL</code>:&nbsp;47 <code>CM</code>:&nbsp;38 <code>CN</code>:&nbsp;181 <code>CO</code>:&nbsp;59 <code>CR</code>:&nbsp;40 <code>CU</code>:&nbsp;36 <code>CV</code>:&nbsp;21 <code>CZ</code>:&nbsp;11 <code>DJ</code>:&nbsp;13 <code>DM</code>:&nbsp;14 <code>DO</code>:&nbsp;20 <code>DZ</code>:&nbsp;17 <code>EC</code>:&nbsp;56 <code>EE</code>:&nbsp;5 <code>EG</code>:&nbsp;39 <code>ER</code>:&nbsp;16 <code>ET</code>:&nbsp;31 <code>FJ</code>:&nbsp;19 <code>FM</code>:&nbsp;11 <code>GA</code>:&nbsp;16 <code>GD</code>:&nbsp;12 <code>GE</code>:&nbsp;28 <code>GH</code>:&nbsp;35 <code>GM</code>:&nbsp;23 <code>GN</code>:&nbsp;25 <code>GQ</code>:&nbsp;7 <code>GT</code>:&nbsp;28 <code>GW</code>:&nbsp;22 <code>GY</code>:&nbsp;19 <code>HN</code>:&nbsp;27 <code>HR</code>:&nbsp;15 <code>HT</code>:&nbsp;16 <code>HU</code>:&nbsp;12 <code>ID</code>:&nbsp;75 <code>IN</code>:&nbsp;91 <code>IQ</code>:&nbsp;8 <code>IR</code>:&nbsp;20 <code>JM</code>:&nbsp;24 <code>JO</code>:&nbsp;33 <code>KE</code>:&nbsp;52 <code>KG</code>:&nbsp;24 <code>KH</code>:&nbsp;31 <code>KI</code>:&nbsp;14 <code>KM</code>:&nbsp;17 <code>KN</code>:&nbsp;10 <code>KP</code>:&nbsp;8 <code>KR</code>:&nbsp;1 <code>KZ</code>:&nbsp;42 <code>LA</code>:&nbsp;26 <code>LB</code>:&nbsp;20 <code>LC</code>:&nbsp;17 <code>LK</code>:&nbsp;40 <code>LR</code>:&nbsp;19 <code>LS</code>:&nbsp;14 <code>LT</code>:&nbsp;10 <code>LV</code>:&nbsp;10 <code>LY</code>:&nbsp;3 <code>MA</code>:&nbsp;43 <code>MD</code>:&nbsp;32 <code>ME</code>:&nbsp;16 <code>MG</code>:&nbsp;43 <code>MH</code>:&nbsp;11 <code>MK</code>:&nbsp;21 <code>ML</code>:&nbsp;27 <code>MM</code>:&nbsp;17 <code>MN</code>:&nbsp;41 <code>MR</code>:&nbsp;24 <code>MT</code>:&nbsp;2 <code>MU</code>:&nbsp;29 <code>MV</code>:&nbsp;18 <code>MW</code>:&nbsp;23 <code>MX</code>:&nbsp;76 <code>MY</code>:&nbsp;35 <code>MZ</code>:&nbsp;30 <code>NA</code>:&nbsp;35 <code>NE</code>:&nbsp;25 <code>NG</code>:&nbsp;42 <code>NI</code>:&nbsp;29 <code>NP</code>:&nbsp;26 <code>NR</code>:&nbsp;9 <code>NU</code>:&nbsp;12 <code>OM</code>:&nbsp;5 <code>PA</code>:&nbsp;31 <code>PE</code>:&nbsp;67 <code>PG</code>:&nbsp;22 <code>PH</code>:&nbsp;64 <code>PK</code>:&nbsp;38 <code>PL</code>:&nbsp;18 <code>PW</code>:&nbsp;13 <code>PY</code>:&nbsp;22 <code>RO</code>:&nbsp;20 <code>RS</code>:&nbsp;20 <code>RU</code>:&nbsp;45 <code>RW</code>:&nbsp;19 <code>SA</code>:&nbsp;1 <code>SB</code>:&nbsp;12 <code>SC</code>:&nbsp;31 <code>SD</code>:&nbsp;26 <code>SI</code>:&nbsp;7 <code>SK</code>:&nbsp;14 <code>SL</code>:&nbsp;18 <code>SN</code>:&nbsp;29 <code>SO</code>:&nbsp;3 <code>SR</code>:&nbsp;17 <code>SS</code>:&nbsp;4 <code>ST</code>:&nbsp;14 <code>SV</code>:&nbsp;17 <code>SY</code>:&nbsp;15 <code>SZ</code>:&nbsp;14 <code>TD</code>:&nbsp;20 <code>TG</code>:&nbsp;15 <code>TH</code>:&nbsp;44 <code>TJ</code>:&nbsp;25 <code>TL</code>:&nbsp;3 <code>TM</code>:&nbsp;16 <code>TN</code>:&nbsp;33 <code>TO</code>:&nbsp;11 <code>TR</code>:&nbsp;37 <code>TT</code>:&nbsp;14 <code>TV</code>:&nbsp;9 <code>TZ</code>:&nbsp;43 <code>UA</code>:&nbsp;39 <code>UG</code>:&nbsp;36 <code>UY</code>:&nbsp;32 <code>UZ</code>:&nbsp;31 <code>VC</code>:&nbsp;10 <code>VE</code>:&nbsp;16 <code>VN</code>:&nbsp;66 <code>VU</code>:&nbsp;15 <code>WS</code>:&nbsp;13 <code>XK</code>:&nbsp;1 <code>YE</code>:&nbsp;19 <code>ZA</code>:&nbsp;65 <code>ZM</code>:&nbsp;22 <code>ZW</code>:&nbsp;19 ">162</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        <a href="javascript: return false;" class="popover-html" title="Values not on codelist for .//recipient-country/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>6L</code>:&nbsp;1 ">
+                            1
+                        </a>
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/recipient-region@vocabulary1ornot@vocabulary_@code.html">.//recipient-region[@vocabulary = &#39;1&#39; or not(@vocabulary)]/@code</a></td>
+                <td><a href="https://codelists.codeforiati.org/Region">Region</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//recipient-region[@vocabulary = &#39;1&#39; or not(@vocabulary)]/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>998</code>:&nbsp;609 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/related-activity_@type.html">.//related-activity/@type</a></td>
+                <td><a href="https://codelists.codeforiati.org/RelatedActivityType">RelatedActivityType</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//related-activity/@type" role="button" tabindex="0" data-trigger="focus" data-content="<code>1</code>:&nbsp;590 <code>2</code>:&nbsp;522 ">2</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/reporting-org_@type.html">.//reporting-org/@type</a></td>
+                <td><a href="https://codelists.codeforiati.org/OrganisationType">OrganisationType</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//reporting-org/@type" role="button" tabindex="0" data-trigger="focus" data-content="<code>40</code>:&nbsp;4119 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/sector_@vocabulary.html">.//sector/@vocabulary</a></td>
+                <td><a href="https://codelists.codeforiati.org/SectorVocabulary">SectorVocabulary</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//sector/@vocabulary" role="button" tabindex="0" data-trigger="focus" data-content="<code>99</code>:&nbsp;4013 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/transaction_finance-type_@code.html">.//transaction/finance-type/@code</a></td>
+                <td><a href="https://codelists.codeforiati.org/FinanceType">FinanceType</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//transaction/finance-type/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>110</code>:&nbsp;17588 <code>422</code>:&nbsp;1 ">2</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/transaction_transaction-type_@code.html">.//transaction/transaction-type/@code</a></td>
+                <td><a href="https://codelists.codeforiati.org/TransactionType">TransactionType</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//transaction/transaction-type/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>2</code>:&nbsp;4232 <code>3</code>:&nbsp;13357 ">2</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/transaction_value_@currency.html">.//transaction/value/@currency</a></td>
+                <td><a href="https://codelists.codeforiati.org/Currency">Currency</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//transaction/value/@currency" role="button" tabindex="0" data-trigger="focus" data-content="<code>USD</code>:&nbsp;17589 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/@xml:lang.html">.//@xml:lang</a></td>
+                <td><a href="https://codelists.codeforiati.org/Language">Language</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//@xml:lang" role="button" tabindex="0" data-trigger="focus" data-content="<code>en</code>:&nbsp;1578 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        <a href="javascript: return false;" class="popover-html" title="Values not on codelist for .//@xml:lang" role="button" tabindex="0" data-trigger="focus" data-content="<code>EN</code>:&nbsp;4119 ">
+                            1
+                        </a>
+                    
+                </td>
+                
+            
+            </tr>
+            
+            
+        </tbody>
+    </table>
+    </div>
+    
+    
+    
+    
+
+    <div class="panel panel-default" id="p_elements">
+    <table class="table table-striped">
+    <div class="panel-heading">
+        <a href="https://stats.codeforiati.org/current/aggregated-publisher/gef/elements.json" style="float:right">(J)</a>
+        <h3 class="panel-title">Elements and Attributes Published</h3>
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Element/Attribute</th>
+                <th>Activities/Organisations</th>
+                <th>Files</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity.html">iati-activity</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_@default-currency.html">iati-activity/@default-currency</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity_@default-currency.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_@last-updated-datetime.html">iati-activity/@last-updated-datetime</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity_@last-updated-datetime.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_@xml:lang.html">iati-activity/@{http://www.w3.org/XML/1998/namespace}lang</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity_@xml:lang.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_activity-date.html">iati-activity/activity-date</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity_activity-date.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_activity-date_@iso-date.html">iati-activity/activity-date/@iso-date</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity_activity-date_@iso-date.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_activity-date_@type.html">iati-activity/activity-date/@type</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity_activity-date_@type.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_activity-date_narrative.html">iati-activity/activity-date/narrative</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity_activity-date_narrative.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_activity-scope.html">iati-activity/activity-scope</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity_activity-scope.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_activity-scope_@code.html">iati-activity/activity-scope/@code</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity_activity-scope_@code.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_activity-status.html">iati-activity/activity-status</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity_activity-status.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_activity-status_@code.html">iati-activity/activity-status/@code</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity_activity-status_@code.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_budget.html">iati-activity/budget</a></td>
+                <td>4110</td>
+                <td><a href="../element/iati-activity_budget.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_budget_@type.html">iati-activity/budget/@type</a></td>
+                <td>4110</td>
+                <td><a href="../element/iati-activity_budget_@type.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_budget_period-end.html">iati-activity/budget/period-end</a></td>
+                <td>4110</td>
+                <td><a href="../element/iati-activity_budget_period-end.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_budget_period-end_@iso-date.html">iati-activity/budget/period-end/@iso-date</a></td>
+                <td>4110</td>
+                <td><a href="../element/iati-activity_budget_period-end_@iso-date.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_budget_period-start.html">iati-activity/budget/period-start</a></td>
+                <td>4110</td>
+                <td><a href="../element/iati-activity_budget_period-start.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_budget_period-start_@iso-date.html">iati-activity/budget/period-start/@iso-date</a></td>
+                <td>4110</td>
+                <td><a href="../element/iati-activity_budget_period-start_@iso-date.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_budget_value.html">iati-activity/budget/value</a></td>
+                <td>4110</td>
+                <td><a href="../element/iati-activity_budget_value.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_budget_value_@currency.html">iati-activity/budget/value/@currency</a></td>
+                <td>4110</td>
+                <td><a href="../element/iati-activity_budget_value_@currency.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_budget_value_@value-date.html">iati-activity/budget/value/@value-date</a></td>
+                <td>4110</td>
+                <td><a href="../element/iati-activity_budget_value_@value-date.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_collaboration-type.html">iati-activity/collaboration-type</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity_collaboration-type.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_collaboration-type_@code.html">iati-activity/collaboration-type/@code</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity_collaboration-type_@code.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_contact-info.html">iati-activity/contact-info</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity_contact-info.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_contact-info_@type.html">iati-activity/contact-info/@type</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity_contact-info_@type.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_contact-info_department.html">iati-activity/contact-info/department</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity_contact-info_department.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_contact-info_department_narrative.html">iati-activity/contact-info/department/narrative</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity_contact-info_department_narrative.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_contact-info_email.html">iati-activity/contact-info/email</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity_contact-info_email.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_contact-info_job-title.html">iati-activity/contact-info/job-title</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity_contact-info_job-title.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_contact-info_job-title_narrative.html">iati-activity/contact-info/job-title/narrative</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity_contact-info_job-title_narrative.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_contact-info_mailing-address.html">iati-activity/contact-info/mailing-address</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity_contact-info_mailing-address.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_contact-info_mailing-address_narrative.html">iati-activity/contact-info/mailing-address/narrative</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity_contact-info_mailing-address_narrative.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_contact-info_organisation.html">iati-activity/contact-info/organisation</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity_contact-info_organisation.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_contact-info_organisation_narrative.html">iati-activity/contact-info/organisation/narrative</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity_contact-info_organisation_narrative.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_contact-info_person-name.html">iati-activity/contact-info/person-name</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity_contact-info_person-name.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_contact-info_person-name_narrative.html">iati-activity/contact-info/person-name/narrative</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity_contact-info_person-name_narrative.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_contact-info_telephone.html">iati-activity/contact-info/telephone</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity_contact-info_telephone.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_default-aid-type.html">iati-activity/default-aid-type</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity_default-aid-type.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_default-aid-type_@code.html">iati-activity/default-aid-type/@code</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity_default-aid-type_@code.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_default-tied-status.html">iati-activity/default-tied-status</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity_default-tied-status.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_default-tied-status_@code.html">iati-activity/default-tied-status/@code</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity_default-tied-status_@code.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_description.html">iati-activity/description</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity_description.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_description_@type.html">iati-activity/description/@type</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity_description_@type.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_description_narrative.html">iati-activity/description/narrative</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity_description_narrative.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_document-link.html">iati-activity/document-link</a></td>
+                <td>1042</td>
+                <td><a href="../element/iati-activity_document-link.html#files_gef">145</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_document-link_@format.html">iati-activity/document-link/@format</a></td>
+                <td>1042</td>
+                <td><a href="../element/iati-activity_document-link_@format.html#files_gef">145</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_document-link_@url.html">iati-activity/document-link/@url</a></td>
+                <td>1042</td>
+                <td><a href="../element/iati-activity_document-link_@url.html#files_gef">145</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_document-link_category.html">iati-activity/document-link/category</a></td>
+                <td>1042</td>
+                <td><a href="../element/iati-activity_document-link_category.html#files_gef">145</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_document-link_category_@code.html">iati-activity/document-link/category/@code</a></td>
+                <td>1042</td>
+                <td><a href="../element/iati-activity_document-link_category_@code.html#files_gef">145</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_document-link_title.html">iati-activity/document-link/title</a></td>
+                <td>1042</td>
+                <td><a href="../element/iati-activity_document-link_title.html#files_gef">145</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_document-link_title_@xml:lang.html">iati-activity/document-link/title/@{http://www.w3.org/XML/1998/namespace}lang</a></td>
+                <td>1042</td>
+                <td><a href="../element/iati-activity_document-link_title_@xml:lang.html#files_gef">145</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_document-link_title_narrative.html">iati-activity/document-link/title/narrative</a></td>
+                <td>1042</td>
+                <td><a href="../element/iati-activity_document-link_title_narrative.html#files_gef">145</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_iati-identifier.html">iati-activity/iati-identifier</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity_iati-identifier.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_participating-org.html">iati-activity/participating-org</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity_participating-org.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_participating-org_@ref.html">iati-activity/participating-org/@ref</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity_participating-org_@ref.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_participating-org_@role.html">iati-activity/participating-org/@role</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity_participating-org_@role.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_participating-org_@type.html">iati-activity/participating-org/@type</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity_participating-org_@type.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_participating-org_narrative.html">iati-activity/participating-org/narrative</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity_participating-org_narrative.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_recipient-country.html">iati-activity/recipient-country</a></td>
+                <td>3610</td>
+                <td><a href="../element/iati-activity_recipient-country.html#files_gef">162</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_recipient-country_@code.html">iati-activity/recipient-country/@code</a></td>
+                <td>3610</td>
+                <td><a href="../element/iati-activity_recipient-country_@code.html#files_gef">162</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_recipient-country_@percentage.html">iati-activity/recipient-country/@percentage</a></td>
+                <td>3610</td>
+                <td><a href="../element/iati-activity_recipient-country_@percentage.html#files_gef">162</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_recipient-country_narrative.html">iati-activity/recipient-country/narrative</a></td>
+                <td>3610</td>
+                <td><a href="../element/iati-activity_recipient-country_narrative.html#files_gef">162</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_recipient-region.html">iati-activity/recipient-region</a></td>
+                <td>604</td>
+                <td><a href="../element/iati-activity_recipient-region.html#files_gef">112</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_recipient-region_@code.html">iati-activity/recipient-region/@code</a></td>
+                <td>604</td>
+                <td><a href="../element/iati-activity_recipient-region_@code.html#files_gef">112</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_recipient-region_@percentage.html">iati-activity/recipient-region/@percentage</a></td>
+                <td>604</td>
+                <td><a href="../element/iati-activity_recipient-region_@percentage.html#files_gef">112</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_recipient-region_narrative.html">iati-activity/recipient-region/narrative</a></td>
+                <td>604</td>
+                <td><a href="../element/iati-activity_recipient-region_narrative.html#files_gef">112</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_related-activity.html">iati-activity/related-activity</a></td>
+                <td>632</td>
+                <td><a href="../element/iati-activity_related-activity.html#files_gef">140</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_related-activity_@ref.html">iati-activity/related-activity/@ref</a></td>
+                <td>632</td>
+                <td><a href="../element/iati-activity_related-activity_@ref.html#files_gef">140</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_related-activity_@type.html">iati-activity/related-activity/@type</a></td>
+                <td>632</td>
+                <td><a href="../element/iati-activity_related-activity_@type.html#files_gef">140</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_reporting-org.html">iati-activity/reporting-org</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity_reporting-org.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_reporting-org_@ref.html">iati-activity/reporting-org/@ref</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity_reporting-org_@ref.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_reporting-org_@type.html">iati-activity/reporting-org/@type</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity_reporting-org_@type.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_reporting-org_narrative.html">iati-activity/reporting-org/narrative</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity_reporting-org_narrative.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_sector.html">iati-activity/sector</a></td>
+                <td>3693</td>
+                <td><a href="../element/iati-activity_sector.html#files_gef">146</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_sector_@code.html">iati-activity/sector/@code</a></td>
+                <td>3693</td>
+                <td><a href="../element/iati-activity_sector_@code.html#files_gef">146</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_sector_@percentage.html">iati-activity/sector/@percentage</a></td>
+                <td>3693</td>
+                <td><a href="../element/iati-activity_sector_@percentage.html#files_gef">146</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_sector_@vocabulary.html">iati-activity/sector/@vocabulary</a></td>
+                <td>3693</td>
+                <td><a href="../element/iati-activity_sector_@vocabulary.html#files_gef">146</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_sector_@vocabulary-uri.html">iati-activity/sector/@vocabulary-uri</a></td>
+                <td>3693</td>
+                <td><a href="../element/iati-activity_sector_@vocabulary-uri.html#files_gef">146</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_sector_narrative.html">iati-activity/sector/narrative</a></td>
+                <td>3693</td>
+                <td><a href="../element/iati-activity_sector_narrative.html#files_gef">146</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_title.html">iati-activity/title</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity_title.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_title_narrative.html">iati-activity/title/narrative</a></td>
+                <td>4119</td>
+                <td><a href="../element/iati-activity_title_narrative.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction.html">iati-activity/transaction</a></td>
+                <td>4069</td>
+                <td><a href="../element/iati-activity_transaction.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_finance-type.html">iati-activity/transaction/finance-type</a></td>
+                <td>4069</td>
+                <td><a href="../element/iati-activity_transaction_finance-type.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_finance-type_@code.html">iati-activity/transaction/finance-type/@code</a></td>
+                <td>4069</td>
+                <td><a href="../element/iati-activity_transaction_finance-type_@code.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_provider-org.html">iati-activity/transaction/provider-org</a></td>
+                <td>4069</td>
+                <td><a href="../element/iati-activity_transaction_provider-org.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_provider-org_@provider-activity-id.html">iati-activity/transaction/provider-org/@provider-activity-id</a></td>
+                <td>4069</td>
+                <td><a href="../element/iati-activity_transaction_provider-org_@provider-activity-id.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_provider-org_narrative.html">iati-activity/transaction/provider-org/narrative</a></td>
+                <td>4069</td>
+                <td><a href="../element/iati-activity_transaction_provider-org_narrative.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_receiver-org.html">iati-activity/transaction/receiver-org</a></td>
+                <td>4069</td>
+                <td><a href="../element/iati-activity_transaction_receiver-org.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_receiver-org_@receiver-activity-id.html">iati-activity/transaction/receiver-org/@receiver-activity-id</a></td>
+                <td>4066</td>
+                <td><a href="../element/iati-activity_transaction_receiver-org_@receiver-activity-id.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_receiver-org_narrative.html">iati-activity/transaction/receiver-org/narrative</a></td>
+                <td>4069</td>
+                <td><a href="../element/iati-activity_transaction_receiver-org_narrative.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_transaction-date.html">iati-activity/transaction/transaction-date</a></td>
+                <td>4069</td>
+                <td><a href="../element/iati-activity_transaction_transaction-date.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_transaction-date_@iso-date.html">iati-activity/transaction/transaction-date/@iso-date</a></td>
+                <td>4069</td>
+                <td><a href="../element/iati-activity_transaction_transaction-date_@iso-date.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_transaction-type.html">iati-activity/transaction/transaction-type</a></td>
+                <td>4069</td>
+                <td><a href="../element/iati-activity_transaction_transaction-type.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_transaction-type_@code.html">iati-activity/transaction/transaction-type/@code</a></td>
+                <td>4069</td>
+                <td><a href="../element/iati-activity_transaction_transaction-type_@code.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_value.html">iati-activity/transaction/value</a></td>
+                <td>4069</td>
+                <td><a href="../element/iati-activity_transaction_value.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_value_@currency.html">iati-activity/transaction/value/@currency</a></td>
+                <td>4069</td>
+                <td><a href="../element/iati-activity_transaction_value_@currency.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_value_@value-date.html">iati-activity/transaction/value/@value-date</a></td>
+                <td>4069</td>
+                <td><a href="../element/iati-activity_transaction_value_@value-date.html#files_gef">163</a></td>
+            
+            </tr>
+            
+            
+        </tbody>
+    </table>
+    </div>
+
+
+
+    
+  </div><!-- /.container -->
+
+</div>
+
+<div id="footer">
+    <div class="container">
+        <p class="text-muted">
+          <a href="https://github.com/codeforIATI/analytics/">Source Code</a>.
+
+          <a href="https://github.com/codeforIATI/analytics/issues?state=open">Report bugs, and request features using Github issues</a>.<br/>
+
+          Generated at <em>2022-03-29 22:59:28 UTC</em> from data downloaded at <em>2022-03-29 00:54:01 UTC</em>.<br/>
+
+          (NB This is the time the download task started. Any changes made after this time may not be reflected).<br />
+
+          For details on how often these updates are applied, see the <a href="/faq.html">Code for IATI Analytics FAQ</a>.
+    </div>
+</div>
+
+<script src="//codeforiati.org/sidebar/sidebar.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.13.3/jquery.tablesorter.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.13.3/jquery.tablesorter.widgets.min.js"></script>
+
+<script>$(function() { $("table.table:not(.exploring-data)").tablesorter(); });</script>
+<script>$(function() { $("table.exploring-data").tablesorter({textExtraction:{3: function(node,table,cellIndex) { return $(node).attr('data-bytes'); } }}); });</script>
+
+  
+    <script>
+$('.popover-html').popover({
+  html: true
+})
+    </script>
+
+</body>
+</html>

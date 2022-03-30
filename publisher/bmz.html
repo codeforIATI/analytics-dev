@@ -1,0 +1,5194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <style>
+  em {
+    font-style: italic;
+  }
+  .big-number {
+    font-size: 100px;
+  }
+  .title-number {
+    font-weight: bold;
+    float: left;
+    width: 20%;
+  }
+  .title-text {
+    float: left;
+  }
+  .panel-heading {
+    clear: both;
+  }
+  .break {
+    word-break:break-all;
+  }
+  .panel-body h4, .panel-body h5 {
+    margin-top: 24px;
+  }
+  .panel-body h4:first-of-type, .panel-body h5:first-of-type {
+    margin-top: 10px;
+  }
+
+  .tablesorter-default .tablesorter-header {
+    background-image: url(data:image/gif;base64,R0lGODlhFQAJAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAkAAAIXjI+AywnaYnhUMoqt3gZXPmVg94yJVQAAOw==);
+    background-position: center left;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  .tablesorter-default thead .headerSortUp,
+  .tablesorter-default thead .tablesorter-headerSortUp,
+  .tablesorter-default thead .tablesorter-headerAsc {
+    background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjI8Bya2wnINUMopZAQA7);
+    border-bottom: #000 2px solid;
+  }
+  .tablesorter-default thead .headerSortDown,
+  .tablesorter-default thead .tablesorter-headerSortDown,
+  .tablesorter-default thead .tablesorter-headerDesc {
+    background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjB+gC+jP2ptn0WskLQA7);
+    border-bottom: #000 2px solid;
+  }
+  .tablesorter-header-inner {
+    margin-left:10px;
+  }
+  .tablesorter-headerRow {
+    background-color:white;
+  }
+  html,body {
+    height:100%;
+  }
+
+  #wrap {
+    min-height:100%;
+    height:auto;
+    margin:0 auto -60px;
+    padding:0 0 60px;
+  }
+
+  #footer {
+    background-color:#f5f5f5;
+    margin-top: 30px
+  }
+
+  .container .text-muted {
+    margin: 20px 0;
+  }
+
+  .navbar-default {
+     margin-bottom: 0px;
+  }
+
+  .navbar-brand {
+    padding: 10px;
+  }
+
+  .navbar-brand img {
+    height: 30px;
+  }
+
+  a.popover-html:focus {
+    outline: none;
+  }
+  </style>
+  <link rel="icon" href="/favicon.ico">
+  <title>
+Code for IATI Analytics -  Publisher: Germany - Ministry for Economic Cooperation and Development
+</title>
+
+  
+</head>
+<body>
+<div id="wrap">
+  <div class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="#" class="navbar-brand" data-c4i-toggle="sidebar" aria-controls="c4i-sidebar" aria-expanded="false" aria-label="Toggle Code for IATI sidebar"><img src="https://codeforiati.org/assets/img/logo.png" alt="Code for IATI" /></a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+        
+            <li ><a href="../index.html">Home</a></li>
+        
+            <li ><a href="../headlines.html">Headlines</a></li>
+        
+            <li ><a href="../data_quality.html">Data Quality</a></li>
+        
+            <li ><a href="../publishing_stats.html">Publishing Statistics</a></li>
+        
+            <li ><a href="../exploring_data.html">Exploring Data</a></li>
+        
+            <li ><a href="../faq.html">FAQ</a></li>
+        
+        </ul>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+        
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+  <div class="container">
+    
+      
+        <div class="page-header">
+          
+<a href="https://github.com/codeforIATI/IATI-Stats-public/tree/gh-pages/current/aggregated-publisher/bmz/" style="float:right">(Publisher Stats JSON)</a>
+<h1>Publisher: Germany - Ministry for Economic Cooperation and Development</h1>
+<p class="lead"></p>
+
+        </div>
+      
+
+      
+    <div class="row">
+    <div class="col-md-6">
+    <div class="panel panel-default">
+        <div class="panel-heading"><h3 class="panel-title" id="list_fail_validation">Table of Contents</h3></div>
+        <div class="panel-body">
+            <ul>
+                <li><a href="#h_headlines">Headlines</a>
+                <li><a href="#h_dataquality">Data Quality</a>
+                    <ul>
+                        
+                        
+                        
+                        
+                    </ul>
+                </li>
+                <li><a href="#h_financial">Financial</a></li>
+                <li><a href="#h_exploringdata">Exploring Data</a>
+                    <ul>
+                        <li><a href="#p_files">Files</a>
+                        <li><a href="#p_codelists">Codelist values</a>
+                        <li><a href="#p_elements">Elements and Attributes published</a>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <h2 id="h_headlines">Headlines</h2>
+
+    <div class="row">
+    <div class="col-md-6">
+    <div class="panel panel-default">
+    <table class="table table-striped">
+        <tbody>
+            <tr>
+                <td>On the Registry</td>
+                <td><a href="http://iatiregistry.org/publisher/bmz">bmz</a></td>
+            </tr>
+            <tr>
+                <td>Reporting Org on Registry</td>
+                <td>
+                    <code>DE-1</code>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>Reporting Org(s) in Data</td>
+                <td>
+                
+                <code>DE-1</code>
+                
+                </td>
+            </tr><tr>
+                <td>Activity Files</td>
+                <td>142</td>
+            </tr><tr>
+                <td>Organisation Files</td>
+                <td>1</td>
+            </tr><tr>
+                <td>Total File Size</td>
+                <td>177.9 MB</td>
+            </tr><tr>
+                <td>Activities</td>
+                <td>27762</td>
+            </tr><tr>
+                <td>Unique Activities</td>
+                <td>27762</td>
+            </tr><tr>
+                <td>Organisations</td>
+                <td>1</td>
+            </tr><tr>
+                <td>Versions</td>
+                <td>
+                
+                <code>2.03</code>
+                
+                </td>
+            </tr><tr>
+                <td>Hierarchies</td>
+                <td>
+                
+                <code>1</code>
+                
+                </td>
+            </tr><tr>
+                <td>Licenses</td>
+                <td>
+                
+                <code><a href="../license/cc-by.html">cc-by</a></code>
+                
+                </td>
+            </tr><tr>
+                <td>Files failing validation</td>
+                <td>
+                0
+                </td>
+            </tr>
+        </body>
+    </table>
+    </div>
+    </div>
+    
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              
+              <span id="activities" class="title-number">27762</span>
+              <span class="title-text">Activities</span>
+            </h3>
+            
+            <a href="https://stats.codeforiati.org/gitaggregate-publisher-dated/bmz/activities.json" style="float:right">(J)</a>
+            
+            <div class="clearfix"></div>
+          </div>
+          <div class="panel-body">
+            <p></p>
+            <img src="../publisher_imgs/bmz_activities.png" width="100%" />
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+        
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              
+              <span id="activity-files" class="title-number">142</span>
+              <span class="title-text">Activity Files</span>
+            </h3>
+            
+            <a href="https://stats.codeforiati.org/gitaggregate-publisher-dated/bmz/activity_files.json" style="float:right">(J)</a>
+            
+            <div class="clearfix"></div>
+          </div>
+          <div class="panel-body">
+            <p></p>
+            <img src="../publisher_imgs/bmz_activity_files.png" width="100%" />
+            
+          </div>
+        </div>
+      </div>
+
+        
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              
+              <span id="organisation-files" class="title-number">1</span>
+              <span class="title-text">Organisation Files</span>
+            </h3>
+            
+            <a href="https://stats.codeforiati.org/gitaggregate-publisher-dated/bmz/organisation_files.json" style="float:right">(J)</a>
+            
+            <div class="clearfix"></div>
+          </div>
+          <div class="panel-body">
+            <p></p>
+            <img src="../publisher_imgs/bmz_organisation_files.png" width="100%" />
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+        
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              
+              <span id="files-per-version" class="title-number"></span>
+              <span class="title-text">Files per version</span>
+            </h3>
+            
+            <a href="https://stats.codeforiati.org/gitaggregate-publisher-dated/bmz/versions.json" style="float:right">(J)</a>
+            
+            <div class="clearfix"></div>
+          </div>
+          <div class="panel-body">
+            <p></p>
+            <img src="../publisher_imgs/bmz_versions.png" width="100%" />
+            
+            <img src="../publisher_imgs/bmz_versions_legend.png" width="100%" />
+            
+          </div>
+        </div>
+      </div>
+
+        
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              
+              <span id="total-file-size" class="title-number">177.9 MB</span>
+              <span class="title-text">Total File Size</span>
+            </h3>
+            
+            <a href="https://stats.codeforiati.org/gitaggregate-publisher-dated/bmz/file_size.json" style="float:right">(J)</a>
+            
+            <div class="clearfix"></div>
+          </div>
+          <div class="panel-body">
+            <p></p>
+            <img src="../publisher_imgs/bmz_file_size.png" width="100%" />
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+        
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              
+              <span id="files-failing-validation" class="title-number"></span>
+              <span class="title-text">Files failing validation</span>
+            </h3>
+            
+            <a href="https://stats.codeforiati.org/gitaggregate-publisher-dated/bmz/validation.json" style="float:right">(J)</a>
+            
+            <div class="clearfix"></div>
+          </div>
+          <div class="panel-body">
+            <p></p>
+            <img src="../publisher_imgs/bmz_validation.png" width="100%" />
+            
+          </div>
+        </div>
+      </div>
+
+        
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              
+              <span id="files-where-xml-is-not-well-formed" class="title-number">0</span>
+              <span class="title-text">Files where XML is not well-formed</span>
+            </h3>
+            
+            <a href="https://stats.codeforiati.org/gitaggregate-publisher-dated/bmz/invalidxml.json" style="float:right">(J)</a>
+            
+            <div class="clearfix"></div>
+          </div>
+          <div class="panel-body">
+            <p></p>
+            <img src="../publisher_imgs/bmz_invalidxml.png" width="100%" />
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <h2 id="h_dataquality">Data Quality</h2>
+
+    
+
+    <div class="row">
+    
+
+    
+
+    
+
+    </div><!-- .row -->
+
+    
+
+    
+    <p>No issues were found.</p>
+    
+
+    <h2 id="h_financial">Financial</h2>
+
+    
+
+    <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Budgets</h3>
+    </div>
+    <div class="panel-body">
+        <p>The below figures are calculated based on the data contained within the <code>&lt;budget&gt;</code> element for each reported activity. Original and revised elements are based on the value declared in the <code><a href="https://reference.codeforiati.org/activity-standard/iati-activities/iati-activity/budget/#iati-activities-iati-activity-budget-type">budget/@type</a></code> attribute. Where budgets fall across two calendar years, the month of the <code>&lt;period-end&gt;</code> date is used to determine annual groupings, with budgets for periods ending January-June added to the previous calendar year.</p>
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Year</th>
+                <th>Count (all)</th>
+                <th>Sum (all)</th>
+                <th>Count (Original)</th>
+                <th>Sum (Original)</th>
+                <th>Count (Revised)</th>
+                <th>Sum (Revised)</th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <td>Total</td>
+                <td>16411</td>
+                <td>
+    
+    
+    
+    20276752608.19 EUR</br>
+    
+    
+    
+    </td>
+                <td>8177</td>
+                <td>
+    
+    
+    
+    21007314812.109997 EUR</br>
+    
+    
+    
+    </td>
+                <td>8234</td>
+                <td>
+    
+    
+    
+    20276752608.19 EUR</br>
+    
+    
+    
+    </td>
+            </tr>
+        
+            <tr>
+                <td>1994</td>
+                <td>9</td>
+                <td>
+    
+    
+    
+    295338.89 EUR</br>
+    
+    
+    
+    </td>
+                <td>5</td>
+                <td>
+    
+    
+    
+    217200.42 EUR</br>
+    
+    
+    
+    </td>
+                <td>4</td>
+                <td>
+    
+    
+    
+    295338.89 EUR</br>
+    
+    
+    
+    </td>
+            </tr>
+        
+            <tr>
+                <td>1995</td>
+                <td>70</td>
+                <td>
+    
+    
+    
+    9789361.93 EUR</br>
+    
+    
+    
+    </td>
+                <td>34</td>
+                <td>
+    
+    
+    
+    10585932.48 EUR</br>
+    
+    
+    
+    </td>
+                <td>36</td>
+                <td>
+    
+    
+    
+    9789361.93 EUR</br>
+    
+    
+    
+    </td>
+            </tr>
+        
+            <tr>
+                <td>1996</td>
+                <td>71</td>
+                <td>
+    
+    
+    
+    10123610.8 EUR</br>
+    
+    
+    
+    </td>
+                <td>35</td>
+                <td>
+    
+    
+    
+    10757833.34 EUR</br>
+    
+    
+    
+    </td>
+                <td>36</td>
+                <td>
+    
+    
+    
+    10123610.8 EUR</br>
+    
+    
+    
+    </td>
+            </tr>
+        
+            <tr>
+                <td>1997</td>
+                <td>71</td>
+                <td>
+    
+    
+    
+    10123610.8 EUR</br>
+    
+    
+    
+    </td>
+                <td>35</td>
+                <td>
+    
+    
+    
+    10821512.7 EUR</br>
+    
+    
+    
+    </td>
+                <td>36</td>
+                <td>
+    
+    
+    
+    10123610.8 EUR</br>
+    
+    
+    
+    </td>
+            </tr>
+        
+            <tr>
+                <td>1998</td>
+                <td>73</td>
+                <td>
+    
+    
+    
+    10825788.64 EUR</br>
+    
+    
+    
+    </td>
+                <td>36</td>
+                <td>
+    
+    
+    
+    11754372.74 EUR</br>
+    
+    
+    
+    </td>
+                <td>37</td>
+                <td>
+    
+    
+    
+    10825788.64 EUR</br>
+    
+    
+    
+    </td>
+            </tr>
+        
+            <tr>
+                <td>1999</td>
+                <td>65</td>
+                <td>
+    
+    
+    
+    10614006.31 EUR</br>
+    
+    
+    
+    </td>
+                <td>31</td>
+                <td>
+    
+    
+    
+    10588763.15 EUR</br>
+    
+    
+    
+    </td>
+                <td>34</td>
+                <td>
+    
+    
+    
+    10614006.31 EUR</br>
+    
+    
+    
+    </td>
+            </tr>
+        
+            <tr>
+                <td>2000</td>
+                <td>6</td>
+                <td>
+    
+    
+    
+    2299950.37 EUR</br>
+    
+    
+    
+    </td>
+                <td>3</td>
+                <td>
+    
+    
+    
+    1856320.8 EUR</br>
+    
+    
+    
+    </td>
+                <td>3</td>
+                <td>
+    
+    
+    
+    2299950.37 EUR</br>
+    
+    
+    
+    </td>
+            </tr>
+        
+            <tr>
+                <td>2001</td>
+                <td>14</td>
+                <td>
+    
+    
+    
+    2327560.65 EUR</br>
+    
+    
+    
+    </td>
+                <td>5</td>
+                <td>
+    
+    
+    
+    2269572.12 EUR</br>
+    
+    
+    
+    </td>
+                <td>9</td>
+                <td>
+    
+    
+    
+    2327560.65 EUR</br>
+    
+    
+    
+    </td>
+            </tr>
+        
+            <tr>
+                <td>2002</td>
+                <td>33</td>
+                <td>
+    
+    
+    
+    16506762.26 EUR</br>
+    
+    
+    
+    </td>
+                <td>11</td>
+                <td>
+    
+    
+    
+    4340294.52 EUR</br>
+    
+    
+    
+    </td>
+                <td>22</td>
+                <td>
+    
+    
+    
+    16506762.26 EUR</br>
+    
+    
+    
+    </td>
+            </tr>
+        
+            <tr>
+                <td>2003</td>
+                <td>44</td>
+                <td>
+    
+    
+    
+    31195159.21 EUR</br>
+    
+    
+    
+    </td>
+                <td>13</td>
+                <td>
+    
+    
+    
+    4536708.84 EUR</br>
+    
+    
+    
+    </td>
+                <td>31</td>
+                <td>
+    
+    
+    
+    31195159.21 EUR</br>
+    
+    
+    
+    </td>
+            </tr>
+        
+            <tr>
+                <td>2004</td>
+                <td>50</td>
+                <td>
+    
+    
+    
+    44176125.96 EUR</br>
+    
+    
+    
+    </td>
+                <td>13</td>
+                <td>
+    
+    
+    
+    4621425.15 EUR</br>
+    
+    
+    
+    </td>
+                <td>37</td>
+                <td>
+    
+    
+    
+    44176125.96 EUR</br>
+    
+    
+    
+    </td>
+            </tr>
+        
+            <tr>
+                <td>2005</td>
+                <td>67</td>
+                <td>
+    
+    
+    
+    81057299.13 EUR</br>
+    
+    
+    
+    </td>
+                <td>16</td>
+                <td>
+    
+    
+    
+    5377758.63 EUR</br>
+    
+    
+    
+    </td>
+                <td>51</td>
+                <td>
+    
+    
+    
+    81057299.13 EUR</br>
+    
+    
+    
+    </td>
+            </tr>
+        
+            <tr>
+                <td>2006</td>
+                <td>81</td>
+                <td>
+    
+    
+    
+    115365282.86 EUR</br>
+    
+    
+    
+    </td>
+                <td>14</td>
+                <td>
+    
+    
+    
+    5629382.92 EUR</br>
+    
+    
+    
+    </td>
+                <td>67</td>
+                <td>
+    
+    
+    
+    115365282.86 EUR</br>
+    
+    
+    
+    </td>
+            </tr>
+        
+            <tr>
+                <td>2007</td>
+                <td>124</td>
+                <td>
+    
+    
+    
+    246085032.98 EUR</br>
+    
+    
+    
+    </td>
+                <td>12</td>
+                <td>
+    
+    
+    
+    4681605.55 EUR</br>
+    
+    
+    
+    </td>
+                <td>112</td>
+                <td>
+    
+    
+    
+    246085032.98 EUR</br>
+    
+    
+    
+    </td>
+            </tr>
+        
+            <tr>
+                <td>2008</td>
+                <td>174</td>
+                <td>
+    
+    
+    
+    300768613.96 EUR</br>
+    
+    
+    
+    </td>
+                <td>13</td>
+                <td>
+    
+    
+    
+    8322733.65 EUR</br>
+    
+    
+    
+    </td>
+                <td>161</td>
+                <td>
+    
+    
+    
+    300768613.96 EUR</br>
+    
+    
+    
+    </td>
+            </tr>
+        
+            <tr>
+                <td>2009</td>
+                <td>299</td>
+                <td>
+    
+    
+    
+    399182582.05 EUR</br>
+    
+    
+    
+    </td>
+                <td>22</td>
+                <td>
+    
+    
+    
+    16226850.67 EUR</br>
+    
+    
+    
+    </td>
+                <td>277</td>
+                <td>
+    
+    
+    
+    399182582.05 EUR</br>
+    
+    
+    
+    </td>
+            </tr>
+        
+            <tr>
+                <td>2010</td>
+                <td>451</td>
+                <td>
+    
+    
+    
+    651583712.99 EUR</br>
+    
+    
+    
+    </td>
+                <td>24</td>
+                <td>
+    
+    
+    
+    21795764.55 EUR</br>
+    
+    
+    
+    </td>
+                <td>427</td>
+                <td>
+    
+    
+    
+    651583712.99 EUR</br>
+    
+    
+    
+    </td>
+            </tr>
+        
+            <tr>
+                <td>2011</td>
+                <td>660</td>
+                <td>
+    
+    
+    
+    1083557599.63 EUR</br>
+    
+    
+    
+    </td>
+                <td>37</td>
+                <td>
+    
+    
+    
+    42724575.03 EUR</br>
+    
+    
+    
+    </td>
+                <td>623</td>
+                <td>
+    
+    
+    
+    1083557599.63 EUR</br>
+    
+    
+    
+    </td>
+            </tr>
+        
+            <tr>
+                <td>2012</td>
+                <td>909</td>
+                <td>
+    
+    
+    
+    1212077939.83 EUR</br>
+    
+    
+    
+    </td>
+                <td>65</td>
+                <td>
+    
+    
+    
+    88881721.63 EUR</br>
+    
+    
+    
+    </td>
+                <td>844</td>
+                <td>
+    
+    
+    
+    1212077939.83 EUR</br>
+    
+    
+    
+    </td>
+            </tr>
+        
+            <tr>
+                <td>2013</td>
+                <td>1039</td>
+                <td>
+    
+    
+    
+    1549276790.8 EUR</br>
+    
+    
+    
+    </td>
+                <td>102</td>
+                <td>
+    
+    
+    
+    146203274.92 EUR</br>
+    
+    
+    
+    </td>
+                <td>937</td>
+                <td>
+    
+    
+    
+    1549276790.8 EUR</br>
+    
+    
+    
+    </td>
+            </tr>
+        
+            <tr>
+                <td>2014</td>
+                <td>1098</td>
+                <td>
+    
+    
+    
+    1549565567.83 EUR</br>
+    
+    
+    
+    </td>
+                <td>149</td>
+                <td>
+    
+    
+    
+    237104668.73 EUR</br>
+    
+    
+    
+    </td>
+                <td>949</td>
+                <td>
+    
+    
+    
+    1549565567.83 EUR</br>
+    
+    
+    
+    </td>
+            </tr>
+        
+            <tr>
+                <td>2015</td>
+                <td>1164</td>
+                <td>
+    
+    
+    
+    1943681727.03 EUR</br>
+    
+    
+    
+    </td>
+                <td>255</td>
+                <td>
+    
+    
+    
+    534234230.17 EUR</br>
+    
+    
+    
+    </td>
+                <td>909</td>
+                <td>
+    
+    
+    
+    1943681727.03 EUR</br>
+    
+    
+    
+    </td>
+            </tr>
+        
+            <tr>
+                <td>2016</td>
+                <td>1177</td>
+                <td>
+    
+    
+    
+    1931142540.7 EUR</br>
+    
+    
+    
+    </td>
+                <td>393</td>
+                <td>
+    
+    
+    
+    918046385.8 EUR</br>
+    
+    
+    
+    </td>
+                <td>784</td>
+                <td>
+    
+    
+    
+    1931142540.7 EUR</br>
+    
+    
+    
+    </td>
+            </tr>
+        
+            <tr>
+                <td>2017</td>
+                <td>1186</td>
+                <td>
+    
+    
+    
+    1517354094.54 EUR</br>
+    
+    
+    
+    </td>
+                <td>550</td>
+                <td>
+    
+    
+    
+    1343030059.1 EUR</br>
+    
+    
+    
+    </td>
+                <td>636</td>
+                <td>
+    
+    
+    
+    1517354094.54 EUR</br>
+    
+    
+    
+    </td>
+            </tr>
+        
+            <tr>
+                <td>2018</td>
+                <td>1195</td>
+                <td>
+    
+    
+    
+    1465000093.09 EUR</br>
+    
+    
+    
+    </td>
+                <td>735</td>
+                <td>
+    
+    
+    
+    1765962778.89 EUR</br>
+    
+    
+    
+    </td>
+                <td>460</td>
+                <td>
+    
+    
+    
+    1465000093.09 EUR</br>
+    
+    
+    
+    </td>
+            </tr>
+        
+            <tr>
+                <td>2019</td>
+                <td>1165</td>
+                <td>
+    
+    
+    
+    1548905925.4 EUR</br>
+    
+    
+    
+    </td>
+                <td>931</td>
+                <td>
+    
+    
+    
+    2212961852.7 EUR</br>
+    
+    
+    
+    </td>
+                <td>234</td>
+                <td>
+    
+    
+    
+    1548905925.4 EUR</br>
+    
+    
+    
+    </td>
+            </tr>
+        
+            <tr>
+                <td>2020</td>
+                <td>1167</td>
+                <td>
+    
+    
+    
+    2295869740.13 EUR</br>
+    
+    
+    
+    </td>
+                <td>1059</td>
+                <td>
+    
+    
+    
+    2477561296.77 EUR</br>
+    
+    
+    
+    </td>
+                <td>108</td>
+                <td>
+    
+    
+    
+    2295869740.13 EUR</br>
+    
+    
+    
+    </td>
+            </tr>
+        
+            <tr>
+                <td>2021</td>
+                <td>2011</td>
+                <td>
+    
+    
+    
+    2238000789.42 EUR</br>
+    
+    
+    
+    </td>
+                <td>1641</td>
+                <td>
+    
+    
+    
+    5444224811.02 EUR</br>
+    
+    
+    
+    </td>
+                <td>370</td>
+                <td>
+    
+    
+    
+    2238000789.42 EUR</br>
+    
+    
+    
+    </td>
+            </tr>
+        
+            <tr>
+                <td>2022</td>
+                <td>995</td>
+                <td>
+    
+    
+    
+    
+    
+    </td>
+                <td>995</td>
+                <td>
+    
+    
+    
+    3567395385.05 EUR</br>
+    
+    
+    
+    </td>
+                <td></td>
+                <td>
+    
+    
+    
+    
+    
+    </td>
+            </tr>
+        
+            <tr>
+                <td>2023</td>
+                <td>600</td>
+                <td>
+    
+    
+    
+    
+    
+    </td>
+                <td>600</td>
+                <td>
+    
+    
+    
+    1466504206.64 EUR</br>
+    
+    
+    
+    </td>
+                <td></td>
+                <td>
+    
+    
+    
+    
+    
+    </td>
+            </tr>
+        
+            <tr>
+                <td>2024</td>
+                <td>283</td>
+                <td>
+    
+    
+    
+    
+    
+    </td>
+                <td>283</td>
+                <td>
+    
+    
+    
+    559762861.13 EUR</br>
+    
+    
+    
+    </td>
+                <td></td>
+                <td>
+    
+    
+    
+    
+    
+    </td>
+            </tr>
+        
+            <tr>
+                <td>2025</td>
+                <td>53</td>
+                <td>
+    
+    
+    
+    
+    
+    </td>
+                <td>53</td>
+                <td>
+    
+    
+    
+    62159084.13 EUR</br>
+    
+    
+    
+    </td>
+                <td></td>
+                <td>
+    
+    
+    
+    
+    
+    </td>
+            </tr>
+        
+            <tr>
+                <td>2026</td>
+                <td>7</td>
+                <td>
+    
+    
+    
+    
+    
+    </td>
+                <td>7</td>
+                <td>
+    
+    
+    
+    6173588.17 EUR</br>
+    
+    
+    
+    </td>
+                <td></td>
+                <td>
+    
+    
+    
+    
+    
+    </td>
+            </tr>
+        
+        </tbody>
+    </table>
+    </div>
+
+
+    <h2 id="h_exploringdata">Exploring Data</h2>
+
+    <div class="panel panel-default" id="p_files">
+    <div class="panel-heading">
+        <h3 class="panel-title">Files</h3>
+    </div>
+    <table class="table table-striped exploring-data">
+        <thead>
+            <tr>
+                <th>Package</th>
+                <th>Activities <a href="https://stats.codeforiati.org/current/inverted-file-publisher/bmz/activities.json">(J)</a></th>
+                <th>Organisations <a href="https://stats.codeforiati.org/current/inverted-file-publisher/bmz/organisations.json">(J)</a></th>
+                <th>File Size <a href="https://stats.codeforiati.org/current/inverted-file-publisher/bmz/file_size.json">(J)</a></th>
+                <th>Version <a href="https://stats.codeforiati.org/current/inverted-file-publisher/bmz/versions.json">(J)</a></th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-189">bmz-189</a></td>
+                <td>36</td>
+                <td>0</td>
+                <td data-bytes="250065">250.1 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-289">bmz-289</a></td>
+                <td>245</td>
+                <td>0</td>
+                <td data-bytes="1624759">1.6 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-298">bmz-298</a></td>
+                <td>544</td>
+                <td>0</td>
+                <td data-bytes="5006112">5.0 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-389">bmz-389</a></td>
+                <td>93</td>
+                <td>0</td>
+                <td data-bytes="653163">653.2 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-489">bmz-489</a></td>
+                <td>90</td>
+                <td>0</td>
+                <td data-bytes="465992">466.0 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-498">bmz-498</a></td>
+                <td>264</td>
+                <td>0</td>
+                <td data-bytes="1940332">1.9 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-589">bmz-589</a></td>
+                <td>174</td>
+                <td>0</td>
+                <td data-bytes="1510539">1.5 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-689">bmz-689</a></td>
+                <td>84</td>
+                <td>0</td>
+                <td data-bytes="577405">577.4 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-789">bmz-789</a></td>
+                <td>17</td>
+                <td>0</td>
+                <td data-bytes="112423">112.4 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-798">bmz-798</a></td>
+                <td>316</td>
+                <td>0</td>
+                <td data-bytes="1992002">2.0 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-889">bmz-889</a></td>
+                <td>13</td>
+                <td>0</td>
+                <td data-bytes="74437">74.4 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-89">bmz-89</a></td>
+                <td>248</td>
+                <td>0</td>
+                <td data-bytes="2087873">2.1 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-998">bmz-998</a></td>
+                <td>5537</td>
+                <td>0</td>
+                <td data-bytes="24448851">24.4 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-al">bmz-al</a></td>
+                <td>121</td>
+                <td>0</td>
+                <td data-bytes="1231777">1.2 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-am">bmz-am</a></td>
+                <td>110</td>
+                <td>0</td>
+                <td data-bytes="961177">961.2 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-ao">bmz-ao</a></td>
+                <td>93</td>
+                <td>0</td>
+                <td data-bytes="437909">437.9 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-ar">bmz-ar</a></td>
+                <td>128</td>
+                <td>0</td>
+                <td data-bytes="625180">625.2 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-az">bmz-az</a></td>
+                <td>29</td>
+                <td>0</td>
+                <td data-bytes="274214">274.2 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-ba">bmz-ba</a></td>
+                <td>92</td>
+                <td>0</td>
+                <td data-bytes="779120">779.1 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-bd">bmz-bd</a></td>
+                <td>406</td>
+                <td>0</td>
+                <td data-bytes="2640341">2.6 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-bf">bmz-bf</a></td>
+                <td>312</td>
+                <td>0</td>
+                <td data-bytes="2358127">2.4 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-bg">bmz-bg</a></td>
+                <td>11</td>
+                <td>0</td>
+                <td data-bytes="111990">112.0 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-bi">bmz-bi</a></td>
+                <td>133</td>
+                <td>0</td>
+                <td data-bytes="893691">893.7 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-bj">bmz-bj</a></td>
+                <td>153</td>
+                <td>0</td>
+                <td data-bytes="1222903">1.2 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-bo">bmz-bo</a></td>
+                <td>450</td>
+                <td>0</td>
+                <td data-bytes="2596936">2.6 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-br">bmz-br</a></td>
+                <td>911</td>
+                <td>0</td>
+                <td data-bytes="5222747">5.2 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-bt">bmz-bt</a></td>
+                <td>4</td>
+                <td>0</td>
+                <td data-bytes="19750">19.8 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-bw">bmz-bw</a></td>
+                <td>11</td>
+                <td>0</td>
+                <td data-bytes="63612">63.6 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-by">bmz-by</a></td>
+                <td>25</td>
+                <td>0</td>
+                <td data-bytes="154844">154.8 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-cd">bmz-cd</a></td>
+                <td>463</td>
+                <td>0</td>
+                <td data-bytes="2793705">2.8 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-cf">bmz-cf</a></td>
+                <td>38</td>
+                <td>0</td>
+                <td data-bytes="279729">279.7 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-cg">bmz-cg</a></td>
+                <td>10</td>
+                <td>0</td>
+                <td data-bytes="53323">53.3 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-ci">bmz-ci</a></td>
+                <td>73</td>
+                <td>0</td>
+                <td data-bytes="615823">615.8 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-cl">bmz-cl</a></td>
+                <td>43</td>
+                <td>0</td>
+                <td data-bytes="270772">270.8 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-cm">bmz-cm</a></td>
+                <td>332</td>
+                <td>0</td>
+                <td data-bytes="2079608">2.1 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-cn">bmz-cn</a></td>
+                <td>332</td>
+                <td>0</td>
+                <td data-bytes="2144645">2.1 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-co">bmz-co</a></td>
+                <td>541</td>
+                <td>0</td>
+                <td data-bytes="3180293">3.2 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-cr">bmz-cr</a></td>
+                <td>47</td>
+                <td>0</td>
+                <td data-bytes="278397">278.4 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-cu">bmz-cu</a></td>
+                <td>17</td>
+                <td>0</td>
+                <td data-bytes="89003">89.0 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-cv">bmz-cv</a></td>
+                <td>4</td>
+                <td>0</td>
+                <td data-bytes="32385">32.4 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-dj">bmz-dj</a></td>
+                <td>10</td>
+                <td>0</td>
+                <td data-bytes="51903">51.9 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-do">bmz-do</a></td>
+                <td>47</td>
+                <td>0</td>
+                <td data-bytes="263317">263.3 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-dz">bmz-dz</a></td>
+                <td>26</td>
+                <td>0</td>
+                <td data-bytes="258757">258.8 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-ec">bmz-ec</a></td>
+                <td>157</td>
+                <td>0</td>
+                <td data-bytes="1071083">1.1 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-eg">bmz-eg</a></td>
+                <td>228</td>
+                <td>0</td>
+                <td data-bytes="1894149">1.9 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-er">bmz-er</a></td>
+                <td>27</td>
+                <td>0</td>
+                <td data-bytes="161294">161.3 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-et">bmz-et</a></td>
+                <td>450</td>
+                <td>0</td>
+                <td data-bytes="2985278">3.0 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-fj">bmz-fj</a></td>
+                <td>54</td>
+                <td>0</td>
+                <td data-bytes="255583">255.6 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-fm">bmz-fm</a></td>
+                <td>2</td>
+                <td>0</td>
+                <td data-bytes="9790">9.8 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-ge">bmz-ge</a></td>
+                <td>147</td>
+                <td>0</td>
+                <td data-bytes="1232214">1.2 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-gh">bmz-gh</a></td>
+                <td>245</td>
+                <td>0</td>
+                <td data-bytes="1859754">1.9 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-gm">bmz-gm</a></td>
+                <td>13</td>
+                <td>0</td>
+                <td data-bytes="57264">57.3 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-gn">bmz-gn</a></td>
+                <td>56</td>
+                <td>0</td>
+                <td data-bytes="401357">401.4 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-gt">bmz-gt</a></td>
+                <td>279</td>
+                <td>0</td>
+                <td data-bytes="1550307">1.6 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-gw">bmz-gw</a></td>
+                <td>9</td>
+                <td>0</td>
+                <td data-bytes="43417">43.4 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-gy">bmz-gy</a></td>
+                <td>5</td>
+                <td>0</td>
+                <td data-bytes="44675">44.7 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-hn">bmz-hn</a></td>
+                <td>140</td>
+                <td>0</td>
+                <td data-bytes="889013">889.0 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-hr">bmz-hr</a></td>
+                <td>11</td>
+                <td>0</td>
+                <td data-bytes="103319">103.3 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-ht">bmz-ht</a></td>
+                <td>214</td>
+                <td>0</td>
+                <td data-bytes="1076122">1.1 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-id">bmz-id</a></td>
+                <td>436</td>
+                <td>0</td>
+                <td data-bytes="2772674">2.8 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-il">bmz-il</a></td>
+                <td>70</td>
+                <td>0</td>
+                <td data-bytes="328241">328.2 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-in">bmz-in</a></td>
+                <td>1644</td>
+                <td>0</td>
+                <td data-bytes="9739150">9.7 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-iq">bmz-iq</a></td>
+                <td>150</td>
+                <td>0</td>
+                <td data-bytes="1165878">1.2 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-ir">bmz-ir</a></td>
+                <td>2</td>
+                <td>0</td>
+                <td data-bytes="9236">9.2 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-jm">bmz-jm</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td data-bytes="10773">10.8 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-jo">bmz-jo</a></td>
+                <td>203</td>
+                <td>0</td>
+                <td data-bytes="2087928">2.1 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-ke">bmz-ke</a></td>
+                <td>479</td>
+                <td>0</td>
+                <td data-bytes="3091156">3.1 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-kg">bmz-kg</a></td>
+                <td>120</td>
+                <td>0</td>
+                <td data-bytes="1146695">1.1 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-kh">bmz-kh</a></td>
+                <td>308</td>
+                <td>0</td>
+                <td data-bytes="1932633">1.9 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-kp">bmz-kp</a></td>
+                <td>12</td>
+                <td>0</td>
+                <td data-bytes="56605">56.6 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-kr">bmz-kr</a></td>
+                <td>2</td>
+                <td>0</td>
+                <td data-bytes="15131">15.1 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-kz">bmz-kz</a></td>
+                <td>8</td>
+                <td>0</td>
+                <td data-bytes="50206">50.2 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-la">bmz-la</a></td>
+                <td>136</td>
+                <td>0</td>
+                <td data-bytes="1054688">1.1 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-lb">bmz-lb</a></td>
+                <td>165</td>
+                <td>0</td>
+                <td data-bytes="1348087">1.3 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-lk">bmz-lk</a></td>
+                <td>141</td>
+                <td>0</td>
+                <td data-bytes="889281">889.3 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-lr">bmz-lr</a></td>
+                <td>123</td>
+                <td>0</td>
+                <td data-bytes="774855">774.9 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-ls">bmz-ls</a></td>
+                <td>26</td>
+                <td>0</td>
+                <td data-bytes="151117">151.1 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-ly">bmz-ly</a></td>
+                <td>20</td>
+                <td>0</td>
+                <td data-bytes="204162">204.2 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-ma">bmz-ma</a></td>
+                <td>149</td>
+                <td>0</td>
+                <td data-bytes="1598316">1.6 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-md">bmz-md</a></td>
+                <td>49</td>
+                <td>0</td>
+                <td data-bytes="452361">452.4 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-me">bmz-me</a></td>
+                <td>24</td>
+                <td>0</td>
+                <td data-bytes="281036">281.0 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-mg">bmz-mg</a></td>
+                <td>136</td>
+                <td>0</td>
+                <td data-bytes="1009238">1.0 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-mk">bmz-mk</a></td>
+                <td>31</td>
+                <td>0</td>
+                <td data-bytes="311974">312.0 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-ml">bmz-ml</a></td>
+                <td>268</td>
+                <td>0</td>
+                <td data-bytes="1994601">2.0 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-mm">bmz-mm</a></td>
+                <td>268</td>
+                <td>0</td>
+                <td data-bytes="1535791">1.5 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-mn">bmz-mn</a></td>
+                <td>85</td>
+                <td>0</td>
+                <td data-bytes="734499">734.5 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-mr">bmz-mr</a></td>
+                <td>46</td>
+                <td>0</td>
+                <td data-bytes="472615">472.6 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-mv">bmz-mv</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td data-bytes="4141">4.1 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-mw">bmz-mw</a></td>
+                <td>181</td>
+                <td>0</td>
+                <td data-bytes="1392896">1.4 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-mx">bmz-mx</a></td>
+                <td>261</td>
+                <td>0</td>
+                <td data-bytes="1640194">1.6 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-my">bmz-my</a></td>
+                <td>9</td>
+                <td>0</td>
+                <td data-bytes="47159">47.2 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-mz">bmz-mz</a></td>
+                <td>288</td>
+                <td>0</td>
+                <td data-bytes="2067919">2.1 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-na">bmz-na</a></td>
+                <td>142</td>
+                <td>0</td>
+                <td data-bytes="1330191">1.3 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-ne">bmz-ne</a></td>
+                <td>117</td>
+                <td>0</td>
+                <td data-bytes="1104428">1.1 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-ng">bmz-ng</a></td>
+                <td>285</td>
+                <td>0</td>
+                <td data-bytes="1751131">1.8 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-ni">bmz-ni</a></td>
+                <td>163</td>
+                <td>0</td>
+                <td data-bytes="907244">907.2 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-np">bmz-np</a></td>
+                <td>264</td>
+                <td>0</td>
+                <td data-bytes="1693874">1.7 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-org">bmz-org</a></td>
+                <td>0</td>
+                <td>1</td>
+                <td data-bytes="323338">323.3 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-pa">bmz-pa</a></td>
+                <td>11</td>
+                <td>0</td>
+                <td data-bytes="51565">51.6 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-pe">bmz-pe</a></td>
+                <td>465</td>
+                <td>0</td>
+                <td data-bytes="3047042">3.0 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-pg">bmz-pg</a></td>
+                <td>81</td>
+                <td>0</td>
+                <td data-bytes="390417">390.4 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-ph">bmz-ph</a></td>
+                <td>546</td>
+                <td>0</td>
+                <td data-bytes="2795571">2.8 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-pk">bmz-pk</a></td>
+                <td>259</td>
+                <td>0</td>
+                <td data-bytes="1972991">2.0 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-ps">bmz-ps</a></td>
+                <td>326</td>
+                <td>0</td>
+                <td data-bytes="2466945">2.5 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-py">bmz-py</a></td>
+                <td>108</td>
+                <td>0</td>
+                <td data-bytes="584371">584.4 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-ro">bmz-ro</a></td>
+                <td>4</td>
+                <td>0</td>
+                <td data-bytes="42975">43.0 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-rs">bmz-rs</a></td>
+                <td>151</td>
+                <td>0</td>
+                <td data-bytes="1698860">1.7 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-ru">bmz-ru</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td data-bytes="4067">4.1 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-rw">bmz-rw</a></td>
+                <td>196</td>
+                <td>0</td>
+                <td data-bytes="1427838">1.4 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-sb">bmz-sb</a></td>
+                <td>10</td>
+                <td>0</td>
+                <td data-bytes="48347">48.3 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-sd">bmz-sd</a></td>
+                <td>74</td>
+                <td>0</td>
+                <td data-bytes="550744">550.7 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-sk">bmz-sk</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td data-bytes="4404">4.4 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-sl">bmz-sl</a></td>
+                <td>132</td>
+                <td>0</td>
+                <td data-bytes="790517">790.5 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-sn">bmz-sn</a></td>
+                <td>151</td>
+                <td>0</td>
+                <td data-bytes="1250324">1.3 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-so">bmz-so</a></td>
+                <td>104</td>
+                <td>0</td>
+                <td data-bytes="754714">754.7 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-sr">bmz-sr</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td data-bytes="4783">4.8 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-ss">bmz-ss</a></td>
+                <td>184</td>
+                <td>0</td>
+                <td data-bytes="1106852">1.1 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-st">bmz-st</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td data-bytes="10592">10.6 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-sv">bmz-sv</a></td>
+                <td>184</td>
+                <td>0</td>
+                <td data-bytes="981936">981.9 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-sy">bmz-sy</a></td>
+                <td>83</td>
+                <td>0</td>
+                <td data-bytes="599645">599.6 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-sz">bmz-sz</a></td>
+                <td>19</td>
+                <td>0</td>
+                <td data-bytes="87841">87.8 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-td">bmz-td</a></td>
+                <td>146</td>
+                <td>0</td>
+                <td data-bytes="828765">828.8 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-tg">bmz-tg</a></td>
+                <td>186</td>
+                <td>0</td>
+                <td data-bytes="1274542">1.3 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-th">bmz-th</a></td>
+                <td>33</td>
+                <td>0</td>
+                <td data-bytes="168976">169.0 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-tj">bmz-tj</a></td>
+                <td>81</td>
+                <td>0</td>
+                <td data-bytes="749043">749.0 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-tl">bmz-tl</a></td>
+                <td>74</td>
+                <td>0</td>
+                <td data-bytes="459348">459.3 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-tm">bmz-tm</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td data-bytes="5562">5.6 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-tn">bmz-tn</a></td>
+                <td>150</td>
+                <td>0</td>
+                <td data-bytes="1671070">1.7 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-tr">bmz-tr</a></td>
+                <td>82</td>
+                <td>0</td>
+                <td data-bytes="826554">826.6 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-tz">bmz-tz</a></td>
+                <td>373</td>
+                <td>0</td>
+                <td data-bytes="2437051">2.4 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-ua">bmz-ua</a></td>
+                <td>160</td>
+                <td>0</td>
+                <td data-bytes="1453207">1.5 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-ug">bmz-ug</a></td>
+                <td>361</td>
+                <td>0</td>
+                <td data-bytes="2429085">2.4 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-uy">bmz-uy</a></td>
+                <td>2</td>
+                <td>0</td>
+                <td data-bytes="15164">15.2 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-uz">bmz-uz</a></td>
+                <td>50</td>
+                <td>0</td>
+                <td data-bytes="529685">529.7 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-ve">bmz-ve</a></td>
+                <td>18</td>
+                <td>0</td>
+                <td data-bytes="87409">87.4 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-vn">bmz-vn</a></td>
+                <td>260</td>
+                <td>0</td>
+                <td data-bytes="1903901">1.9 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-vu">bmz-vu</a></td>
+                <td>2</td>
+                <td>0</td>
+                <td data-bytes="10115">10.1 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-ws">bmz-ws</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td data-bytes="4827">4.8 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-xk">bmz-xk</a></td>
+                <td>101</td>
+                <td>0</td>
+                <td data-bytes="1010007">1.0 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-ye">bmz-ye</a></td>
+                <td>148</td>
+                <td>0</td>
+                <td data-bytes="1513862">1.5 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-za">bmz-za</a></td>
+                <td>495</td>
+                <td>0</td>
+                <td data-bytes="3017253">3.0 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-zm">bmz-zm</a></td>
+                <td>178</td>
+                <td>0</td>
+                <td data-bytes="1439252">1.4 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/bmz-zw">bmz-zw</a></td>
+                <td>285</td>
+                <td>0</td>
+                <td data-bytes="1546112">1.5 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+        </tbody>
+    </table>
+    </div>
+
+    
+    
+    <div class="panel panel-default" id="p_codelists">
+    <table class="table table-striped">
+    <div class="panel-heading">
+        <a href="https://stats.codeforiati.org/current/aggregated-publisher/bmz/codelist_values.json" style="float:right">(J)</a>
+        <h3 class="panel-title">Codelist Values (version 2.xx)</h3>
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Element/Attribute</th>
+                <th>Codelist</th>
+                <th>Values on Codelist</th>
+                <th>Values not on Codelist</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            
+            <tr>
+            
+                <td><a href="../codelist/2/@default-currency.html">.//@default-currency</a></td>
+                <td><a href="https://codelists.codeforiati.org/Currency">Currency</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//@default-currency" role="button" tabindex="0" data-trigger="focus" data-content="<code>EUR</code>:&nbsp;27762 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/activity-date_@type.html">.//activity-date/@type</a></td>
+                <td><a href="https://codelists.codeforiati.org/ActivityDateType">ActivityDateType</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//activity-date/@type" role="button" tabindex="0" data-trigger="focus" data-content="<code>1</code>:&nbsp;27762 <code>2</code>:&nbsp;27762 <code>3</code>:&nbsp;27277 <code>4</code>:&nbsp;19124 ">4</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/activity-status_@code.html">.//activity-status/@code</a></td>
+                <td><a href="https://codelists.codeforiati.org/ActivityStatus">ActivityStatus</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//activity-status/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>2</code>:&nbsp;8638 <code>3</code>:&nbsp;11808 <code>4</code>:&nbsp;7316 ">3</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/activity-scope_@code.html">.//activity-scope/@code</a></td>
+                <td><a href="https://codelists.codeforiati.org/ActivityScope">ActivityScope</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//activity-scope/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>1</code>:&nbsp;541 <code>2</code>:&nbsp;1075 <code>3</code>:&nbsp;1 <code>4</code>:&nbsp;5541 ">4</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/budget_@status.html">.//budget/@status</a></td>
+                <td><a href="https://codelists.codeforiati.org/BudgetStatus">BudgetStatus</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//budget/@status" role="button" tabindex="0" data-trigger="focus" data-content="<code>1</code>:&nbsp;9279 <code>2</code>:&nbsp;11528 ">2</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/budget_@type.html">.//budget/@type</a></td>
+                <td><a href="https://codelists.codeforiati.org/BudgetType">BudgetType</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//budget/@type" role="button" tabindex="0" data-trigger="focus" data-content="<code>1</code>:&nbsp;9279 <code>2</code>:&nbsp;11528 ">2</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/collaboration-type_@code.html">.//collaboration-type/@code</a></td>
+                <td><a href="https://codelists.codeforiati.org/CollaborationType">CollaborationType</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//collaboration-type/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>1</code>:&nbsp;6101 <code>3</code>:&nbsp;34 <code>7</code>:&nbsp;1 <code>8</code>:&nbsp;1 ">4</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/conditions_condition_@type.html">.//conditions/condition/@type</a></td>
+                <td><a href="https://codelists.codeforiati.org/ConditionType">ConditionType</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//conditions/condition/@type" role="button" tabindex="0" data-trigger="focus" data-content="<code>1</code>:&nbsp;27762 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/contact-info_@type.html">.//contact-info/@type</a></td>
+                <td><a href="https://codelists.codeforiati.org/ContactType">ContactType</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//contact-info/@type" role="button" tabindex="0" data-trigger="focus" data-content="<code>1</code>:&nbsp;27762 <code>2</code>:&nbsp;7164 ">2</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/default-aid-type@vocabulary1ornot@vocabulary_@code.html">.//default-aid-type[@vocabulary = &#39;1&#39; or not(@vocabulary)]/@code</a></td>
+                <td><a href="https://codelists.codeforiati.org/AidType">AidType</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//default-aid-type[@vocabulary = &#39;1&#39; or not(@vocabulary)]/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>A01</code>:&nbsp;43 <code>A02</code>:&nbsp;28 <code>B01</code>:&nbsp;8483 <code>B02</code>:&nbsp;1 <code>B03</code>:&nbsp;390 <code>B04</code>:&nbsp;105 <code>C01</code>:&nbsp;9340 <code>D01</code>:&nbsp;32 <code>D02</code>:&nbsp;53 <code>E01</code>:&nbsp;9 <code>G01</code>:&nbsp;59 <code>H01</code>:&nbsp;2618 ">12</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/default-finance-type_@code.html">.//default-finance-type/@code</a></td>
+                <td><a href="https://codelists.codeforiati.org/FinanceType">FinanceType</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//default-finance-type/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>110</code>:&nbsp;20561 <code>410</code>:&nbsp;31 <code>411</code>:&nbsp;4 <code>421</code>:&nbsp;643 <code>510</code>:&nbsp;102 <code>520</code>:&nbsp;19 ">6</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/default-flow-type_@code.html">.//default-flow-type/@code</a></td>
+                <td><a href="https://codelists.codeforiati.org/FlowType">FlowType</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//default-flow-type/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>10</code>:&nbsp;27762 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/default-tied-status_@code.html">.//default-tied-status/@code</a></td>
+                <td><a href="https://codelists.codeforiati.org/TiedStatus">TiedStatus</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//default-tied-status/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>3</code>:&nbsp;27587 <code>4</code>:&nbsp;5 <code>5</code>:&nbsp;170 ">3</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/description_@type.html">.//description/@type</a></td>
+                <td><a href="https://codelists.codeforiati.org/DescriptionType">DescriptionType</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//description/@type" role="button" tabindex="0" data-trigger="focus" data-content="<code>1</code>:&nbsp;27762 <code>2</code>:&nbsp;27762 ">2</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/document-link_@format.html">.//document-link/@format</a></td>
+                <td><a href="https://codelists.codeforiati.org/FileFormat">FileFormat</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//document-link/@format" role="button" tabindex="0" data-trigger="focus" data-content="<code>application/pdf</code>:&nbsp;15790 <code>text/html</code>:&nbsp;65825 ">2</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/document-link_category_@code.html">.//document-link/category/@code</a></td>
+                <td><a href="https://codelists.codeforiati.org/DocumentCategory">DocumentCategory</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//document-link/category/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>A01</code>:&nbsp;3962 <code>A02</code>:&nbsp;3730 <code>A04</code>:&nbsp;3026 <code>A05</code>:&nbsp;7895 <code>A07</code>:&nbsp;11391 <code>A08</code>:&nbsp;3034 <code>A10</code>:&nbsp;10933 <code>A11</code>:&nbsp;10933 <code>A12</code>:&nbsp;9777 <code>B03</code>:&nbsp;16934 ">10</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/document-link_language_@code.html">.//document-link/language/@code</a></td>
+                <td><a href="https://codelists.codeforiati.org/Language">Language</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//document-link/language/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>de</code>:&nbsp;43471 <code>en</code>:&nbsp;38144 ">2</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/other-identifier_@type.html">.//other-identifier/@type</a></td>
+                <td><a href="https://codelists.codeforiati.org/OtherIdentifierType">OtherIdentifierType</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//other-identifier/@type" role="button" tabindex="0" data-trigger="focus" data-content="<code>A1</code>:&nbsp;27762 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/participating-org_@role.html">.//participating-org/@role</a></td>
+                <td><a href="https://codelists.codeforiati.org/OrganisationRole">OrganisationRole</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//participating-org/@role" role="button" tabindex="0" data-trigger="focus" data-content="<code>1</code>:&nbsp;28153 <code>2</code>:&nbsp;27762 <code>3</code>:&nbsp;27762 <code>4</code>:&nbsp;5322 ">4</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/participating-org_@type.html">.//participating-org/@type</a></td>
+                <td><a href="https://codelists.codeforiati.org/OrganisationType">OrganisationType</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//participating-org/@type" role="button" tabindex="0" data-trigger="focus" data-content="<code>10</code>:&nbsp;27816 <code>40</code>:&nbsp;337 ">2</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/policy-marker@vocabulary1ornot@vocabulary_@code.html">.//policy-marker[@vocabulary = &#39;1&#39; or not(@vocabulary)]/@code</a></td>
+                <td><a href="https://codelists.codeforiati.org/PolicyMarker">PolicyMarker</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//policy-marker[@vocabulary = &#39;1&#39; or not(@vocabulary)]/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>1</code>:&nbsp;7133 <code>2</code>:&nbsp;7144 <code>3</code>:&nbsp;7126 <code>4</code>:&nbsp;2274 <code>5</code>:&nbsp;6506 <code>6</code>:&nbsp;6478 <code>7</code>:&nbsp;5783 <code>8</code>:&nbsp;6518 <code>9</code>:&nbsp;6505 ">9</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/policy-marker_@significance.html">.//policy-marker/@significance</a></td>
+                <td><a href="https://codelists.codeforiati.org/PolicySignificance">PolicySignificance</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//policy-marker/@significance" role="button" tabindex="0" data-trigger="focus" data-content="<code>0</code>:&nbsp;37322 <code>1</code>:&nbsp;13936 <code>2</code>:&nbsp;4209 ">3</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/policy-marker_@vocabulary.html">.//policy-marker/@vocabulary</a></td>
+                <td><a href="https://codelists.codeforiati.org/PolicyMarkerVocabulary">PolicyMarkerVocabulary</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//policy-marker/@vocabulary" role="button" tabindex="0" data-trigger="focus" data-content="<code>1</code>:&nbsp;55467 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/recipient-region@vocabulary1ornot@vocabulary_@code.html">.//recipient-region[@vocabulary = &#39;1&#39; or not(@vocabulary)]/@code</a></td>
+                <td><a href="https://codelists.codeforiati.org/Region">Region</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//recipient-region[@vocabulary = &#39;1&#39; or not(@vocabulary)]/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>189</code>:&nbsp;36 <code>289</code>:&nbsp;245 <code>298</code>:&nbsp;544 <code>389</code>:&nbsp;93 <code>489</code>:&nbsp;90 <code>498</code>:&nbsp;264 <code>589</code>:&nbsp;174 <code>689</code>:&nbsp;84 <code>789</code>:&nbsp;17 <code>798</code>:&nbsp;316 <code>889</code>:&nbsp;13 <code>89</code>:&nbsp;248 <code>998</code>:&nbsp;5537 ">13</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/recipient-region_@vocabulary.html">.//recipient-region/@vocabulary</a></td>
+                <td><a href="https://codelists.codeforiati.org/RegionVocabulary">RegionVocabulary</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//recipient-region/@vocabulary" role="button" tabindex="0" data-trigger="focus" data-content="<code>1</code>:&nbsp;7661 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/reporting-org_@type.html">.//reporting-org/@type</a></td>
+                <td><a href="https://codelists.codeforiati.org/OrganisationType">OrganisationType</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//reporting-org/@type" role="button" tabindex="0" data-trigger="focus" data-content="<code>10</code>:&nbsp;27762 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/sector@vocabulary1ornot@vocabulary_@code.html">.//sector[@vocabulary = &#39;1&#39; or not(@vocabulary)]/@code</a></td>
+                <td><a href="https://codelists.codeforiati.org/Sector">Sector</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//sector[@vocabulary = &#39;1&#39; or not(@vocabulary)]/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>11110</code>:&nbsp;142 <code>11120</code>:&nbsp;341 <code>11130</code>:&nbsp;122 <code>11182</code>:&nbsp;5 <code>11220</code>:&nbsp;600 <code>11230</code>:&nbsp;269 <code>11231</code>:&nbsp;3 <code>11240</code>:&nbsp;57 <code>11260</code>:&nbsp;6 <code>11320</code>:&nbsp;173 <code>11330</code>:&nbsp;905 <code>11420</code>:&nbsp;168 <code>11430</code>:&nbsp;167 <code>12110</code>:&nbsp;201 <code>12181</code>:&nbsp;61 <code>12182</code>:&nbsp;5 <code>12191</code>:&nbsp;231 <code>12220</code>:&nbsp;436 <code>12230</code>:&nbsp;202 <code>12240</code>:&nbsp;169 <code>12250</code>:&nbsp;139 <code>12261</code>:&nbsp;115 <code>12262</code>:&nbsp;2 <code>12263</code>:&nbsp;15 <code>12264</code>:&nbsp;26 <code>12281</code>:&nbsp;56 <code>12310</code>:&nbsp;3 <code>12330</code>:&nbsp;1 <code>12340</code>:&nbsp;14 <code>12350</code>:&nbsp;2 <code>13010</code>:&nbsp;13 <code>13020</code>:&nbsp;202 <code>13030</code>:&nbsp;73 <code>13040</code>:&nbsp;288 <code>13081</code>:&nbsp;29 <code>14010</code>:&nbsp;168 <code>14015</code>:&nbsp;111 <code>14020</code>:&nbsp;397 <code>14021</code>:&nbsp;26 <code>14022</code>:&nbsp;50 <code>14030</code>:&nbsp;385 <code>14031</code>:&nbsp;215 <code>14032</code>:&nbsp;80 <code>14040</code>:&nbsp;25 <code>14050</code>:&nbsp;95 <code>14081</code>:&nbsp;37 <code>15110</code>:&nbsp;347 <code>15111</code>:&nbsp;111 <code>15112</code>:&nbsp;189 <code>15113</code>:&nbsp;47 <code>15114</code>:&nbsp;128 <code>15130</code>:&nbsp;211 <code>15142</code>:&nbsp;1 <code>15150</code>:&nbsp;2209 <code>15151</code>:&nbsp;18 <code>15152</code>:&nbsp;3 <code>15153</code>:&nbsp;169 <code>15160</code>:&nbsp;1461 <code>15170</code>:&nbsp;550 <code>15180</code>:&nbsp;92 <code>15190</code>:&nbsp;40 <code>15210</code>:&nbsp;3 <code>15220</code>:&nbsp;833 <code>15230</code>:&nbsp;35 <code>15240</code>:&nbsp;3 <code>15250</code>:&nbsp;2 <code>15261</code>:&nbsp;4 <code>16010</code>:&nbsp;516 <code>16020</code>:&nbsp;206 <code>16030</code>:&nbsp;51 <code>16040</code>:&nbsp;159 <code>16050</code>:&nbsp;242 <code>16061</code>:&nbsp;8 <code>16062</code>:&nbsp;5 <code>16063</code>:&nbsp;4 <code>16064</code>:&nbsp;26 <code>16070</code>:&nbsp;10 <code>16080</code>:&nbsp;3 <code>21010</code>:&nbsp;49 <code>21020</code>:&nbsp;85 <code>21030</code>:&nbsp;19 <code>21040</code>:&nbsp;14 <code>21061</code>:&nbsp;1 <code>22010</code>:&nbsp;4 <code>22020</code>:&nbsp;3 <code>22030</code>:&nbsp;17 <code>22040</code>:&nbsp;18 <code>23010</code>:&nbsp;2 <code>23110</code>:&nbsp;152 <code>23181</code>:&nbsp;19 <code>23182</code>:&nbsp;6 <code>23183</code>:&nbsp;88 <code>23210</code>:&nbsp;296 <code>23220</code>:&nbsp;51 <code>23230</code>:&nbsp;75 <code>23231</code>:&nbsp;4 <code>23240</code>:&nbsp;20 <code>23260</code>:&nbsp;9 <code>23270</code>:&nbsp;16 <code>23310</code>:&nbsp;14 <code>23320</code>:&nbsp;4 <code>23330</code>:&nbsp;1 <code>23410</code>:&nbsp;1 <code>23620</code>:&nbsp;3 <code>23630</code>:&nbsp;132 <code>23631</code>:&nbsp;1 <code>23642</code>:&nbsp;1 <code>24010</code>:&nbsp;83 <code>24020</code>:&nbsp;3 <code>24030</code>:&nbsp;447 <code>24040</code>:&nbsp;113 <code>24050</code>:&nbsp;1 <code>24081</code>:&nbsp;16 <code>25010</code>:&nbsp;431 <code>25020</code>:&nbsp;1 <code>25030</code>:&nbsp;20 <code>25040</code>:&nbsp;17 <code>31110</code>:&nbsp;127 <code>31120</code>:&nbsp;1568 <code>31130</code>:&nbsp;214 <code>31140</code>:&nbsp;188 <code>31150</code>:&nbsp;50 <code>31161</code>:&nbsp;135 <code>31162</code>:&nbsp;21 <code>31163</code>:&nbsp;31 <code>31164</code>:&nbsp;81 <code>31165</code>:&nbsp;105 <code>31166</code>:&nbsp;183 <code>31181</code>:&nbsp;137 <code>31182</code>:&nbsp;47 <code>31191</code>:&nbsp;39 <code>31192</code>:&nbsp;6 <code>31193</code>:&nbsp;57 <code>31194</code>:&nbsp;48 <code>31195</code>:&nbsp;4 <code>31210</code>:&nbsp;72 <code>31220</code>:&nbsp;160 <code>31261</code>:&nbsp;4 <code>31281</code>:&nbsp;8 <code>31291</code>:&nbsp;1 <code>31310</code>:&nbsp;21 <code>31320</code>:&nbsp;35 <code>31381</code>:&nbsp;6 <code>31391</code>:&nbsp;2 <code>32110</code>:&nbsp;14 <code>32120</code>:&nbsp;10 <code>32130</code>:&nbsp;98 <code>32140</code>:&nbsp;35 <code>32161</code>:&nbsp;11 <code>32162</code>:&nbsp;4 <code>32163</code>:&nbsp;9 <code>32167</code>:&nbsp;1 <code>32168</code>:&nbsp;15 <code>32172</code>:&nbsp;1 <code>32174</code>:&nbsp;1 <code>32182</code>:&nbsp;24 <code>32210</code>:&nbsp;83 <code>32220</code>:&nbsp;8 <code>32266</code>:&nbsp;2 <code>32267</code>:&nbsp;2 <code>32310</code>:&nbsp;2 <code>33110</code>:&nbsp;114 <code>33120</code>:&nbsp;22 <code>33130</code>:&nbsp;36 <code>33140</code>:&nbsp;3 <code>33150</code>:&nbsp;10 <code>33181</code>:&nbsp;6 <code>33210</code>:&nbsp;16 <code>41010</code>:&nbsp;363 <code>41020</code>:&nbsp;91 <code>41030</code>:&nbsp;600 <code>41040</code>:&nbsp;18 <code>41050</code>:&nbsp;8 <code>41081</code>:&nbsp;121 <code>41082</code>:&nbsp;16 <code>43010</code>:&nbsp;970 <code>43030</code>:&nbsp;238 <code>43040</code>:&nbsp;1263 <code>43050</code>:&nbsp;11 <code>43060</code>:&nbsp;98 <code>43071</code>:&nbsp;5 <code>43072</code>:&nbsp;35 <code>43073</code>:&nbsp;4 <code>43081</code>:&nbsp;119 <code>43082</code>:&nbsp;129 <code>51010</code>:&nbsp;60 <code>52010</code>:&nbsp;319 <code>53040</code>:&nbsp;9 <code>60010</code>:&nbsp;1 <code>60040</code>:&nbsp;1 <code>60063</code>:&nbsp;1 <code>72010</code>:&nbsp;98 <code>72040</code>:&nbsp;149 <code>72050</code>:&nbsp;13 <code>73010</code>:&nbsp;308 <code>74010</code>:&nbsp;61 <code>74020</code>:&nbsp;37 <code>91010</code>:&nbsp;81 <code>92010</code>:&nbsp;2 <code>92020</code>:&nbsp;2 <code>92030</code>:&nbsp;9 <code>93010</code>:&nbsp;2 <code>99810</code>:&nbsp;175 <code>99820</code>:&nbsp;3273 ">204</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        <a href="javascript: return false;" class="popover-html" title="Values not on codelist for .//sector[@vocabulary = &#39;1&#39; or not(@vocabulary)]/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>32128</code>:&nbsp;1 <code>38182</code>:&nbsp;1 ">
+                            2
+                        </a>
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/sector_@vocabulary.html">.//sector/@vocabulary</a></td>
+                <td><a href="https://codelists.codeforiati.org/SectorVocabulary">SectorVocabulary</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//sector/@vocabulary" role="button" tabindex="0" data-trigger="focus" data-content="<code>1</code>:&nbsp;29322 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/transaction_provider-org_@type.html">.//transaction/provider-org/@type</a></td>
+                <td><a href="https://codelists.codeforiati.org/OrganisationType">OrganisationType</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//transaction/provider-org/@type" role="button" tabindex="0" data-trigger="focus" data-content="<code>10</code>:&nbsp;191 <code>40</code>:&nbsp;948 ">2</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/transaction_transaction-type_@code.html">.//transaction/transaction-type/@code</a></td>
+                <td><a href="https://codelists.codeforiati.org/TransactionType">TransactionType</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//transaction/transaction-type/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>1</code>:&nbsp;1139 <code>2</code>:&nbsp;27762 <code>3</code>:&nbsp;3962 <code>4</code>:&nbsp;23319 ">4</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/@xml:lang.html">.//@xml:lang</a></td>
+                <td><a href="https://codelists.codeforiati.org/Language">Language</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//@xml:lang" role="button" tabindex="0" data-trigger="focus" data-content="<code>de</code>:&nbsp;299874 <code>en</code>:&nbsp;199171 <code>es</code>:&nbsp;822 <code>fr</code>:&nbsp;2031 <code>pt</code>:&nbsp;249 ">5</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/location_administrative_@vocabulary.html">.//location/administrative/@vocabulary</a></td>
+                <td><a href="https://codelists.codeforiati.org/GeographicVocabulary">GeographicVocabulary</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//location/administrative/@vocabulary" role="button" tabindex="0" data-trigger="focus" data-content="<code>G1</code>:&nbsp;20101 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/location_feature-designation_@code.html">.//location/feature-designation/@code</a></td>
+                <td><a href="https://codelists.codeforiati.org/LocationType">LocationType</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//location/feature-designation/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>PPLA</code>:&nbsp;70 <code>PPLC</code>:&nbsp;19705 <code>PPLX</code>:&nbsp;326 ">3</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/location_location-class_@code.html">.//location/location-class/@code</a></td>
+                <td><a href="https://codelists.codeforiati.org/GeographicLocationClass">GeographicLocationClass</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//location/location-class/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>1</code>:&nbsp;20101 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/location_location-id_@vocabulary.html">.//location/location-id/@vocabulary</a></td>
+                <td><a href="https://codelists.codeforiati.org/GeographicVocabulary">GeographicVocabulary</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//location/location-id/@vocabulary" role="button" tabindex="0" data-trigger="focus" data-content="<code>G1</code>:&nbsp;20101 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/location_location-reach_@code.html">.//location/location-reach/@code</a></td>
+                <td><a href="https://codelists.codeforiati.org/GeographicLocationReach">GeographicLocationReach</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//location/location-reach/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>1</code>:&nbsp;20101 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/location_exactness_@code.html">.//location/exactness/@code</a></td>
+                <td><a href="https://codelists.codeforiati.org/GeographicExactness">GeographicExactness</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//location/exactness/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>2</code>:&nbsp;20101 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/recipient-country_@code.html">.//recipient-country/@code</a></td>
+                <td><a href="https://codelists.codeforiati.org/Country">Country</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//recipient-country/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>AL</code>:&nbsp;121 <code>AM</code>:&nbsp;110 <code>AO</code>:&nbsp;93 <code>AR</code>:&nbsp;128 <code>AZ</code>:&nbsp;29 <code>BA</code>:&nbsp;92 <code>BD</code>:&nbsp;406 <code>BF</code>:&nbsp;312 <code>BG</code>:&nbsp;11 <code>BI</code>:&nbsp;133 <code>BJ</code>:&nbsp;153 <code>BO</code>:&nbsp;450 <code>BR</code>:&nbsp;911 <code>BT</code>:&nbsp;4 <code>BW</code>:&nbsp;11 <code>BY</code>:&nbsp;25 <code>CD</code>:&nbsp;463 <code>CF</code>:&nbsp;38 <code>CG</code>:&nbsp;10 <code>CI</code>:&nbsp;73 <code>CL</code>:&nbsp;43 <code>CM</code>:&nbsp;332 <code>CN</code>:&nbsp;332 <code>CO</code>:&nbsp;541 <code>CR</code>:&nbsp;47 <code>CU</code>:&nbsp;17 <code>CV</code>:&nbsp;4 <code>DJ</code>:&nbsp;10 <code>DO</code>:&nbsp;47 <code>DZ</code>:&nbsp;26 <code>EC</code>:&nbsp;157 <code>EG</code>:&nbsp;228 <code>ER</code>:&nbsp;27 <code>ET</code>:&nbsp;450 <code>FJ</code>:&nbsp;54 <code>FM</code>:&nbsp;2 <code>GE</code>:&nbsp;147 <code>GH</code>:&nbsp;245 <code>GM</code>:&nbsp;13 <code>GN</code>:&nbsp;56 <code>GT</code>:&nbsp;279 <code>GW</code>:&nbsp;9 <code>GY</code>:&nbsp;5 <code>HN</code>:&nbsp;140 <code>HR</code>:&nbsp;11 <code>HT</code>:&nbsp;214 <code>ID</code>:&nbsp;436 <code>IL</code>:&nbsp;70 <code>IN</code>:&nbsp;1644 <code>IQ</code>:&nbsp;150 <code>IR</code>:&nbsp;2 <code>JM</code>:&nbsp;1 <code>JO</code>:&nbsp;203 <code>KE</code>:&nbsp;479 <code>KG</code>:&nbsp;120 <code>KH</code>:&nbsp;308 <code>KP</code>:&nbsp;12 <code>KR</code>:&nbsp;2 <code>KZ</code>:&nbsp;8 <code>LA</code>:&nbsp;136 <code>LB</code>:&nbsp;165 <code>LK</code>:&nbsp;141 <code>LR</code>:&nbsp;123 <code>LS</code>:&nbsp;26 <code>LY</code>:&nbsp;20 <code>MA</code>:&nbsp;149 <code>MD</code>:&nbsp;49 <code>ME</code>:&nbsp;24 <code>MG</code>:&nbsp;136 <code>MK</code>:&nbsp;31 <code>ML</code>:&nbsp;268 <code>MM</code>:&nbsp;268 <code>MN</code>:&nbsp;85 <code>MR</code>:&nbsp;46 <code>MV</code>:&nbsp;1 <code>MW</code>:&nbsp;181 <code>MX</code>:&nbsp;261 <code>MY</code>:&nbsp;9 <code>MZ</code>:&nbsp;288 <code>NA</code>:&nbsp;142 <code>NE</code>:&nbsp;117 <code>NG</code>:&nbsp;285 <code>NI</code>:&nbsp;163 <code>NP</code>:&nbsp;264 <code>PA</code>:&nbsp;11 <code>PE</code>:&nbsp;465 <code>PG</code>:&nbsp;81 <code>PH</code>:&nbsp;546 <code>PK</code>:&nbsp;259 <code>PS</code>:&nbsp;326 <code>PY</code>:&nbsp;108 <code>RO</code>:&nbsp;4 <code>RS</code>:&nbsp;151 <code>RU</code>:&nbsp;1 <code>RW</code>:&nbsp;196 <code>SB</code>:&nbsp;10 <code>SD</code>:&nbsp;74 <code>SK</code>:&nbsp;1 <code>SL</code>:&nbsp;132 <code>SN</code>:&nbsp;151 <code>SO</code>:&nbsp;104 <code>SR</code>:&nbsp;1 <code>SS</code>:&nbsp;184 <code>ST</code>:&nbsp;1 <code>SV</code>:&nbsp;184 <code>SY</code>:&nbsp;83 <code>SZ</code>:&nbsp;19 <code>TD</code>:&nbsp;146 <code>TG</code>:&nbsp;186 <code>TH</code>:&nbsp;33 <code>TJ</code>:&nbsp;81 <code>TL</code>:&nbsp;74 <code>TM</code>:&nbsp;1 <code>TN</code>:&nbsp;150 <code>TR</code>:&nbsp;82 <code>TZ</code>:&nbsp;373 <code>UA</code>:&nbsp;160 <code>UG</code>:&nbsp;361 <code>UY</code>:&nbsp;2 <code>UZ</code>:&nbsp;50 <code>VE</code>:&nbsp;18 <code>VN</code>:&nbsp;260 <code>VU</code>:&nbsp;2 <code>WS</code>:&nbsp;1 <code>XK</code>:&nbsp;101 <code>YE</code>:&nbsp;148 <code>ZA</code>:&nbsp;495 <code>ZM</code>:&nbsp;178 <code>ZW</code>:&nbsp;285 ">129</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            
+        </tbody>
+    </table>
+    </div>
+    
+    
+    
+    
+
+    <div class="panel panel-default" id="p_elements">
+    <table class="table table-striped">
+    <div class="panel-heading">
+        <a href="https://stats.codeforiati.org/current/aggregated-publisher/bmz/elements.json" style="float:right">(J)</a>
+        <h3 class="panel-title">Elements and Attributes Published</h3>
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Element/Attribute</th>
+                <th>Activities/Organisations</th>
+                <th>Files</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity.html">iati-activity</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_@default-currency.html">iati-activity/@default-currency</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_@default-currency.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_@hierarchy.html">iati-activity/@hierarchy</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_@hierarchy.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_@last-updated-datetime.html">iati-activity/@last-updated-datetime</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_@last-updated-datetime.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_@xml:lang.html">iati-activity/@{http://www.w3.org/XML/1998/namespace}lang</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_@xml:lang.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_activity-date.html">iati-activity/activity-date</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_activity-date.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_activity-date_@iso-date.html">iati-activity/activity-date/@iso-date</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_activity-date_@iso-date.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_activity-date_@type.html">iati-activity/activity-date/@type</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_activity-date_@type.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_activity-scope.html">iati-activity/activity-scope</a></td>
+                <td>7158</td>
+                <td><a href="../element/iati-activity_activity-scope.html#files_bmz">123</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_activity-scope_@code.html">iati-activity/activity-scope/@code</a></td>
+                <td>7158</td>
+                <td><a href="../element/iati-activity_activity-scope_@code.html#files_bmz">123</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_activity-status.html">iati-activity/activity-status</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_activity-status.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_activity-status_@code.html">iati-activity/activity-status/@code</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_activity-status_@code.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_budget.html">iati-activity/budget</a></td>
+                <td>7164</td>
+                <td><a href="../element/iati-activity_budget.html#files_bmz">123</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_budget_@status.html">iati-activity/budget/@status</a></td>
+                <td>7164</td>
+                <td><a href="../element/iati-activity_budget_@status.html#files_bmz">123</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_budget_@type.html">iati-activity/budget/@type</a></td>
+                <td>7164</td>
+                <td><a href="../element/iati-activity_budget_@type.html#files_bmz">123</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_budget_period-end.html">iati-activity/budget/period-end</a></td>
+                <td>7164</td>
+                <td><a href="../element/iati-activity_budget_period-end.html#files_bmz">123</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_budget_period-end_@iso-date.html">iati-activity/budget/period-end/@iso-date</a></td>
+                <td>7164</td>
+                <td><a href="../element/iati-activity_budget_period-end_@iso-date.html#files_bmz">123</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_budget_period-start.html">iati-activity/budget/period-start</a></td>
+                <td>7164</td>
+                <td><a href="../element/iati-activity_budget_period-start.html#files_bmz">123</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_budget_period-start_@iso-date.html">iati-activity/budget/period-start/@iso-date</a></td>
+                <td>7164</td>
+                <td><a href="../element/iati-activity_budget_period-start_@iso-date.html#files_bmz">123</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_budget_value.html">iati-activity/budget/value</a></td>
+                <td>7164</td>
+                <td><a href="../element/iati-activity_budget_value.html#files_bmz">123</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_budget_value_@value-date.html">iati-activity/budget/value/@value-date</a></td>
+                <td>7164</td>
+                <td><a href="../element/iati-activity_budget_value_@value-date.html#files_bmz">123</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_collaboration-type.html">iati-activity/collaboration-type</a></td>
+                <td>6137</td>
+                <td><a href="../element/iati-activity_collaboration-type.html#files_bmz">122</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_collaboration-type_@code.html">iati-activity/collaboration-type/@code</a></td>
+                <td>6137</td>
+                <td><a href="../element/iati-activity_collaboration-type_@code.html#files_bmz">122</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_conditions.html">iati-activity/conditions</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_conditions.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_conditions_@attached.html">iati-activity/conditions/@attached</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_conditions_@attached.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_conditions_condition.html">iati-activity/conditions/condition</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_conditions_condition.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_conditions_condition_@type.html">iati-activity/conditions/condition/@type</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_conditions_condition_@type.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_conditions_condition_narrative.html">iati-activity/conditions/condition/narrative</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_conditions_condition_narrative.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_conditions_condition_narrative_@xml:lang.html">iati-activity/conditions/condition/narrative/@{http://www.w3.org/XML/1998/namespace}lang</a></td>
+                <td>3026</td>
+                <td><a href="../element/iati-activity_conditions_condition_narrative_@xml:lang.html#files_bmz">117</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_contact-info.html">iati-activity/contact-info</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_contact-info.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_contact-info_@type.html">iati-activity/contact-info/@type</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_contact-info_@type.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_contact-info_email.html">iati-activity/contact-info/email</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_contact-info_email.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_contact-info_mailing-address.html">iati-activity/contact-info/mailing-address</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_contact-info_mailing-address.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_contact-info_mailing-address_narrative.html">iati-activity/contact-info/mailing-address/narrative</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_contact-info_mailing-address_narrative.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_contact-info_organisation.html">iati-activity/contact-info/organisation</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_contact-info_organisation.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_contact-info_organisation_narrative.html">iati-activity/contact-info/organisation/narrative</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_contact-info_organisation_narrative.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_contact-info_website.html">iati-activity/contact-info/website</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_contact-info_website.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_default-aid-type.html">iati-activity/default-aid-type</a></td>
+                <td>21161</td>
+                <td><a href="../element/iati-activity_default-aid-type.html#files_bmz">136</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_default-aid-type_@code.html">iati-activity/default-aid-type/@code</a></td>
+                <td>21161</td>
+                <td><a href="../element/iati-activity_default-aid-type_@code.html#files_bmz">136</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_default-finance-type.html">iati-activity/default-finance-type</a></td>
+                <td>21360</td>
+                <td><a href="../element/iati-activity_default-finance-type.html#files_bmz">136</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_default-finance-type_@code.html">iati-activity/default-finance-type/@code</a></td>
+                <td>21360</td>
+                <td><a href="../element/iati-activity_default-finance-type_@code.html#files_bmz">136</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_default-flow-type.html">iati-activity/default-flow-type</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_default-flow-type.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_default-flow-type_@code.html">iati-activity/default-flow-type/@code</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_default-flow-type_@code.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_default-tied-status.html">iati-activity/default-tied-status</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_default-tied-status.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_default-tied-status_@code.html">iati-activity/default-tied-status/@code</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_default-tied-status_@code.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_description.html">iati-activity/description</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_description.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_description_@type.html">iati-activity/description/@type</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_description_@type.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_description_narrative.html">iati-activity/description/narrative</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_description_narrative.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_description_narrative_@xml:lang.html">iati-activity/description/narrative/@{http://www.w3.org/XML/1998/namespace}lang</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_description_narrative_@xml:lang.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_document-link.html">iati-activity/document-link</a></td>
+                <td>16664</td>
+                <td><a href="../element/iati-activity_document-link.html#files_bmz">123</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_document-link_@format.html">iati-activity/document-link/@format</a></td>
+                <td>16664</td>
+                <td><a href="../element/iati-activity_document-link_@format.html#files_bmz">123</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_document-link_@url.html">iati-activity/document-link/@url</a></td>
+                <td>16664</td>
+                <td><a href="../element/iati-activity_document-link_@url.html#files_bmz">123</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_document-link_category.html">iati-activity/document-link/category</a></td>
+                <td>16664</td>
+                <td><a href="../element/iati-activity_document-link_category.html#files_bmz">123</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_document-link_category_@code.html">iati-activity/document-link/category/@code</a></td>
+                <td>16664</td>
+                <td><a href="../element/iati-activity_document-link_category_@code.html#files_bmz">123</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_document-link_document-date.html">iati-activity/document-link/document-date</a></td>
+                <td>16664</td>
+                <td><a href="../element/iati-activity_document-link_document-date.html#files_bmz">123</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_document-link_document-date_@iso-date.html">iati-activity/document-link/document-date/@iso-date</a></td>
+                <td>16664</td>
+                <td><a href="../element/iati-activity_document-link_document-date_@iso-date.html#files_bmz">123</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_document-link_language.html">iati-activity/document-link/language</a></td>
+                <td>16664</td>
+                <td><a href="../element/iati-activity_document-link_language.html#files_bmz">123</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_document-link_language_@code.html">iati-activity/document-link/language/@code</a></td>
+                <td>16664</td>
+                <td><a href="../element/iati-activity_document-link_language_@code.html#files_bmz">123</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_document-link_title.html">iati-activity/document-link/title</a></td>
+                <td>16664</td>
+                <td><a href="../element/iati-activity_document-link_title.html#files_bmz">123</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_document-link_title_narrative.html">iati-activity/document-link/title/narrative</a></td>
+                <td>16664</td>
+                <td><a href="../element/iati-activity_document-link_title_narrative.html#files_bmz">123</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_document-link_title_narrative_@xml:lang.html">iati-activity/document-link/title/narrative/@{http://www.w3.org/XML/1998/namespace}lang</a></td>
+                <td>16664</td>
+                <td><a href="../element/iati-activity_document-link_title_narrative_@xml:lang.html#files_bmz">123</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_iati-identifier.html">iati-activity/iati-identifier</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_iati-identifier.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location.html">iati-activity/location</a></td>
+                <td>20101</td>
+                <td><a href="../element/iati-activity_location.html#files_bmz">129</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_activity-description.html">iati-activity/location/activity-description</a></td>
+                <td>20101</td>
+                <td><a href="../element/iati-activity_location_activity-description.html#files_bmz">129</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_activity-description_narrative.html">iati-activity/location/activity-description/narrative</a></td>
+                <td>20101</td>
+                <td><a href="../element/iati-activity_location_activity-description_narrative.html#files_bmz">129</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_administrative.html">iati-activity/location/administrative</a></td>
+                <td>20101</td>
+                <td><a href="../element/iati-activity_location_administrative.html#files_bmz">129</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_administrative_@code.html">iati-activity/location/administrative/@code</a></td>
+                <td>20101</td>
+                <td><a href="../element/iati-activity_location_administrative_@code.html#files_bmz">129</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_administrative_@level.html">iati-activity/location/administrative/@level</a></td>
+                <td>20101</td>
+                <td><a href="../element/iati-activity_location_administrative_@level.html#files_bmz">129</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_administrative_@vocabulary.html">iati-activity/location/administrative/@vocabulary</a></td>
+                <td>20101</td>
+                <td><a href="../element/iati-activity_location_administrative_@vocabulary.html#files_bmz">129</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_description.html">iati-activity/location/description</a></td>
+                <td>20101</td>
+                <td><a href="../element/iati-activity_location_description.html#files_bmz">129</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_description_narrative.html">iati-activity/location/description/narrative</a></td>
+                <td>20101</td>
+                <td><a href="../element/iati-activity_location_description_narrative.html#files_bmz">129</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_exactness.html">iati-activity/location/exactness</a></td>
+                <td>20101</td>
+                <td><a href="../element/iati-activity_location_exactness.html#files_bmz">129</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_exactness_@code.html">iati-activity/location/exactness/@code</a></td>
+                <td>20101</td>
+                <td><a href="../element/iati-activity_location_exactness_@code.html#files_bmz">129</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_feature-designation.html">iati-activity/location/feature-designation</a></td>
+                <td>20101</td>
+                <td><a href="../element/iati-activity_location_feature-designation.html#files_bmz">129</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_feature-designation_@code.html">iati-activity/location/feature-designation/@code</a></td>
+                <td>20101</td>
+                <td><a href="../element/iati-activity_location_feature-designation_@code.html#files_bmz">129</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_location-class.html">iati-activity/location/location-class</a></td>
+                <td>20101</td>
+                <td><a href="../element/iati-activity_location_location-class.html#files_bmz">129</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_location-class_@code.html">iati-activity/location/location-class/@code</a></td>
+                <td>20101</td>
+                <td><a href="../element/iati-activity_location_location-class_@code.html#files_bmz">129</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_location-id.html">iati-activity/location/location-id</a></td>
+                <td>20101</td>
+                <td><a href="../element/iati-activity_location_location-id.html#files_bmz">129</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_location-id_@code.html">iati-activity/location/location-id/@code</a></td>
+                <td>20101</td>
+                <td><a href="../element/iati-activity_location_location-id_@code.html#files_bmz">129</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_location-id_@vocabulary.html">iati-activity/location/location-id/@vocabulary</a></td>
+                <td>20101</td>
+                <td><a href="../element/iati-activity_location_location-id_@vocabulary.html#files_bmz">129</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_location-reach.html">iati-activity/location/location-reach</a></td>
+                <td>20101</td>
+                <td><a href="../element/iati-activity_location_location-reach.html#files_bmz">129</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_location-reach_@code.html">iati-activity/location/location-reach/@code</a></td>
+                <td>20101</td>
+                <td><a href="../element/iati-activity_location_location-reach_@code.html#files_bmz">129</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_name.html">iati-activity/location/name</a></td>
+                <td>20101</td>
+                <td><a href="../element/iati-activity_location_name.html#files_bmz">129</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_name_narrative.html">iati-activity/location/name/narrative</a></td>
+                <td>20101</td>
+                <td><a href="../element/iati-activity_location_name_narrative.html#files_bmz">129</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_point.html">iati-activity/location/point</a></td>
+                <td>20101</td>
+                <td><a href="../element/iati-activity_location_point.html#files_bmz">129</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_point_@srsName.html">iati-activity/location/point/@srsName</a></td>
+                <td>20101</td>
+                <td><a href="../element/iati-activity_location_point_@srsName.html#files_bmz">129</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_point_pos.html">iati-activity/location/point/pos</a></td>
+                <td>20101</td>
+                <td><a href="../element/iati-activity_location_point_pos.html#files_bmz">129</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_other-identifier.html">iati-activity/other-identifier</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_other-identifier.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_other-identifier_@ref.html">iati-activity/other-identifier/@ref</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_other-identifier_@ref.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_other-identifier_@type.html">iati-activity/other-identifier/@type</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_other-identifier_@type.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_other-identifier_owner-org.html">iati-activity/other-identifier/owner-org</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_other-identifier_owner-org.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_other-identifier_owner-org_@ref.html">iati-activity/other-identifier/owner-org/@ref</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_other-identifier_owner-org_@ref.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_other-identifier_owner-org_narrative.html">iati-activity/other-identifier/owner-org/narrative</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_other-identifier_owner-org_narrative.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_other-identifier_owner-org_narrative_@xml:lang.html">iati-activity/other-identifier/owner-org/narrative/@{http://www.w3.org/XML/1998/namespace}lang</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_other-identifier_owner-org_narrative_@xml:lang.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_participating-org.html">iati-activity/participating-org</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_participating-org.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_participating-org_@ref.html">iati-activity/participating-org/@ref</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_participating-org_@ref.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_participating-org_@role.html">iati-activity/participating-org/@role</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_participating-org_@role.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_participating-org_@type.html">iati-activity/participating-org/@type</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_participating-org_@type.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_participating-org_narrative.html">iati-activity/participating-org/narrative</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_participating-org_narrative.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_participating-org_narrative_@xml:lang.html">iati-activity/participating-org/narrative/@{http://www.w3.org/XML/1998/namespace}lang</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_participating-org_narrative_@xml:lang.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_policy-marker.html">iati-activity/policy-marker</a></td>
+                <td>7149</td>
+                <td><a href="../element/iati-activity_policy-marker.html#files_bmz">123</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_policy-marker_@code.html">iati-activity/policy-marker/@code</a></td>
+                <td>7149</td>
+                <td><a href="../element/iati-activity_policy-marker_@code.html#files_bmz">123</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_policy-marker_@significance.html">iati-activity/policy-marker/@significance</a></td>
+                <td>7149</td>
+                <td><a href="../element/iati-activity_policy-marker_@significance.html#files_bmz">123</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_policy-marker_@vocabulary.html">iati-activity/policy-marker/@vocabulary</a></td>
+                <td>7149</td>
+                <td><a href="../element/iati-activity_policy-marker_@vocabulary.html#files_bmz">123</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_recipient-country.html">iati-activity/recipient-country</a></td>
+                <td>20101</td>
+                <td><a href="../element/iati-activity_recipient-country.html#files_bmz">129</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_recipient-country_@code.html">iati-activity/recipient-country/@code</a></td>
+                <td>20101</td>
+                <td><a href="../element/iati-activity_recipient-country_@code.html#files_bmz">129</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_recipient-country_@percentage.html">iati-activity/recipient-country/@percentage</a></td>
+                <td>20101</td>
+                <td><a href="../element/iati-activity_recipient-country_@percentage.html#files_bmz">129</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_recipient-country_narrative.html">iati-activity/recipient-country/narrative</a></td>
+                <td>20101</td>
+                <td><a href="../element/iati-activity_recipient-country_narrative.html#files_bmz">129</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_recipient-region.html">iati-activity/recipient-region</a></td>
+                <td>7661</td>
+                <td><a href="../element/iati-activity_recipient-region.html#files_bmz">13</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_recipient-region_@code.html">iati-activity/recipient-region/@code</a></td>
+                <td>7661</td>
+                <td><a href="../element/iati-activity_recipient-region_@code.html#files_bmz">13</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_recipient-region_@percentage.html">iati-activity/recipient-region/@percentage</a></td>
+                <td>7661</td>
+                <td><a href="../element/iati-activity_recipient-region_@percentage.html#files_bmz">13</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_recipient-region_@vocabulary.html">iati-activity/recipient-region/@vocabulary</a></td>
+                <td>7661</td>
+                <td><a href="../element/iati-activity_recipient-region_@vocabulary.html#files_bmz">13</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_recipient-region_narrative.html">iati-activity/recipient-region/narrative</a></td>
+                <td>7661</td>
+                <td><a href="../element/iati-activity_recipient-region_narrative.html#files_bmz">13</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_reporting-org.html">iati-activity/reporting-org</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_reporting-org.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_reporting-org_@ref.html">iati-activity/reporting-org/@ref</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_reporting-org_@ref.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_reporting-org_@secondary-reporter.html">iati-activity/reporting-org/@secondary-reporter</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_reporting-org_@secondary-reporter.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_reporting-org_@type.html">iati-activity/reporting-org/@type</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_reporting-org_@type.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_reporting-org_narrative.html">iati-activity/reporting-org/narrative</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_reporting-org_narrative.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_reporting-org_narrative_@xml:lang.html">iati-activity/reporting-org/narrative/@{http://www.w3.org/XML/1998/namespace}lang</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_reporting-org_narrative_@xml:lang.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_sector.html">iati-activity/sector</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_sector.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_sector_@code.html">iati-activity/sector/@code</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_sector_@code.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_sector_@percentage.html">iati-activity/sector/@percentage</a></td>
+                <td>27760</td>
+                <td><a href="../element/iati-activity_sector_@percentage.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_sector_@vocabulary.html">iati-activity/sector/@vocabulary</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_sector_@vocabulary.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_title.html">iati-activity/title</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_title.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_title_narrative.html">iati-activity/title/narrative</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_title_narrative.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_title_narrative_@xml:lang.html">iati-activity/title/narrative/@{http://www.w3.org/XML/1998/namespace}lang</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_title_narrative_@xml:lang.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction.html">iati-activity/transaction</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_transaction.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_description.html">iati-activity/transaction/description</a></td>
+                <td>373</td>
+                <td><a href="../element/iati-activity_transaction_description.html#files_bmz">86</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_description_narrative.html">iati-activity/transaction/description/narrative</a></td>
+                <td>373</td>
+                <td><a href="../element/iati-activity_transaction_description_narrative.html#files_bmz">86</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_description_narrative_@xml:lang.html">iati-activity/transaction/description/narrative/@{http://www.w3.org/XML/1998/namespace}lang</a></td>
+                <td>373</td>
+                <td><a href="../element/iati-activity_transaction_description_narrative_@xml:lang.html#files_bmz">86</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_provider-org.html">iati-activity/transaction/provider-org</a></td>
+                <td>373</td>
+                <td><a href="../element/iati-activity_transaction_provider-org.html#files_bmz">86</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_provider-org_@ref.html">iati-activity/transaction/provider-org/@ref</a></td>
+                <td>52</td>
+                <td><a href="../element/iati-activity_transaction_provider-org_@ref.html#files_bmz">27</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_provider-org_@type.html">iati-activity/transaction/provider-org/@type</a></td>
+                <td>373</td>
+                <td><a href="../element/iati-activity_transaction_provider-org_@type.html#files_bmz">86</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_provider-org_narrative.html">iati-activity/transaction/provider-org/narrative</a></td>
+                <td>373</td>
+                <td><a href="../element/iati-activity_transaction_provider-org_narrative.html#files_bmz">86</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_provider-org_narrative_@xml:lang.html">iati-activity/transaction/provider-org/narrative/@{http://www.w3.org/XML/1998/namespace}lang</a></td>
+                <td>373</td>
+                <td><a href="../element/iati-activity_transaction_provider-org_narrative_@xml:lang.html#files_bmz">86</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_transaction-date.html">iati-activity/transaction/transaction-date</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_transaction_transaction-date.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_transaction-date_@iso-date.html">iati-activity/transaction/transaction-date/@iso-date</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_transaction_transaction-date_@iso-date.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_transaction-type.html">iati-activity/transaction/transaction-type</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_transaction_transaction-type.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_transaction-type_@code.html">iati-activity/transaction/transaction-type/@code</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_transaction_transaction-type_@code.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_value.html">iati-activity/transaction/value</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_transaction_value.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_value_@value-date.html">iati-activity/transaction/value/@value-date</a></td>
+                <td>27762</td>
+                <td><a href="../element/iati-activity_transaction_value_@value-date.html#files_bmz">142</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation.html">iati-organisation</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_@default-currency.html">iati-organisation/@default-currency</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_@default-currency.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_@last-updated-datetime.html">iati-organisation/@last-updated-datetime</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_@last-updated-datetime.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_@xml:lang.html">iati-organisation/@{http://www.w3.org/XML/1998/namespace}lang</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_@xml:lang.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_document-link.html">iati-organisation/document-link</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_document-link.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_document-link_@format.html">iati-organisation/document-link/@format</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_document-link_@format.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_document-link_@url.html">iati-organisation/document-link/@url</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_document-link_@url.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_document-link_category.html">iati-organisation/document-link/category</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_document-link_category.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_document-link_category_@code.html">iati-organisation/document-link/category/@code</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_document-link_category_@code.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_document-link_language.html">iati-organisation/document-link/language</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_document-link_language.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_document-link_language_@code.html">iati-organisation/document-link/language/@code</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_document-link_language_@code.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_document-link_title.html">iati-organisation/document-link/title</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_document-link_title.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_document-link_title_narrative.html">iati-organisation/document-link/title/narrative</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_document-link_title_narrative.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_name.html">iati-organisation/name</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_name.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_name_narrative.html">iati-organisation/name/narrative</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_name_narrative.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_name_narrative_@xml:lang.html">iati-organisation/name/narrative/@{http://www.w3.org/XML/1998/namespace}lang</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_name_narrative_@xml:lang.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_organisation-identifier.html">iati-organisation/organisation-identifier</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_organisation-identifier.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_recipient-country-budget.html">iati-organisation/recipient-country-budget</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_recipient-country-budget.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_recipient-country-budget_@status.html">iati-organisation/recipient-country-budget/@status</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_recipient-country-budget_@status.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_recipient-country-budget_period-end.html">iati-organisation/recipient-country-budget/period-end</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_recipient-country-budget_period-end.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_recipient-country-budget_period-end_@iso-date.html">iati-organisation/recipient-country-budget/period-end/@iso-date</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_recipient-country-budget_period-end_@iso-date.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_recipient-country-budget_period-start.html">iati-organisation/recipient-country-budget/period-start</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_recipient-country-budget_period-start.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_recipient-country-budget_period-start_@iso-date.html">iati-organisation/recipient-country-budget/period-start/@iso-date</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_recipient-country-budget_period-start_@iso-date.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_recipient-country-budget_recipient-country.html">iati-organisation/recipient-country-budget/recipient-country</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_recipient-country-budget_recipient-country.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_recipient-country-budget_recipient-country_@code.html">iati-organisation/recipient-country-budget/recipient-country/@code</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_recipient-country-budget_recipient-country_@code.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_recipient-country-budget_recipient-country_narrative.html">iati-organisation/recipient-country-budget/recipient-country/narrative</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_recipient-country-budget_recipient-country_narrative.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_recipient-country-budget_value.html">iati-organisation/recipient-country-budget/value</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_recipient-country-budget_value.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_recipient-country-budget_value_@currency.html">iati-organisation/recipient-country-budget/value/@currency</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_recipient-country-budget_value_@currency.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_recipient-country-budget_value_@value-date.html">iati-organisation/recipient-country-budget/value/@value-date</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_recipient-country-budget_value_@value-date.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_recipient-region-budget.html">iati-organisation/recipient-region-budget</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_recipient-region-budget.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_recipient-region-budget_@status.html">iati-organisation/recipient-region-budget/@status</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_recipient-region-budget_@status.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_recipient-region-budget_period-end.html">iati-organisation/recipient-region-budget/period-end</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_recipient-region-budget_period-end.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_recipient-region-budget_period-end_@iso-date.html">iati-organisation/recipient-region-budget/period-end/@iso-date</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_recipient-region-budget_period-end_@iso-date.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_recipient-region-budget_period-start.html">iati-organisation/recipient-region-budget/period-start</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_recipient-region-budget_period-start.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_recipient-region-budget_period-start_@iso-date.html">iati-organisation/recipient-region-budget/period-start/@iso-date</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_recipient-region-budget_period-start_@iso-date.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_recipient-region-budget_recipient-region.html">iati-organisation/recipient-region-budget/recipient-region</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_recipient-region-budget_recipient-region.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_recipient-region-budget_recipient-region_@code.html">iati-organisation/recipient-region-budget/recipient-region/@code</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_recipient-region-budget_recipient-region_@code.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_recipient-region-budget_recipient-region_@vocabulary.html">iati-organisation/recipient-region-budget/recipient-region/@vocabulary</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_recipient-region-budget_recipient-region_@vocabulary.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_recipient-region-budget_recipient-region_narrative.html">iati-organisation/recipient-region-budget/recipient-region/narrative</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_recipient-region-budget_recipient-region_narrative.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_recipient-region-budget_value.html">iati-organisation/recipient-region-budget/value</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_recipient-region-budget_value.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_recipient-region-budget_value_@currency.html">iati-organisation/recipient-region-budget/value/@currency</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_recipient-region-budget_value_@currency.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_recipient-region-budget_value_@value-date.html">iati-organisation/recipient-region-budget/value/@value-date</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_recipient-region-budget_value_@value-date.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_reporting-org.html">iati-organisation/reporting-org</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_reporting-org.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_reporting-org_@ref.html">iati-organisation/reporting-org/@ref</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_reporting-org_@ref.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_reporting-org_@type.html">iati-organisation/reporting-org/@type</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_reporting-org_@type.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_reporting-org_narrative.html">iati-organisation/reporting-org/narrative</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_reporting-org_narrative.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_reporting-org_narrative_@xml:lang.html">iati-organisation/reporting-org/narrative/@{http://www.w3.org/XML/1998/namespace}lang</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_reporting-org_narrative_@xml:lang.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_total-budget.html">iati-organisation/total-budget</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_total-budget.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_total-budget_period-end.html">iati-organisation/total-budget/period-end</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_total-budget_period-end.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_total-budget_period-end_@iso-date.html">iati-organisation/total-budget/period-end/@iso-date</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_total-budget_period-end_@iso-date.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_total-budget_period-start.html">iati-organisation/total-budget/period-start</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_total-budget_period-start.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_total-budget_period-start_@iso-date.html">iati-organisation/total-budget/period-start/@iso-date</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_total-budget_period-start_@iso-date.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_total-budget_value.html">iati-organisation/total-budget/value</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_total-budget_value.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_total-budget_value_@currency.html">iati-organisation/total-budget/value/@currency</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_total-budget_value_@currency.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_total-budget_value_@value-date.html">iati-organisation/total-budget/value/@value-date</a></td>
+                <td>1</td>
+                <td><a href="../element/iati-organisation_total-budget_value_@value-date.html#files_bmz">1</a></td>
+            
+            </tr>
+            
+            
+        </tbody>
+    </table>
+    </div>
+
+
+
+    
+  </div><!-- /.container -->
+
+</div>
+
+<div id="footer">
+    <div class="container">
+        <p class="text-muted">
+          <a href="https://github.com/codeforIATI/analytics/">Source Code</a>.
+
+          <a href="https://github.com/codeforIATI/analytics/issues?state=open">Report bugs, and request features using Github issues</a>.<br/>
+
+          Generated at <em>2022-03-29 22:58:40 UTC</em> from data downloaded at <em>2022-03-29 00:54:01 UTC</em>.<br/>
+
+          (NB This is the time the download task started. Any changes made after this time may not be reflected).<br />
+
+          For details on how often these updates are applied, see the <a href="/faq.html">Code for IATI Analytics FAQ</a>.
+    </div>
+</div>
+
+<script src="//codeforiati.org/sidebar/sidebar.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.13.3/jquery.tablesorter.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.13.3/jquery.tablesorter.widgets.min.js"></script>
+
+<script>$(function() { $("table.table:not(.exploring-data)").tablesorter(); });</script>
+<script>$(function() { $("table.exploring-data").tablesorter({textExtraction:{3: function(node,table,cellIndex) { return $(node).attr('data-bytes'); } }}); });</script>
+
+  
+    <script>
+$('.popover-html').popover({
+  html: true
+})
+    </script>
+
+</body>
+</html>
