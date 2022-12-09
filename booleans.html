@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="/style.css" />
+  <link rel="icon" href="/favicon.ico">
+  <title>Booleans – Code for IATI Analytics</title>
+
+  
+</head>
+<body>
+<div id="wrap">
+  <div class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="#" class="navbar-brand" data-c4i-toggle="sidebar" aria-controls="c4i-sidebar" aria-expanded="false" aria-label="Toggle Code for IATI sidebar"><img src="https://codeforiati.org/assets/img/logo.png" alt="Code for IATI" /></a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li ><a href="/">Home</a></li>
+          
+          <li ><a href="/headlines.html">Headlines</a></li>
+          
+          <li ><a href="/data_quality.html">Data Quality</a></li>
+          
+          <li ><a href="/publishing_stats.html">Publishing Statistics</a></li>
+          
+          <li class="active"><a href="/exploring_data.html">Exploring Data</a></li>
+          
+          <li ><a href="/faq.html">FAQ</a></li>
+          
+        </ul>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+        
+            <li><a href="/elements.html">Elements</a></li>
+        
+            <li><a href="/codelists.html">Codelists</a></li>
+        
+            <li class="active"><a href="/booleans.html">Booleans</a></li>
+        
+            <li><a href="/dates.html">Dates</a></li>
+        
+            <li><a href="/traceability.html">Traceability</a></li>
+        
+            <li><a href="/org_ids.html">Organisation Identifiers</a></li>
+        
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+  <div class="container">
+    
+      
+        <div class="page-header">
+          
+          <h1>Booleans</h1>
+          <p class="lead">How are booleans used in IATI data?</p>
+          <p>Checking usage of booleans across IATI data files. Booleans are values that are either true or false. In XML <code>true</code> or <code>1</code> can be used for true and <code>false</code> or <code>0</code> can be used for false.</p>
+          
+        </div>
+      
+
+      
+    <div class="row">
+      <div class="col-xs-12">
+        <p>(<a href="https://stats.codeforiati.org/current/inverted-publisher/boolean_values.json">This table as JSON</a>)</p>
+
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <p>List of values used by publishers for attributes that should be valid XML booleans (ie. <code>true</code>, <code>false</code>, <code>0</code> or <code>1</code>).</p>
+            <p>Click the <img src="/img/tablesorter-icons.gif" style="width: 21px; height: 9px"/> icons to sort the table by a column. Selecting further columns whilst holding the shift key will enable secondary (tertiary etc) sorting by the desired column/s.</p>
+          </div>
+          <table class="table table-striped">
+            <thead><tr><th>Element</th><th>Values</th><th>Publishers</th></tr></thead>
+            <tbody>
+              
+                  
+                      <tr>
+                          <td><a href="https://reference.codeforiati.org/activity-standard/iati-activities/iati-activity/#attributes">@humanitarian</a></td>
+                          <td>false</td>
+                          <td>hefoundation edukans_foundation iza knmi gca isdglobal kituo leedsuni cku villagewater lts pmo-us sowt satelliteapplicationscatapultltd dki1151219 zsl guttmacher jfa-pfe al_majmoua sddirect pskenya_19 riverrecycle bu-carbx-admin mag vfi weforum_geneva thp_org aktis rri foe_ewni uaf cpd emissa wvnld cdacnetwork chanceforchildhood dhsc wwfzambia fida iraq_foundation udsm-cbs nutritionintl crtda lhac lemann bsf1 berytech uni_of_nottingham amrefhq ywcabd dspd_unikin apn fh ktk fca cost_uk wei dggf_financing_local_smes arcfge givedirectly gnpplus rmi cividep hqai wag-1983 wep ims gaia gppac scm b_a_t lftw-be aics drc danmission wwfdk agri3_fund su-impala alab rmf-lb transparency-international whw2019 climate-group hmtfitb codeart bit ctbeijing cesc nwo msm-ipd concordis whh aiuk hif seefar dcms ndf_fgm lbg iiss itforchange sawdf-admin profamilia bpcrs cis posneg wcuk mailman_school_of_public_health sosdk pwwsd_2022 duf idh dkti girlsnotbrides landell-mills sacethiopia syf fhi360 ti-uk bwh ti_kenya loop rc2africa idinsight kmss iif pact p-t-f- montrose_llp riia kidasha sehatkahanicih canadem ifoam c40cities larive femnet colalife grc2018 mukisa_foundation knust wayamo energy_saving_trust acet hsi plannlno cegaa opml ces-ua iyafp ide manniondaniels epha ons jass soas tbi international-alert friendsofpwyf dmi_admin pwc gi-jhu hi_fed uol ktn vlir-uos unaids rabo_partnerships lcdi_admin the_fsi ipe gogla csom1 nyu mofa-jpn efi eddevtrust nrc agriterra ipcrg educate ul csc wecf tmea mcs_new jowomenomics cfm the_power_of_nutrition ywcakenya ejc draf ecuk codacop ucl ethiopiaiduk altai idlo shn theglobalfund carter-center hri dttillp ifac caribank gfcf sdi-k ttf cesvi kingscollegelondon aias caritas_denmark african_parks defra_transparency wnf orbis_africa bucksfarm hpc oau fundacionavina pstc_1102 tear redbarnet ldsps elsam ajar foenl zoa_uk swidn cepi pfg transforma upm fcam ndsicde traide_foundation gdihub avsi-ssd atnf sfd-yemen imc-2021 nrt-kenya ntfp-ep cec e_n pegasys-eu npm atmf chemonics f2a bvf crerd_ng ceci gggi appro-af wfwiuk maksph rcgp-international wo-men uafla pax womankindworld ibfd interaction afghanaid acumen mdmnl partos_nl shiftproject fundacion-acceso uwezo_youth_empowerment imcw_admin marysmeals kse jocc_uk acatba qrfed wclac delivery_associates ipeglobal pwcplindia sr acu plama crisisgroup irise_int samdhana_institute bos_plus_tropen gain kesho_kenya ipao villageenterprise child-dot_org instiglio homeoffice m_u ideo_org wwf-be ungc-uk uoy atsf clgf_data acceleratornepal gfems agwa imdmozambique cdi fh_ch awdf sanpud ccc universityofbirmingham fsduganda nchrdk paf_2018 foei max-foundation uclan rpm timidria awo2022 skf cdi_vn_2021 nlr_indonesia sisonke orientame wfd pmc imf cidr dps-nampula uom ataf ywcass universiteit_leiden raleigh_int uvw equileap plan_uk hfc tdh_foundation odi addinternational wcs fimi_iiwf_2019 sosnl cobracollective libymca idea cst mcg unf bylc wlrc_aau agencia_do_zambeze gdi yai-hub wf-asia reach-iraq practica hiuk mdp mofaic_uae fhfuk swisscontact mangotree clerd-prpi worldeconomicforum kit crehpa oyw srhr_africa_trust icauk infnepal chs_alliance horizons healthpartners-international guluuni spr neem medafrica bapsa odi_sales_ltd f-aids fawe-rs cpi aipr gecfundmanagerpwc adsb eap ruaf wwf_bolivia cpd_2021 dri agdevco rutgers aanl mmr_admin2 alineainternational_2020 pathfinder1 di dit </td>
+                      </tr>
+                  
+                      <tr>
+                          <td><a href="https://reference.codeforiati.org/activity-standard/iati-activities/iati-activity/#attributes">@humanitarian</a></td>
+                          <td>0</td>
+                          <td>amrefha wcia gardp tbalert oqc gca bd amrefug oww cku liwa-admin ahead world_ywca pcf eclosio bdo ilgaasia scss coffey tearfund lts ser zsl utz uoe trustafrica mml nmhiati ec-intpa oxfamus win siren tropicalhealth cww abtbritain warchildholland mfat cibe bothends bwi mag cip ri-uk dai fwf mrg eel aktis handinhand foncaba achest wvnld apt snv fsdk twaweza mondiaalfnv dhsc ef_ uvcw surf ageintl epf kpmgea bsf1 fgae_ethiopia aag cowi amrefmw actec dfpa varkeyfoundation amrefhq itad mrf buildafrica unitedstates africalia micfound tlmew ifdc-us dpod emms orbis_international pacja bsr_admin dwp mce vsfbelgium wipc stc-international arcfge elevatelimited sjac tuos bauk traidcraft pumnl col-greenfinance mvo_nederland nuwodu iwda apefe gnpplus wsm wsup crane amrefeth acfshr aas rc acted oxfamintermon wws pasgr icm_mx aar b_a_t lftw-be options damien-foundation udom sendacow mdif fms drc danmission accountablenow orbis_uk josa bbcmediaaction pib ddp learningforlife etmkdw palladium clientearth-1 fci whh dfe fyf pi-uk omdm uand_2020 ndf_fgm unais uva_org rikolto_belgium integrity hp_12 globaltfokus zoa ava_admin nwp mamac mck acaa agra lhcf tni dotw_uk wcuk eti sosdk coe-abc investinternational wvuk ihedelft idh aab kpmgllp bvrio yoneco1997 shortlistogti ictj uhai-eashri fowode esfd transafrica19 aaik imc_uk wellfound nathan hha memisa ippf wemos amrefkenya interburns ti_kenya bopinc ad namati_inc ehpea act4africa idom_mx iiwe water-witness-international inasp opennorth rahuug amrefnl appro-eu mondefemmes uct signal comp_uk cadtm peas pact wygi boadiita fiabel dciecpatnl heifernederland esrf ycare yffhsd camfed _path_ hwa-zm limpal-colombia larive lshtm wv_cd iwrm educomm scnl dndi_transparency bond ct-admin ifsi_isvi iisd hsi msi free_press_unlimited j2022 opportunity-international-uk ibis_denmark zet avsi_uganda baag iom imperial acord bac cdp 111111_publisher idh_im lepra idp wpp bitc gadp cfyas eif rfuk international-alert cowateruk pwc waterworks aak mmha vlir-uos unaids lcdi_admin helpage_international sida ec-near gif undco wusc gwp art19 welbodipartnership deltares 12921047 ngo-federatie dynamo_international pphpz orbis_ethiopia fifty_eight agriterra cisu rojiroti mwatana unicef childhopeuk self-help-africa hai dcaf kad uncdf oxsol wecf tmea isdao tfb_admin1 ticah lboro brulocalis hrwg_indonesia cifal dance4life bvs-nepal vei_nl ran pbi_io ejc finddiagnostics odakorea promsex ethiopiaiduk oxford gvtc hib street_child g3w-m3m_admin excellent apc idlo sdsna restless edt_kenya climate_centre tns ec tfacmalawi irc_uk pacam bii cncd medecins iteco open_university cowater assn bmgf ablechildafrica sciaf fact wanep mcn fo_germany carpo asil caritas_denmark sdi-int defra_transparency wnf umn growasia network4africa wowni wvi ub ybawahid oau quinoa lse svdbskb_admin trias cocnl_publisher rcn ipa galz ftm-291333 kepsa beesfordevelopment foenl simprints rvo trianglen cu rcog_resilience_in_obstetric_skills protos sdi mmh r4d iwrawasiapacific sg afrikids ucos fc-f inhive plb solsoc irw vvsg ewdna2025 aadk hauk icipe pontis childfund rc4d resilience idi polea cec ncea wageningen_ur pegasys-eu palladium_eur stichtingfern trf caid rnw_org aidspan cordaid fairtrade_international jrf tha acf globalcanopy amwa gggi simavi laf icwrsa shc rnli_international kcdf fos wfwiuk iodparc soundseekers knchr kmc maksph niras utwente cal wo-men 1-uz sjg hdcentre rkiv womankindworld afemena kwaafrica worldwaternet aai aain rspb_ wateraid ciuk wwf_id undp fairfood acodev lpi solidarsuisse solarnowsofa yipl wba mifumi_uk dgmh thefaradayinstitution amnesty asi ec-fpi mainline st_vluchteling dgf wccuk treea sqf cicni mlf ipas wfp synergiaihr djapo wff iw_admin partos_nl traffic adrauk imcw_admin marysmeals jpal hhc goal vngi saferworld clingendael inbar ac1999 ssn asdap delivery_associates tkf1234 taf wcf acu crisisgroup tlo wai crs pcst sdn pri gain creawkenya bracintl be-dgd crb-ai_admin carbontrustadvisory nico stromme_ug whpca pai155669 spuk sacu msuk swda forest-trends tb-a umu homeoffice _admin awid wwf-be ieu ark ai_1064413 oisl_gh itm wjr_001 aeras bismsi intrac imdmozambique giin redorange cdeb-kvhb_admin cbm uq awdf iucn ccc 7iberdotcom uws integrity_action dba wctc cjp dkt adra-dk healthnet motivation scibelgium nnjs_nepal wwf-kenya nrgi ida foei creausa-org fian-belgium fa oca via-db waste amreftz freeagirl viva sfcg aauk pri_icf hpa drf loftf gac-amc fairtrade_be vso carenederland twynstragudde irc_inc nroot unw kipkelion unrwa sense_international sas_sana wwfna hiil_mfa wri wfm-igp ja_ppmn asf pgi_kenya uvw aaip abaseen pumpaid beis ia_nam basicneeds bu akfuk73 onl msv tifa_foundation odi cepr addinternational stad ids wwf-py mapaction dapp kiyo phase_worldwide twin-iati globalwitness awa_sn hdi scuk sosfaim knvb abt across csa vfan nlrc sct irex wf-asia cyan practica hiuk sci cr dcapitalpartners law nri dla ares rikolto icf ask galvmed worldeconomicforum sha arij wwf-uk kit uaf-africa sinda dai-e a-t ppag_123 utd walaltd progressio ciprb healthpartners-international bracuk wwfbr kemitraan vvob nl_wg geomoun sosjd6 odi_sales_ltd f-aids tan solidagro_admin lstm clasp cabi wv_de oneacrefund adsb ukmod congodorpen fucid ada britishcouncil lcd_admin cardnoem aet ulbcoop rainforest-alliance uwe mrc-sierra-leone rutgers awepa aanl lc qedjt ifpri </td>
+                      </tr>
+                  
+                      <tr>
+                          <td><a href="https://reference.codeforiati.org/activity-standard/iati-activities/iati-activity/#attributes">@humanitarian</a></td>
+                          <td>1</td>
+                          <td>ww-gvc arq_intl dawuro_da marsa_welead eip amrefug tearfund pilpg cilc oxfamus warchildholland mfat acwfs_vu ejaf dai leprazending-tlm-nl mrg africanrevival wedo dkt_drc transparently_lebanese itpc wvnld cdacnetwork dhsc ageintl engenderhealth_eth varkeyfoundation intersos_main worldveg caritasfin fipag afewinternational unitedstates fh unhcr emms ethiopiaidireland mce arcfge fidauganda givedirectly icrc paradigm olammacares fcdf rc oxfamintermon aecom drc ama-south-sudan cehrd1 bbcmediaaction aahusa giro555 civic_admin akf_afghanistan rcel whh afelt zoa siharegional norsaac medair gnbcc wcuk wvuk aab w_r_c minbuza_nl ywca ciafg imc_uk nacgond- siha-southsudan edt_rwanda ylabs mdm_spain amrefnl loop adra_nepal canadem femnet eveowd icddrb wv_cd scnl ksrelief291 cuamm restartcenter ibis_denmark iom maydayrescue ewla musawah dhrc_nepal ti_nl sac_kenya unaids helpage_international sida chai lei prefa_1 12921047 nrc agriterra cisu nj_1 ec-echo unicef nned si-mfa ehorg icva cerf odakorea ethiopiaiduk agresults wv_et_activities social_accountability_international ausgov tns irc_uk wcc cnepal trig bmgf caribank gichd unocha-sdc fo_germany caritas_denmark achr wvi civicus oau jidu2021 tgh populationcouncil halo plb defenddefenders ground-truth-solutions irw tfp atnf aadk ilo mercy-usa ifrcrcs msmgf nuffic20171017 rtp caid cordaid icars psi acf bawacecy-tz dsfn miftah spark unocha worldbank aecid commonwealthsecretariat act_alliance tlmnepal sjg amurt_kenya worldwaternet peacedirect ciuk undp sosvdb_italia nagaad goodweave_intl lpi siwi st_vluchteling dec-uk ha-i idydc hfhnl dca ipas wfp solidarites-international mdmnl star_ghanafoundation e4i marysmeals rmc_um inbar impact_initiatives brac_admin2 npa the_mentor_initiative lbs crs inso us-imawh hgc be-dgd stromme_ug spuk wasteaid elrha ciz united_work ideo_org gsg danida rains wjr_001 inpud_admin wv_cf icmpd acfspain aphrc tff fhf medaccess acf-fr fh_ch cbm nlr universityofbirmingham adra-dk wvz-gec hc2022 ewf creausa-org unocha-cbpf iwpr danishrc okapiconsulting aauk ashoka npss kerk_in_actie avt-l gac-amc carenederland irc_inc tffus unw unrwa aaip ia_nam alliance_of_religions_and_conservation onl dkt_ethiopia tdh_foundation sosnl mapaction silsab1-_ mdm-fr stichting-subsidiegelden-dra scuk nlrc bbdn yai-hub nswp field_ready redruk sci bcm-cf fiftyfifty-lb lftw-int woda_0486 uodcepmlp dec_ethiopia ppag_123 carebenintogo lcp capabui uk-med wilpf_22 jrf_2022 aipr wv_de wfaf auxfinbi hrf </td>
+                      </tr>
+                  
+                      <tr>
+                          <td><a href="https://reference.codeforiati.org/activity-standard/iati-activities/iati-activity/#attributes">@humanitarian</a></td>
+                          <td>true</td>
+                          <td>who fcdo aics ss-org plannlno tear ilo interaction decp sccf plan_uk </td>
+                      </tr>
+                  
+              
+                  
+                      <tr>
+                          <td><a href="https://reference.codeforiati.org/activity-standard/iati-activities/iati-activity/conditions/#attributes">conditions/@attached</a></td>
+                          <td>false</td>
+                          <td>edukans_foundation who fcdo aics iadb asdb fomin afdb plannlno ofid tear </td>
+                      </tr>
+                  
+                      <tr>
+                          <td><a href="https://reference.codeforiati.org/activity-standard/iati-activities/iati-activity/conditions/#attributes">conditions/@attached</a></td>
+                          <td>0</td>
+                          <td>bd oww pcf eclosio utz ec-intpa cibe bmz foncaba dkt_drc snv dhsc ef_ uvcw lhac nef_usa cowi actec unitedstates africalia micfound emms vsfbelgium anaepmr_benin adjohoun pobe apefe wsm lftw-be damien-foundation pib dangbo hmtfitb codeart etmkdw dcms omdm rikolto_belgium millenniumchallenge siharegional parakou minbuza_nl jica pca-gire memisa wemos iiwe amrefnl idinsight mondefemmes cadtm irc fiabel dciecpatnl avrankou ancb_benin bopa idrccrdi ct-admin ifsi_isvi vso_nl bac 111111_publisher klouekanme idp wwf-se ti_nl intrahealth mmha vlir-uos ec-near ngo-federatie dynamo_international nj_1 hai ecorysnl oxsol tfb_admin1 brulocalis hib g3w-m3m_admin gpsp-org ausgov ec nso soneb-benin cncd medecins iteco usaid fo_germany defra_transparency unesco ub quinoa svdbskb_admin trias rcn ajar nef-uk protos halo sg ucos solsoc vvsg ilo mercy-usa pontis rc4d cec trf cordaid gavi lalo psi amwa alcrer-1 ifangni shc unocha fos adjarra ine_benin aplahoue sjg rkiv slf ze acodev ibfd allada ec-fpi mefbenin finance_canada wfp djapo vngi ssn asdap npa akpro-misserete bos_plus_tropen diakonia802017-3517 be-dgd crb-ai_admin twnafrica instiglio wwf-be ieu swb_1 itm bismsi mamta_himc kpomasse cdeb-kvhb_admin cdi iucn nlr dba cjp nchrdk ketou scibelgium planinternationalfinland max-foundation fian-belgium via-db waste akvo aauk aqua4all gac-amc fairtrade_be unw icraf_ wri asf toffo weeffect msv tdh_foundation kiyo sosfaim csa gdi toviklin ares rikolto cdc_ohg wi crehpa nef_mali a-t afrikagrupperna vvob geomoun caeb_mali solidagro_admin fawe-rs congodorpen fucid ada sdc_ch come ulbcoop cpd_2021 uwe unops lc </td>
+                      </tr>
+                  
+                      <tr>
+                          <td><a href="https://reference.codeforiati.org/activity-standard/iati-activities/iati-activity/conditions/#attributes">conditions/@attached</a></td>
+                          <td>1</td>
+                          <td>sacbc pcf ec-intpa mfat bmz ifcwbg cip adja-ouere snv dhsc unitedstates emms amrefeth ciks dfe millenniumchallenge parakou jica nacgond- bopinc idinsight idrccrdi eib ec-near ec-echo mwatana unicef cerf odakorea ebrd cordaid gavi rnli_international worldbank ze undp fundacion-acceso inbar ssn npa kesho_kenya toffo beis dapp law dri </td>
+                      </tr>
+                  
+                      <tr>
+                          <td><a href="https://reference.codeforiati.org/activity-standard/iati-activities/iati-activity/conditions/#attributes">conditions/@attached</a></td>
+                          <td>true</td>
+                          <td>fcdo iadb afdb </td>
+                      </tr>
+                  
+              
+                  
+                      <tr>
+                          <td><a href="https://reference.codeforiati.org/activity-standard/iati-activities/iati-activity/crs-add/other-flags/#attributes">crs-add/other-flags/@significance</a></td>
+                          <td>0</td>
+                          <td>ec-intpa ec-near ec-fpi </td>
+                      </tr>
+                  
+                      <tr>
+                          <td><a href="https://reference.codeforiati.org/activity-standard/iati-activities/iati-activity/crs-add/other-flags/#attributes">crs-add/other-flags/@significance</a></td>
+                          <td>1</td>
+                          <td>sida slovakaid </td>
+                      </tr>
+                  
+              
+                  
+                      <tr>
+                          <td><a href="https://reference.codeforiati.org/activity-standard/iati-activities/iati-activity/reporting-org/#attributes">reporting-org/@secondary-reporter</a></td>
+                          <td>0</td>
+                          <td>amrefha gardp oqc gca bd kituo cku world_ywca pcf ilgaasia scss lts satelliteapplicationscatapultltd dki1151219 zsl utz uoe trustafrica jfa-pfe mml sddirect ec-intpa siren abtbritain bmz riverrecycle bwi cip dai vfi leprazending-tlm-nl thp_org foncaba cpd adja-ouere dkt_drc transparently_lebanese snv chanceforchildhood fida nutritionintl ageintl lhac kpmgea nef_usa bsf1 fgae_ethiopia aag cowi engenderhealth_eth dfpa dspd_unikin itad ifdc-us emms ethiopiaidireland pacja dwp vsfbelgium fca anaepmr_benin sjac tuos adjohoun givedirectly pobe nuwodu paradigm wsm cividep acfshr fcdf aas oxfamintermon pasgr icm_mx options fms su-impala ama-south-sudan orbis_uk whw2019 josa cehrd1 pib dangbo hmtfitb aahusa ctbeijing etmkdw cesc nwo msm-ipd whh seefar pi-uk ndf_fgm lbg millenniumchallenge zoa siharegional nwp mck bpcrs cis parakou wcuk eti coe-abc duf shortlistogti ictj girlsnotbrides esfd transafrica19 aaik imc_uk syf pca-gire wemos amrefkenya siha-southsudan ad iiwe inasp comp_uk pact irc wygi p-t-f- boadiita fiabel montrose_llp yffhsd canadem ifoam limpal-colombia larive femnet eveowd icddrb avrankou educomm ancb_benin grc2018 bopa dndi_transparency wayamo ksrelief291 restartcenter eib iisd hsi msi ibis_denmark vso_nl cegaa idh_im ces-ua klouekanme iyafp epha gadp international-alert cowateruk pwc intrahealth ktn rabo_partnerships finland_mfa sida ec-near the_fsi chai undco art19 efi pphpz agriterra ec-echo unicef childhopeuk self-help-africa ipcrg si-mfa dcaf ecorysnl jowomenomics ticah hrwg_indonesia cfm ran icva codacop odakorea promsex oxford idlo sdsna social_accountability_international gpsp-org nso soneb-benin bii trig assn bmgf gfcf ablechildafrica gichd sciaf ttf sdi-int defra_transparency wnf growasia hpc oau fundacionavina lse cocnl_publisher tear giz ajar foenl nef-uk rvo tgh protos sdi halo r4d sg pfg inhive plb tfp gdihub aadk ilo mercy-usa sfd-yemen imc-2021 ntfp-ep resilience cec palladium_eur stichtingfern nuffic20171017 rnw_org unfpa cordaid icars bvf lalo jrf acf amwa alcrer-1 miftah ifangni icwrsa spark rnli_international adjarra ine_benin oecd aplahoue tlmnepal wo-men hdcentre rkiv slf ze wwf_id nagaad acodev lpi solidarsuisse solarnowsofa siwi yipl mifumi_uk allada amnesty asi ec-fpi mefbenin treea sqf acumen dca mdmnl djapo iw_admin partos_nl imcw_admin jpal vngi acatba inbar impact_initiatives ac1999 ssn tkf1234 tib lbs crisisgroup tlo akpro-misserete us-imawh gain creawkenya carbontrustadvisory nico villageenterprise twnafrica pai155669 msuk wasteaid forest-trends child-dot_org elrha umu m_u gsg swb_1 oisl_gh wjr_001 bismsi intrac inpud_admin icmpd clgf_data gfems tff kpomasse giin cdeb-kvhb_admin acf-fr cbm awdf iucn nlr universityofbirmingham fsduganda integrity_action ecdpm ketou healthnet ewf scibelgium nnjs_nepal wwf-kenya ida planinternationalfinland unocha-cbpf via-db waste freeagirl rpm akvo awo2022 skf sfcg okapiconsulting cdi_vn_2021 pri_icf nlr_indonesia npss wfd aqua4all pmc fairtrade_be vso tffus icraf_ wwfna ataf hiil_mfa wri universiteit_leiden ja_ppmn asf aaip toffo bu onl dkt_ethiopia hfc tdh_foundation tifa_foundation addinternational sosnl wwf-py mapaction kiyo awa_sn hdi mdm-fr stichting-subsidiegelden-dra csa bylc sct bbdn gdi irex wf-asia redruk toviklin hiuk mdp mofaic_uae law swisscontact icf cdc_ohg mangotree wi lftw-int galvmed worldeconomicforum arij kit nef_mali oyw uodcepmlp srhr_africa_trust icauk ppag_123 carebenintogo lcp wwfbr kemitraan medafrica bapsa nl_wg uk-med caeb_mali fawe-rs lstm aipr gecfundmanagerpwc ukmod britishcouncil eap come wfaf cpd_2021 dri alineainternational_2020 pathfinder1 auxfinbi ifpri </td>
+                      </tr>
+                  
+                      <tr>
+                          <td><a href="https://reference.codeforiati.org/activity-standard/iati-activities/iati-activity/reporting-org/#attributes">reporting-org/@secondary-reporter</a></td>
+                          <td>1</td>
+                          <td>iza marsa_welead ahead pcf coffey pmo-us mrg foe_ewni fsdk crtda worldveg apn fipag ktk wipc cost_uk stc-international scm agri3_fund accountablenow alab transparency-international codeart palladium fci afelt sawdf-admin gnbcc sosdk investinternational nacgond- bopinc mdm_spain rahuug adra_nepal riia lshtm cuamm ifsi_isvi j2022 vso_nl bac soas lcdi_admin fifty_eight agriterra nj_1 mwatana uncdf odakorea g3w-m3m_admin nso irc_uk wanep caritas_denmark pstc_1102 elsam kepsa defenddefenders idi e_n pegasys-eu nuffic20171017 f2a tha ceci laf knchr maksph niras sjg aain slf sosvdb_italia wba idydc cicni hfhnl openmindedly solidarites-international fundacion-acceso wclac asdap ipeglobal plama samdhana_institute imdmozambique wctc dkt nchrdk danishrc loftf vso twynstragudde sas_sana uvw ia_nam wlrc_aau yai-hub fiftyfifty-lb wi clerd-prpi oyw walaltd vvob sosjd6 fawe-rs jrf_2022 rainforest-alliance uwe lc </td>
+                      </tr>
+                  
+                      <tr>
+                          <td><a href="https://reference.codeforiati.org/activity-standard/iati-activities/iati-activity/reporting-org/#attributes">reporting-org/@secondary-reporter</a></td>
+                          <td>false</td>
+                          <td>investinternational theglobalfund rvo </td>
+                      </tr>
+                  
+              
+                  
+                      <tr>
+                          <td><a href="https://reference.codeforiati.org/activity-standard/iati-activities/iati-activity/result/#attributes">result/@aggregation-status</a></td>
+                          <td>1</td>
+                          <td>hefoundation oqc amrefug pcf ilgaasia pmo-us utz al_majmoua siren warchildholland bothends mag ifcwbg cip dai fwf leprazending-tlm-nl weforum_geneva wedo uaf adja-ouere itpc wvnld snv mondiaalfnv wwfzambia ef_ crtda nef_usa bsf1 fgae_ethiopia cowi amrefmw engenderhealth_eth berytech intersos_main worldveg fipag afewinternational solidaridad-ssea unitedstates micfound ktk ifdc-us emms pacja mce dggf_financing_local_smes arcfge anaepmr_benin solidaridad-waf fidauganda adjohoun icrc pobe mvo_nederland iwda gnpplus amrefeth fcdf acted gppac wws damien-foundation fms drc ama-south-sudan rmf-lb josa dangbo cesc msm-ipd uva_org itforchange profamilia zoa siharegional nwp mamac gnbcc parakou tni pwwsd_2022 investinternational ihedelft idh w_r_c uhai-eashri ywca imc_uk syf pca-gire ippf wemos amrefkenya nacgond- siha-southsudan ad ehpea amrefnl mondefemmes p-t-f- dciecpatnl heifernederland yffhsd limpal-colombia femnet eveowd iwrm avrankou ancb_benin bopa scnl ct-admin hsi free_press_unlimited j2022 ibis_denmark vso_nl avsi_uganda acord idh_im ewla klouekanme jass cfyas tbi intrahealth hi_fed vlir-uos unaids deltares wbtf agriterra nj_1 mwatana hai dcaf ecorysnl jowomenomics isdao ticah dance4life vei_nl ywcakenya codacop odakorea gvtc solidaridad-europe unhabitat apc idlo tns nso soneb-benin gfcf gichd unocha-sdc aias wnf civicus hpc quinoa fundacionavina cocnl_publisher pstc_1102 tear rcn galz foenl rvo halo iwrawasiapacific defenddefenders fcam ndsicde traide_foundation gdihub sfd-yemen imc-2021 pontis ntfp-ep resilience cec ncea wageningen_ur rainfoundation palladium_eur atmf nuffic20171017 f2a gavi lalo jrf psi tha amwa gggi ifangni spark worldbank knchr adjarra utwente ine_benin aplahoue icco-cooperation wo-men sjg uafla womankindworld afemena worldwaternet slf ze undp nagaad lpi solarnowsofa siwi ibfd allada amnesty mefbenin mainline st_vluchteling ha-i hfhnl solidarites-international wff partos_nl fundacion-acceso aidenvironment vngi saferworld clingendael inbar wclac asdap brac_admin2 npa taf crisisgroup wai akpro-misserete sdn samdhana_institute creawkenya twnafrica pai155669 united_work awid ieu swb_1 acfspain kpomasse giin redorange cdi cbm awdf iucn sanpud ccc nlr 7iberdotcom fsduganda nchrdk ketou healthnet hc2022 ida foei creausa-org waste freeagirl rpm akvo awo2022 sfcg nlr_indonesia sisonke npss aqua4all carenederland unw icraf_ ywcass wri wfm-igp asf toffo equileap bu onl dkt_ethiopia stad fimi_iiwf_2019 sosnl kiyo libymca awa_sn hdi scuk nlrc agencia_do_zambeze irex yai-hub field_ready wf-asia practica toviklin sci cr swisscontact cdc_ohg wi iucn_nl arij kit uaf-africa nef_mali oyw ppag_123 carebenintogo chs_alliance neem sosjd6 caeb_mali f-aids tan fawe-rs aipr cabi wwf_bolivia come ulbcoop rutgers awepa aanl pathfinder1 auxfinbi </td>
+                      </tr>
+                  
+                      <tr>
+                          <td><a href="https://reference.codeforiati.org/activity-standard/iati-activities/iati-activity/result/#attributes">result/@aggregation-status</a></td>
+                          <td>true</td>
+                          <td>edukans_foundation sacbc stichting_hivos solidaridad wgnrr_iati bnps pidg afsc nl-kvk-54436222-27541 uva_org cavwoc unicefnl issafrica plannlno redeenkind jass pekka_21 umati csu cemi genderatwork tear rvo needs pontis nuffic20171017 gorin cordaid csa-kenya flepuganda amwa kmet simavi pax vhai-org dorp-org rlb ads-nyanza cal_2000-pu skn mdf udpk wri asf dapp hiuk icnl_org cini_jhk iucn_nl savsign-org icdi </td>
+                      </tr>
+                  
+                      <tr>
+                          <td><a href="https://reference.codeforiati.org/activity-standard/iati-activities/iati-activity/result/#attributes">result/@aggregation-status</a></td>
+                          <td>0</td>
+                          <td>knmi bd eip amrefug oww world_ywca eclosio scss pmo-us utz mml ec-intpa warchildholland cibe bothends mag ri-uk dai fwf solidaridad dkt_drc achest itpc wvnld snv mondiaalfnv iraq_foundation ef_ uvcw lhac fgae_ethiopia cowi amrefmw actec engenderhealth_eth intersos_main worldveg amrefhq afewinternational solidaridad-ssea africalia micfound unhcr ifdc-us mce vsfbelgium fca arcfge anaepmr_benin solidaridad-waf adjohoun pobe mvo_nederland iwda apefe wsm amrefeth acfshr acted gppac scm lftw-be damien-foundation drc agri3_fund orbis_uk pib dangbo codeart etmkdw cesc omdm itforchange rikolto_belgium millenniumchallenge zoa nwp cis parakou tni wcuk investinternational ihedelft idh dkti ictj uhai-eashri esfd memisa ippf wemos amrefkenya ehpea iiwe amrefnl mondefemmes cadtm pact irc p-t-f- fiabel yffhsd avrankou ancb_benin bopa scnl dndi_transparency wayamo ifsi_isvi msi free_press_unlimited j2022 ibis_denmark avsi_uganda bac 111111_publisher klouekanme idp wpp cfyas tbi international-alert intrahealth mmha vlir-uos sida ec-near deltares ngo-federatie dynamo_international wbtf orbis_ethiopia nrc agriterra nj_1 mwatana unicef hai kad oxsol isdao tfb_admin1 brulocalis vei_nl cerf hib g3w-m3m_admin solidaridad-europe apc idlo gpsp-org climate_centre tns ec nso wcc cncd medecins iteco gichd unocha-sdc mcn wnf ub hpc quinoa svdbskb_admin trias cocnl_publisher rcn ldsps galz kepsa ajar foenl rvo protos iwrawasiapacific sg ucos solsoc fcam ndsicde vvsg avsi-ssd ilo rc4d ncea e_n wageningen_ur npm atmf rtp f2a gavi lalo psi miftah ifangni simavi laf shc spark rnli_international worldbank wfwiuk utwente ine_benin aplahoue icco-cooperation wo-men sjg hdcentre rkiv worldwaternet ze interpeace acodev lpi solidarsuisse dipr allada mefbenin mainline finance_canada st_vluchteling solidarites-international djapo iw_admin vngi saferworld clingendael asdap npa plama crisisgroup wai sdn samdhana_institute bos_plus_tropen crb-ai_admin homeoffice wwf-be swb_1 itm bismsi inpud_admin kpomasse giin redorange cdeb-kvhb_admin cdi cbm iucn sanpud ccc dba ecdpm cjp adra-dk ketou foei creausa-org fian-belgium via-db amreftz freeagirl akvo sfcg aauk kerk_in_actie aqua4all fairtrade_be carenederland twynstragudde irc_inc hiil_mfa wri universiteit_leiden wfm-igp asf toffo ia_nam bu dkt_ethiopia msv sosnl kiyo awa_sn hdi scuk sosfaim knvb csa nlrc irex yai-hub nswp wf-asia toviklin sci law ares rikolto wi worldeconomicforum kit a-t ppag_123 chs_alliance spr vvob geomoun sosjd6 f-aids tan solidagro_admin oneacrefund congodorpen fucid ada come wfaf ulbcoop dri rutgers awepa aanl lc </td>
+                      </tr>
+                  
+                      <tr>
+                          <td><a href="https://reference.codeforiati.org/activity-standard/iati-activities/iati-activity/result/#attributes">result/@aggregation-status</a></td>
+                          <td>false</td>
+                          <td>troc stichting_hivos wgnrr_iati iadb afsc nl-kvk-54436222-27541 asdb unicefnl issafrica redeenkind umati csu d4d theglobalfund rvo needs rainfoundation simavi pax wateraid vhai-org dorp-org rlb decp skn asf cini_jhk iucn_nl itc icdi </td>
+                      </tr>
+                  
+              
+                  
+                      <tr>
+                          <td><a href="https://reference.codeforiati.org/activity-standard/iati-activities/iati-activity/result/indicator/#attributes">result/indicator/@ascending</a></td>
+                          <td>1</td>
+                          <td>hefoundation ww-gvc oqc knmi bd eip amrefug oww world_ywca pcf eclosio ilgaasia pmo-us sowt utz trustafrica al_majmoua mml ec-intpa siren warchildholland cibe bothends bwi mag ifcwbg cip ri-uk dai fwf leprazending-tlm-nl weforum_geneva thp_org foncaba wedo uaf adja-ouere dkt_drc achest itpc wvnld snv mondiaalfnv wwfzambia ef_ uvcw crtda lhac nef_usa bsf1 fgae_ethiopia cowi amrefmw actec engenderhealth_eth berytech intersos_main worldveg amrefhq apn fipag afewinternational africalia micfound ktk ifdc-us emms pacja mce vsfbelgium fca arcfge anaepmr_benin sjac fidauganda pumnl adjohoun pobe mvo_nederland iwda apefe gnpplus wsm amrefeth acfshr fcdf wws scm lftw-be damien-foundation fms drc ama-south-sudan orbis_uk rmf-lb josa pib dangbo codeart etmkdw cesc msm-ipd hif omdm uva_org itforchange rikolto_belgium millenniumchallenge profamilia zoa nwp mamac gnbcc parakou tni wcuk eti pwwsd_2022 ihedelft idh dkti girlsnotbrides uhai-eashri ywca esfd imc_uk syf pca-gire memisa ippf wemos amrefkenya nacgond- ad ehpea iiwe amrefnl mondefemmes cadtm irc p-t-f- fiabel dciecpatnl heifernederland yffhsd limpal-colombia femnet eveowd iwrm avrankou ancb_benin bopa scnl wayamo ct-admin ifsi_isvi iisd hsi j2022 ibis_denmark vso_nl avsi_uganda acord bac 111111_publisher idh_im ewla klouekanme idp wpp jass cfyas tbi international-alert intrahealth hi_fed mmha vlir-uos unaids ec-near deltares ngo-federatie dynamo_international wbtf nrc agriterra nj_1 mwatana hai dcaf ecorysnl oxsol tmea jowomenomics isdao tfb_admin1 ticah brulocalis vei_nl ywcakenya codacop cerf gvtc hib g3w-m3m_admin unhabitat apc idlo gpsp-org climate_centre tns ec nso soneb-benin wcc cncd medecins iteco gfcf gichd unocha-sdc mcn aias wnf civicus ub hpc quinoa fundacionavina svdbskb_admin trias cocnl_publisher pstc_1102 tear rcn ldsps galz kepsa foenl nef-uk protos halo iwrawasiapacific ucos solsoc defenddefenders fcam ndsicde traide_foundation vvsg avsi-ssd sfd-yemen imc-2021 pontis ntfp-ep rc4d resilience cec ncea e_n wageningen_ur rainfoundation palladium_eur atmf nuffic20171017 rtp rnw_org cordaid f2a gavi lalo jrf psi tha globalcanopy amwa gggi alcrer-1 miftah ifangni simavi laf shc spark rnli_international kcdf worldbank fos wfwiuk knchr adjarra utwente ine_benin oecd aplahoue icco-cooperation wo-men sjg uafla hdcentre rkiv womankindworld afemena worldwaternet slf ze fairfood acodev lpi solidarsuisse solarnowsofa siwi ibfd dipr allada mefbenin mainline st_vluchteling ha-i hfhnl solidarites-international djapo wff star_ghanafoundation fundacion-acceso aidenvironment vngi saferworld clingendael wclac asdap brac_admin2 npa taf plama wai akpro-misserete sdn samdhana_institute bos_plus_tropen creawkenya crb-ai_admin twnafrica pai155669 united_work awid wwf-be ieu swb_1 itm bismsi inpud_admin acfspain kpomasse redorange cdeb-kvhb_admin cdi cbm awdf iucn sanpud ccc nlr 7iberdotcom fsduganda dba cjp nchrdk ketou healthnet hc2022 wwf-kenya ida foei creausa-org max-foundation fian-belgium via-db waste amreftz freeagirl rpm akvo awo2022 sfcg aauk cdi_vn_2021 nlr_indonesia sisonke npss kerk_in_actie aqua4all fairtrade_be cidr carenederland twynstragudde irc_inc icraf_ hiil_mfa ywcass wri universiteit_leiden wfm-igp asf toffo equileap bu onl dkt_ethiopia msv stad fimi_iiwf_2019 sosnl kiyo libymca awa_sn hdi scuk sosfaim knvb csa nlrc agencia_do_zambeze irex yai-hub nswp wf-asia practica toviklin sci cr law swisscontact ares rikolto cdc_ohg mangotree wi worldeconomicforum iucn_nl arij kit uaf-africa nef_mali dec_ethiopia srhr_africa_trust a-t ppag_123 carebenintogo spr neem vvob nl_wg geomoun sosjd6 caeb_mali f-aids tan solidagro_admin fawe-rs aipr cabi oneacrefund congodorpen fucid ada wwf_bolivia come ulbcoop dri rutgers awepa aanl lc pathfinder1 auxfinbi </td>
+                      </tr>
+                  
+                      <tr>
+                          <td><a href="https://reference.codeforiati.org/activity-standard/iati-activities/iati-activity/result/indicator/#attributes">result/indicator/@ascending</a></td>
+                          <td>true</td>
+                          <td>edukans_foundation sacbc troc stichting_hivos solidaridad pascib_benin bnps concern_worldwide mm1 w-d afsc hsa nl-kvk-54436222-27541 investinternational asdb cavwoc unicefnl concernuk issafrica nfp plannlno redeenkind nimd-hq jass pekka_21 umati d4d cemi genderatwork tdh_nl tear rvo gen needs bltp pontis csci_benkadi nuffic20171017 gorin csa-kenya somo flepuganda amwa kmet simavi seco-ong-mali pax wateraid vhai-org dorp-org saferworld danida ads-nyanza decp cal_2000-pu spong-burkina freeagirl mdf asf nl-kvk-41207989 dapp hiuk cini_jhk iucn_nl itc savsign-org </td>
+                      </tr>
+                  
+                      <tr>
+                          <td><a href="https://reference.codeforiati.org/activity-standard/iati-activities/iati-activity/result/indicator/#attributes">result/indicator/@ascending</a></td>
+                          <td>0</td>
+                          <td>bd eip oww world_ywca scss utz mml ec-intpa warchildholland cibe dai fwf wedo adja-ouere snv iraq_foundation ef_ bsf1 engenderhealth_eth apn afewinternational africalia emms mce vsfbelgium arcfge anaepmr_benin adjohoun pobe apefe cividep scm damien-foundation josa pib dangbo cesc zoa nwp cis parakou ihedelft esfd amrefkenya bopinc iiwe avrankou bopa scnl wayamo ifsi_isvi iisd free_press_unlimited j2022 111111_publisher klouekanme idp cfyas sida ec-near mwatana unicef hai isdao brulocalis vei_nl gvtc hib idlo gpsp-org cncd iteco gichd wnf hpc rcn ldsps galz sg solsoc fcam ndsicde avsi-ssd rc4d wageningen_ur npm nuffic20171017 f2a gavi lalo psi ifangni laf spark kcdf fos wfwiuk adjarra aplahoue wo-men rkiv worldwaternet ze undp lpi solidarsuisse allada finance_canada st_vluchteling solidarites-international djapo star_ghanafoundation fundacion-acceso vngi saferworld clingendael asdap npa plama crisisgroup akpro-misserete bos_plus_tropen crb-ai_admin swb_1 itm inpud_admin kpomasse redorange cdi cbm iucn sanpud adra-dk ketou creausa-org max-foundation via-db sfcg aauk sisonke npss kerk_in_actie aqua4all cidr carenederland irc_inc unw hiil_mfa wri universiteit_leiden toffo bu sosnl libymca hdi scuk sosfaim csa irex yai-hub field_ready wf-asia toviklin sci law swisscontact wi kit nef_mali a-t ppag_123 chs_alliance vvob nl_wg geomoun sosjd6 caeb_mali f-aids fawe-rs oneacrefund come wfaf dri rutgers awepa aanl lc </td>
+                      </tr>
+                  
+                      <tr>
+                          <td><a href="https://reference.codeforiati.org/activity-standard/iati-activities/iati-activity/result/indicator/#attributes">result/indicator/@ascending</a></td>
+                          <td>false</td>
+                          <td>sacbc concern_worldwide w-d concernuk issafrica plannlno redeenkind nimd-hq nuffic20171017 simavi danida asf </td>
+                      </tr>
+                  
+                      <tr>
+                          <td><a href="https://reference.codeforiati.org/activity-standard/iati-activities/iati-activity/result/indicator/#attributes">result/indicator/@ascending</a></td>
+                          <td></td>
+                          <td>usaid </td>
+                      </tr>
+                  
+              
+                  
+                      <tr>
+                          <td><a href="https://reference.codeforiati.org/activity-standard/iati-activities/iati-activity/transaction/#attributes">transaction/@humanitarian</a></td>
+                          <td>0</td>
+                          <td>hefoundation amrefha wcia gardp ww-gvc iza oqc amrefug kituo leedsuni oww cku liwa-admin ahead world_ywca pcf villagewater eclosio bdo scss tearfund zsl uoe trustafrica mml sddirect nmhiati ec-intpa win tropicalhealth cww abtbritain warchildholland cibe bothends mag cip leprazending-tlm-nl thp_org mrg aktis handinhand foncaba uaf cpd dkt_drc wvnld apt fsdk mondiaalfnv dhsc fida iraq_foundation ef_ uvcw surf ageintl epf lhac lemann kpmgea fgae_ethiopia aag cowi engenderhealth_eth berytech dfpa amrefhq itad apn buildafrica unitedstates africalia micfound tlmew ifdc-us dpod emms ethiopiaidireland orbis_international pacja mce vsfbelgium wipc cost_uk wei dggf_financing_local_smes arcfge elevatelimited sjac tuos traidcraft pumnl col-greenfinance mvo_nederland nuwodu iwda wsm rmi amrefeth acfshr wep ims gppac oxfamintermon wws pasgr aar scm b_a_t lftw-be aecom fms drc danmission orbis_uk whw2019 josa bbcmediaaction pib ddp hmtfitb codeart bit etmkdw palladium clientearth-1 cesc akf_afghanistan fyf omdm uand_2020 ndf_fgm lbg unais rikolto_belgium integrity globaltfokus zoa ava_admin nwp mamac agra eti sosdk coe-abc investinternational ihedelft duf idh aab kpmgllp dkti bvrio shortlistogti ictj girlsnotbrides uhai-eashri fowode ywca landell-mills transafrica19 aaik syf nathan memisa ippf wemos amrefkenya bopinc ad ehpea iiwe amrefnl mondefemmes uct signal kmss comp_uk cadtm peas wygi fiabel riia dciecpatnl kidasha esrf ycare yffhsd _path_ hwa-zm lshtm colalife educomm ancb_benin scnl dndi_transparency knust wayamo ksrelief291 bond ifsi_isvi iisd hsi j2022 opportunity-international-uk ibis_denmark zet baag imperial cdp 111111_publisher idh_im opml idp manniondaniels epha wpp bitc gadp dhrc_nepal jass cfyas eif tbi friendsofpwyf dmi_admin cowateruk waterworks hi_fed uol vlir-uos lcdi_admin ec-near the_fsi wusc gwp art19 welbodipartnership deltares 12921047 ngo-federatie dynamo_international efi orbis_ethiopia fifty_eight nrc agriterra cisu mwatana unicef childhopeuk self-help-africa hai dcaf uncdf oxsol tmea isdao tfb_admin1 lboro brulocalis hrwg_indonesia cfm dance4life bvs-nepal vei_nl ran the_power_of_nutrition ecuk promsex ethiopiaiduk oxford street_child g3w-m3m_admin apc idlo sdsna restless tns ec tfacmalawi pacam cncd open_university assn caribank ablechildafrica sciaf wanep asil caritas_denmark defra_transparency wnf orbis_africa wowni wvi civicus lse svdbskb_admin cocnl_publisher tear rcn redbarnet galz ftm-291333 beesfordevelopment foenl trianglen rcog_resilience_in_obstetric_skills r4d iwrawasiapacific afrikids ucos inhive plb solsoc fcam ndsicde traide_foundation vvsg ewdna2025 atnf aadk ilo sfd-yemen imc-2021 pontis cec ncea e_n wageningen_ur pegasys-eu npm atmf stichtingfern chemonics cordaid fairtrade_international f2a bvf jrf psi crerd_ng tha acf globalcanopy gggi miftah simavi laf icwrsa kcdf fos appro-af wfwiuk iodparc soundseekers cal tlmnepal wo-men sjg uafla hdcentre rkiv womankindworld aai aain wateraid acodev solidarsuisse solarnowsofa mifumi_uk dgmh ec-fpi afghanaid mainline dgf ha-i treea sqf dca ipas synergiaihr djapo iw_admin partos_nl traffic adrauk e4i fundacion-acceso imcw_admin jpal hhc vngi saferworld clingendael inbar ac1999 ssn brac_admin2 taf wcf ipeglobal plama crisisgroup tlo wai pcst sdn samdhana_institute bos_plus_tropen kesho_kenya ipao carbontrustadvisory nico whpca msuk wasteaid swda forest-trends tb-a umu instiglio homeoffice united_work gsg awid wwf-be ieu ai_1064413 wjr_001 aeras intrac acfspain imdmozambique giin redorange cdi cbm uq awdf iucn ccc nlr 7iberdotcom uws integrity_action wctc cjp nchrdk adra-dk motivation scibelgium foei creausa-org max-foundation fian-belgium via-db waste amreftz freeagirl danishrc akvo sfcg aauk ashoka hpa loftf fairtrade_be vso twynstragudde irc_inc uom sense_international sas_sana hiil_mfa ywcass wri universiteit_leiden raleigh_int wfm-igp ja_ppmn asf abaseen pumpaid equileap basicneeds bu akfuk73 dkt_ethiopia hfc tdh_foundation cepr addinternational fimi_iiwf_2019 sosnl ids mapaction kiyo twin-iati libymca hdi sosfaim knvb csa nlrc wlrc_aau sct gdi wf-asia cyan hiuk cr bcm-cf dcapitalpartners swisscontact ares rikolto worldeconomicforum arij wwf-uk kit uaf-africa sinda oyw dai-e srhr_africa_trust utd walaltd horizons lcp ciprb healthpartners-international guluuni spr medafrica nl_wg tan solidagro_admin fawe-rs lstm clasp wilpf_22 aipr cabi oneacrefund adsb ukmod fucid ada britishcouncil lcd_admin ulbcoop cpd_2021 rainforest-alliance dri rutgers aanl alineainternational_2020 lc pathfinder1 ifpri </td>
+                      </tr>
+                  
+                      <tr>
+                          <td><a href="https://reference.codeforiati.org/activity-standard/iati-activities/iati-activity/transaction/#attributes">transaction/@humanitarian</a></td>
+                          <td>1</td>
+                          <td>gardp dawuro_da tearfund dki1151219 zsl nmhiati win siren cww warchildholland riverrecycle ejaf mag ri-uk dai fwf mrg eel cpd transparently_lebanese wvnld cdacnetwork apt dhsc ageintl kpmgea cowi engenderhealth_eth varkeyfoundation intersos_main worldveg itad apn unitedstates tlmew fh ifdc-us emms ethiopiaidireland pacja mce vsfbelgium cost_uk arcfge tuos fidauganda givedirectly paradigm olammacares wsup cividep amrefeth hqai wep ims rc aar scm damien-foundation sendacow drc danmission wwfdk ama-south-sudan cehrd1 bbcmediaaction ddp aahusa learningforlife giro555 palladium civic_admin akf_afghanistan concordis rcel afelt unais zoa siharegional mamac acaa medair gnbcc lhcf posneg dotw_uk wcuk sosdk wvuk ihedelft aab kpmgllp yoneco1997 uhai-eashri transafrica19 aaik imc_uk sacethiopia wellfound fhi360 nathan wemos interburns siha-southsudan edt_rwanda act4africa mdm_spain rahuug amrefnl loop comp_uk peas wygi fiabel montrose_llp ycare canadem _path_ limpal-colombia femnet scnl ksrelief291 cuamm hsi ibis_denmark avsi_uganda imperial maydayrescue ewla musawah jass cfyas hi_fed unaids lcdi_admin lei prefa_1 art19 welbodipartnership 12921047 nrc agriterra cisu nj_1 unicef childhopeuk si-mfa csc ehorg tmea jowomenomics brulocalis dance4life the_power_of_nutrition icva codacop cerf ethiopiaiduk oxford edt_kenya tns irc_uk wcc open_university cowater caribank gfcf gichd sciaf fact unocha-sdc usaid kingscollegelondon asil caritas_denmark wnf wvi civicus cocnl_publisher pstc_1102 redbarnet galz ftm-291333 kepsa zoa_uk tgh halo mmh afrikids pfg plb upm defenddefenders ground-truth-solutions fcam irw tfp aadk ilo mercy-usa childfund wageningen_ur rtp cordaid jrf psi acf laf spark act_alliance cal tlmnepal wo-men 1-uz sjg womankindworld kwaafrica worldwaternet peacedirect nagaad goodweave_intl lpi solarnowsofa siwi mifumi_uk afghanaid st_vluchteling wccuk dec-uk idydc hfhnl dca ipas solidarites-international adrauk imcw_admin marysmeals goal saferworld jocc_uk inbar impact_initiatives ssn brac_admin2 npa taf the_mentor_initiative irise_int crs sdn us-imawh creawkenya bracintl stromme_ug spuk sacu swda elrha m_u _admin ieu oisl_gh rains wjr_001 inpud_admin icmpd acfspain aphrc tff fh_ch awdf gb-chc-220949 adra-dk healthnet motivation wvz-gec hc2022 ewf ida creausa-org max-foundation unocha-cbpf danishrc rpm aauk nlr_indonesia ashoka npss kerk_in_actie avt-l pmc loftf vso irc_inc tffus uom kipkelion sense_international wfm-igp pumpaid bu akfuk73 alliance_of_religions_and_conservation dkt_ethiopia tdh_foundation addinternational stad sosnl mapaction dapp stichting-subsidiegelden-dra across nlrc bbdn yai-hub field_ready wf-asia redruk hiuk mofaic_uae cr bcm-cf law clerd-prpi ask galvmed wwf-uk kit oyw dai-e ppag_123 infnepal utd carebenintogo bracuk guluuni neem capabui medafrica uk-med f-aids jrf_2022 aipr ukmod eap aet wfaf rutgers awepa auxfinbi hrf </td>
+                      </tr>
+                  
+                      <tr>
+                          <td><a href="https://reference.codeforiati.org/activity-standard/iati-activities/iati-activity/transaction/#attributes">transaction/@humanitarian</a></td>
+                          <td>true</td>
+                          <td>who </td>
+                      </tr>
+                  
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+
+    
+  </div><!-- /.container -->
+
+</div>
+
+<div id="footer">
+    <div class="container">
+        <p class="text-muted">
+          <a href="https://github.com/codeforIATI/analytics/tree/1967c84e60674f5d710fc604abe2f9ca9d97c8ef">Source code</a>.
+
+          <a href="https://github.com/codeforIATI/analytics/issues?state=open">Report bugs, and request features using Github issues</a>.<br/>
+
+          Generated on <em>9 December 2022 (at 11:46 UTC)</em> from data downloaded on <em>9 December 2022 (at 01:41 UTC)</em>.<br/>
+
+          (NB This is the time the download task started. Any changes made after this time may not be reflected).<br />
+
+          For details on how often these updates are applied, see the <a href="/faq.html">Code for IATI Analytics FAQ</a>.
+    </div>
+</div>
+
+<script src="//codeforiati.org/sidebar/sidebar.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.13.3/jquery.tablesorter.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.13.3/jquery.tablesorter.widgets.min.js"></script>
+<script>$(function() { $("table.table").tablesorter({
+  textExtraction:{
+    1: function(node,table,cellIndex) {
+      if (['1', 'true'].indexOf($(node).text()) !== -1) return 1;
+      if (['0', 'false'].indexOf($(node).text()) !== -1) return 0;
+      return -1;
+    }
+  }
+}); });</script>
+  
+</body>
+</html>
